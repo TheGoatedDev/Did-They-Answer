@@ -1,0 +1,24 @@
+name: Dispute an assessment
+description: Tell us an automated assessment looks wrong.
+title: "Dispute: petition "
+labels: [dispute]
+body:
+  - type: input
+    id: petition
+    attributes:
+      label: Petition ID
+      description: The number in the petition's URL.
+    validations:
+      required: true
+  - type: input
+    id: prompt_version
+    attributes:
+      label: Prompt version
+      description: Shown under the assessment.
+  - type: textarea
+    id: reason
+    attributes:
+      label: What looks wrong?
+      description: Which criterion, stance or highlight do you disagree with, and why? Quote the response if you can.
+    validations:
+      required: true
