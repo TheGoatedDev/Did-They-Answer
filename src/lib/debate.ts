@@ -196,7 +196,12 @@ export async function rateMember(
 export async function runDebateStances(
   db: Db,
   client: JevClient,
-  { deadline, petitionIds = [] }: { deadline: number; petitionIds?: number[] },
+  {
+    deadline,
+    petitionIds = [],
+    // Each debate already rates all its speakers at once, so keep this low.
+    concurrency = 4,
+  }: { deadline: number; petitionIds?: number[]; concurrency?: number },
 ) {
   const transcriptUrl = sql<
     string | null
@@ -228,66 +233,71 @@ export async function runDebateStances(
   let items = 0;
   let inputTokens = 0;
   const errors: string[] = [];
-  for (const [debateId, group] of debates) {
-    if (Date.now() > deadline) break;
-    try {
-      const debate = await fetchDebate(debateId);
-      const bySpeaker = speakers(debate.Items);
-      const members = await fetchMembers(
-        [...bySpeaker.keys()],
-        debate.Overview.Date.slice(0, 10),
-      );
-      const rows = await Promise.all(
-        [...bySpeaker].map(async ([memberId, s]) => {
-          const member = members.get(memberId) ?? {
-            name: `Member ${memberId}`,
-            party: "Unknown",
-          };
-          const { raw, ratings } = await rateMember(
-            client,
-            debate.Overview.Title,
-            member,
-            s.speeches,
-            group,
-          );
-          inputTokens += raw.usage.input_tokens ?? 0;
-          return ratings.map((r) => ({
-            ...r,
-            ...member,
-            debateId,
-            memberId,
-            role: s.role,
-            speeches: s.speeches.length,
-            model: MODEL,
-            raw,
-          }));
-        }),
-      );
-      if (rows.length === 0) continue;
-      await db
-        .insert(debateStances)
-        .values(rows.flat())
-        .onConflictDoUpdate({
-          target: [debateStances.petitionId, debateStances.memberId],
-          set: {
-            stance: sql`excluded.stance`,
-            confidence: sql`excluded.confidence`,
-            party: sql`excluded.party`,
-            role: sql`excluded.role`,
-            speeches: sql`excluded.speeches`,
-            raw: sql`excluded.raw`,
-            createdAt: sql`now()`,
-          },
-        });
-      items += 1;
-    } catch (error) {
-      errors.push(`${debateId}: ${(error as Error).message}`);
+  const queue = [...debates];
+  const worker = async () => {
+    // Check the deadline before taking a debate so an untaken one is never lost.
+    while (queue.length > 0 && Date.now() <= deadline) {
+      const [debateId, group] = queue.shift() as (typeof queue)[number];
+      try {
+        const debate = await fetchDebate(debateId);
+        const bySpeaker = speakers(debate.Items);
+        const members = await fetchMembers(
+          [...bySpeaker.keys()],
+          debate.Overview.Date.slice(0, 10),
+        );
+        const rows = await Promise.all(
+          [...bySpeaker].map(async ([memberId, s]) => {
+            const member = members.get(memberId) ?? {
+              name: `Member ${memberId}`,
+              party: "Unknown",
+            };
+            const { raw, ratings } = await rateMember(
+              client,
+              debate.Overview.Title,
+              member,
+              s.speeches,
+              group,
+            );
+            inputTokens += raw.usage.input_tokens ?? 0;
+            return ratings.map((r) => ({
+              ...r,
+              ...member,
+              debateId,
+              memberId,
+              role: s.role,
+              speeches: s.speeches.length,
+              model: MODEL,
+              raw,
+            }));
+          }),
+        );
+        if (rows.length === 0) continue;
+        await db
+          .insert(debateStances)
+          .values(rows.flat())
+          .onConflictDoUpdate({
+            target: [debateStances.petitionId, debateStances.memberId],
+            set: {
+              stance: sql`excluded.stance`,
+              confidence: sql`excluded.confidence`,
+              party: sql`excluded.party`,
+              role: sql`excluded.role`,
+              speeches: sql`excluded.speeches`,
+              raw: sql`excluded.raw`,
+              createdAt: sql`now()`,
+            },
+          });
+        items += 1;
+      } catch (error) {
+        errors.push(`${debateId}: ${(error as Error).message}`);
+      }
     }
-  }
+  };
+  await Promise.all(Array.from({ length: concurrency }, worker));
   return {
     items,
     inputTokens,
     errors,
-    complete: items + errors.length === debates.size && errors.length === 0,
+    complete: queue.length === 0 && errors.length === 0,
   };
 }
