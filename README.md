@@ -19,10 +19,30 @@ pnpm dev
 | --- | --- |
 | `pnpm lint` | Biome lint and format check |
 | `pnpm typecheck` | Next route types and `tsc` |
-| `pnpm test` | Vitest |
-| `pnpm build` | Production build |
+| `pnpm test` | Vitest, with PGlite for database tests |
+| `pnpm build` | Production build (standalone output) |
+| `pnpm db:generate` | Generate a Drizzle migration after editing `src/db/schema.ts` |
+| `pnpm sync:local` | Crawl the petitions API into the local database |
+| `pnpm gold:label` | Hand-label the 30-response gold set into `eval/gold.json` |
+| `pnpm eval` | Score the gold set with Jev and write `eval/results.json` (costs money) |
+
+Migrations run automatically when the server starts.
 
 Git hooks: `pre-commit` runs Biome on staged files. `pre-push` runs the typecheck and the tests.
+
+## Deployment
+
+The `Dockerfile` builds a standalone Next.js server. It needs `DATABASE_URL`, `OPENROUTER_API_KEY` and `CRON_SECRET` at runtime, and `NEXT_PUBLIC_POSTHOG_KEY` and `NEXT_PUBLIC_POSTHOG_HOST` at build time.
+
+Two scheduled tasks keep the data fresh. Each POSTs to an internal route with the cron secret:
+
+```sh
+# Sync, daily at 05:00
+node -e "fetch('http://localhost:3000/api/internal/sync',{method:'POST',headers:{authorization:'Bearer '+process.env.CRON_SECRET}}).then(r=>r.text()).then(console.log)"
+# Judge, daily at 05:30: the same command with /api/internal/judge
+```
+
+Each run stops after about 250 seconds and resumes where it left off on the next run.
 
 ## Licence
 
