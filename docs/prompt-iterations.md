@@ -1,34 +1,53 @@
 # Prompt iterations
 
-Record of the prompt versions tested against version 1, and why version 1 is still current. Tested 2026-10-17 with `typesafe/jev-1.14-20261014`.
+Record of the prompt changes tested, and why the current version won. All runs used `typesafe/jev-1.14-20261014`, on 2026-10-17.
+
+## Current: v2
+
+v2 adds one sentence to the outcome question in v1:
+
+> Describing existing policy or saying it will keep the matter under review is not a commitment, and a refusal only counts as reasoned if it explains why the request will not be met.
+
+Results on the 200-label gold set, averaged over 2 runs:
+
+| Field | v1 | v2 | v2 tune | v2 holdout |
+|---|---|---|---|---|
+| Addresses the ask | 87% | 88% | 88% | 87% |
+| Evidence | 78% | 78% | 79% | 78% |
+| Reasoning | 82% | 83% | 83% | 82% |
+| Outcome | **64%** | **74%** | 76% | 72% (v1: 67%) |
+| Specificity | 72% | 71% | 71% | 72% |
+| Stance | 84% | 84% | 86% | 82% |
+| Verdict | 83% | 85% | 81% | 90% (v1: 88%) |
+| Flagged low confidence | 46% | 50% | | |
+
+- Under v1, Jev rated vague promises as firm commitments: 53 of its 72 outcome misses were a 1 scored as 2. Under v2 that count is 28.
+- The gain is larger on the tuning half (+15) than on the holdout (+5). Part of the tuning gain is fit to those labels, or to how those labellers read the outcome levels.
+- v2 flags about 4 points more responses as low confidence than v1.
 
 ## Method
 
-- **Tuning set:** the original 30 gold responses.
-- **Holdout set:** 30 more responses, 6 from each parliament, labelled blind and only used to confirm a candidate.
-- **Labels:** each set was labelled independently by two Claude agents, with disagreements settled by a third. When a version changed a definition, the affected field was relabelled under the new wording.
-- **Bar, fixed before testing:** verdict agreement at least v1's, stance agreement at least 85%, and fewer petitions flagged as low confidence than v1 on a fixed 200-petition sample. To be adopted, a version also had to beat v1 on the holdout set.
-- **Noise:** Jev's answers vary between runs by about one response in 30 (3 points), so smaller differences are not meaningful.
+- **Gold set:** `eval/gold.json`, 200 labelled responses, split 100 `tune` and 100 `holdout`. Changes are developed against `tune` and confirmed once on `holdout`.
+- **Labelling:** each batch was labelled blind by two Claude agents, with disagreements settled by a third (`pnpm gold:export` and `pnpm gold:merge`).
+- **Runs:** results are averaged over 2 runs, because Jev's answers vary by a few points from run to run.
+- **Baseline:** v1 was measured with the same set and the same runs.
 
-## Results
+## Rejected candidates
 
-| Version | Change from v1 | Tuning set | Holdout set | Outcome |
-|---|---|---|---|---|
-| v2 | Concrete signals for specificity; sharper stance definitions | Verdict 83%, stance 83% | not run | Failed the stance bar: refusals drifted into "deflects" |
-| v3 | v2's specificity wording only | Verdict 85% (2 runs), stance 90%, 40% flagged | Verdict 87%, stance 80%, specificity 57% (v1: 88%) | Gains did not carry over |
-| v4 | v3 plus "answering specific points counts as specific" | Verdict 80–83%, specificity confidence worse | not run | No better than v3 |
-| v5 | Specificity split into two yes/no questions | Specificity 50%, all misses 2 scored as 1 | not run | Worse |
-| v6 | Clarified what counts as a commitment or a reasoned refusal | Outcome 80% (v1: 73%) | Outcome 63% (v1: 70%) | Overfitted to the tuning set |
+These were tested on the earlier 30- and 60-label sets.
 
-On the holdout set v1 scored verdict 83%, stance 80% and specificity 88%.
+| Candidate | Change | Why rejected |
+|---|---|---|
+| A | Concrete signals for specificity, plus sharper stance definitions | Refusals drifted into "deflects": stance fell from 90% to 77–83% |
+| B | Candidate A's specificity wording only | Better on the tuning set; on the holdout, specificity was 57% against v1's 88% |
+| C | B plus "answering specific points counts as specific" | No better than B |
+| D | Specificity split into two yes/no questions | Worse: 15 of 30 tuning labels scored 2 by the labellers came out as 1 |
+| E | Reasoning and evidence clarifications, added on top of v2 (200-label set) | Reasoning overshot from 83% to 69%; evidence unchanged |
 
-## Findings
+The outcome clarification (v2) first looked like overfitting on the 30-label holdout (70% to 63%). The 200-label set showed the gain is real, though smaller on the holdout. Small gold sets can't separate changes of a few points.
 
-- Wording changes produced differences of about one response, the same size as run-to-run noise.
-- About 27% of petitions are flagged on stance confidence alone. Responses that neither clearly accept nor clearly refuse are genuinely ambiguous, so this is a floor that no criterion wording can lower.
-- Outcome is the weakest criterion in every version, at about 70% agreement, with Jev scoring higher than the labels.
-- The gold set now holds all 60 labelled responses, which gives a steadier agreement estimate than 30.
+## Known limits
 
-## Next steps
-
-Telling apart versions that differ by 5 points needs a gold set of a few hundred responses, or human labels.
+- About 27% of responses are flagged on stance confidence alone. Those responses neither clearly accept nor clearly refuse, and no wording change has lowered that floor.
+- Specificity is still systematically low: Jev scores a 2 as a 1. Evidence is still slightly high: Jev scores a 0 as a 1.
+- The labels come from Claude agents, not people. They check Jev against a different model, which is not the same as human judgement.

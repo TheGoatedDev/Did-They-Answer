@@ -1,16 +1,16 @@
 {
   "model": "typesafe/jev-1.14-20261014",
-  "promptVersion": 1,
-  "ranAt": "2026-10-17T18:36:25.116Z",
+  "promptVersion": 2,
+  "ranAt": "2026-10-17T18:39:13.899Z",
   "n": 200,
   "agreement": {
-    "addresses_ask": 0.87,
-    "evidence": 0.7775000000000001,
-    "reasoning": 0.82,
-    "outcome": 0.64,
-    "specificity": 0.715,
+    "addresses_ask": 0.875,
+    "evidence": 0.78,
+    "reasoning": 0.825,
+    "outcome": 0.74,
+    "specificity": 0.7124999999999999,
     "stance": 0.8374999999999999,
-    "verdict": 0.8325
+    "verdict": 0.85
   },
   "items": [
     {
@@ -29,14 +29,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.63,
-          "evidence": 1.03,
+          "addresses_ask": 1.62,
+          "evidence": 1.05,
           "reasoning": 1.88,
-          "outcome": 1.13,
-          "specificity": 0.84
+          "outcome": 0.26,
+          "specificity": 0.83
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -55,14 +56,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.62,
+          "addresses_ask": 1.55,
           "evidence": 2,
-          "reasoning": 1.79,
-          "outcome": 1.92,
-          "specificity": 1.38
+          "reasoning": 1.81,
+          "outcome": 1.82,
+          "specificity": 1.31
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -81,14 +83,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.8,
-          "evidence": 0.64,
+          "addresses_ask": 1.83,
+          "evidence": 0.6,
           "reasoning": 1.71,
-          "outcome": 1.98,
-          "specificity": 1.32
+          "outcome": 1.93,
+          "specificity": 1.41
         },
         "stance": "partially_accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -107,14 +110,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.96,
+          "addresses_ask": 1.95,
           "evidence": 1.95,
-          "reasoning": 0.94,
-          "outcome": 1.9,
+          "reasoning": 0.97,
+          "outcome": 1.89,
           "specificity": 1.93
         },
         "stance": "accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -133,14 +137,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.65,
-          "evidence": 0.65,
-          "reasoning": 1.59,
-          "outcome": 1.8,
-          "specificity": 1.78
+          "addresses_ask": 1.67,
+          "evidence": 0.59,
+          "reasoning": 1.62,
+          "outcome": 1.23,
+          "specificity": 1.77
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -163,10 +168,11 @@
           "evidence": 1,
           "reasoning": 1.98,
           "outcome": 2,
-          "specificity": 1.26
+          "specificity": 1.28
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -185,14 +191,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.87,
-          "evidence": 0.43,
-          "reasoning": 1.38,
-          "outcome": 1.97,
-          "specificity": 1.12
+          "addresses_ask": 1.86,
+          "evidence": 0.42,
+          "reasoning": 1.48,
+          "outcome": 1.79,
+          "specificity": 1.18
         },
         "stance": "declines",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -211,14 +218,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.55,
-          "evidence": 1.99,
-          "reasoning": 1.7,
-          "outcome": 1.99,
-          "specificity": 1.48
+          "addresses_ask": 1.58,
+          "evidence": 1.98,
+          "reasoning": 1.73,
+          "outcome": 1.95,
+          "specificity": 1.43
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -237,14 +245,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.63,
-          "evidence": 1.98,
-          "reasoning": 1.89,
-          "outcome": 1.93,
-          "specificity": 1.14
+          "addresses_ask": 1.68,
+          "evidence": 1.99,
+          "reasoning": 1.88,
+          "outcome": 1.76,
+          "specificity": 1.15
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -263,14 +272,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 0.89,
+          "addresses_ask": 0.78,
           "evidence": 0,
-          "reasoning": 0.81,
-          "outcome": 1.78,
-          "specificity": 0.53
+          "reasoning": 0.76,
+          "outcome": 1.63,
+          "specificity": 0.35
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "low",
+        "needsReview": true
       }
     },
     {
@@ -289,14 +299,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.29,
+          "addresses_ask": 1.32,
           "evidence": 1.01,
-          "reasoning": 1.9,
-          "outcome": 1.98,
-          "specificity": 0.85
+          "reasoning": 1.88,
+          "outcome": 1.86,
+          "specificity": 0.84
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "some",
+        "needsReview": false
       }
     },
     {
@@ -316,13 +327,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.99,
-          "evidence": 1.99,
+          "evidence": 1.98,
           "reasoning": 1.98,
-          "outcome": 2,
-          "specificity": 0.92
+          "outcome": 1.99,
+          "specificity": 0.91
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -342,13 +354,14 @@
       "model": {
         "scores": {
           "addresses_ask": 2,
-          "evidence": 1.88,
-          "reasoning": 1.76,
-          "outcome": 2,
-          "specificity": 1.19
+          "evidence": 1.89,
+          "reasoning": 1.77,
+          "outcome": 1.99,
+          "specificity": 1.13
         },
         "stance": "accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -367,14 +380,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.78,
-          "evidence": 1.39,
+          "addresses_ask": 1.81,
+          "evidence": 1.44,
           "reasoning": 1.97,
-          "outcome": 1.36,
-          "specificity": 1.81
+          "outcome": 1.12,
+          "specificity": 1.82
         },
         "stance": "partially_accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -393,14 +407,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.83,
-          "evidence": 1.51,
-          "reasoning": 1.53,
-          "outcome": 1.93,
-          "specificity": 1.95
+          "addresses_ask": 1.85,
+          "evidence": 1.48,
+          "reasoning": 1.51,
+          "outcome": 1.77,
+          "specificity": 1.94
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -419,14 +434,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.11,
-          "evidence": 0.95,
-          "reasoning": 1.39,
-          "outcome": 1.98,
-          "specificity": 0.85
+          "addresses_ask": 1.26,
+          "evidence": 0.97,
+          "reasoning": 1.41,
+          "outcome": 1.89,
+          "specificity": 0.79
         },
         "stance": "declines",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -446,13 +462,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.99,
-          "evidence": 1.23,
-          "reasoning": 1.69,
-          "outcome": 1.98,
-          "specificity": 1.66
+          "evidence": 1.29,
+          "reasoning": 1.65,
+          "outcome": 1.83,
+          "specificity": 1.7
         },
         "stance": "accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -471,14 +488,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 0.86,
-          "evidence": 0.64,
-          "reasoning": 1.72,
-          "outcome": 1.61,
-          "specificity": 0.19
+          "addresses_ask": 0.85,
+          "evidence": 0.68,
+          "reasoning": 1.76,
+          "outcome": 1.39,
+          "specificity": 0.22
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -498,13 +516,14 @@
       "model": {
         "scores": {
           "addresses_ask": 2,
-          "evidence": 1.28,
+          "evidence": 1.29,
           "reasoning": 2,
           "outcome": 2,
-          "specificity": 1.6
+          "specificity": 1.52
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -523,14 +542,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.79,
+          "addresses_ask": 1.81,
           "evidence": 2,
-          "reasoning": 1.32,
-          "outcome": 1.94,
-          "specificity": 1.49
+          "reasoning": 1.31,
+          "outcome": 1.83,
+          "specificity": 1.5
         },
         "stance": "partially_accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -551,12 +571,13 @@
         "scores": {
           "addresses_ask": 1.95,
           "evidence": 1.99,
-          "reasoning": 1.56,
-          "outcome": 1.99,
-          "specificity": 1.5
+          "reasoning": 1.6,
+          "outcome": 1.93,
+          "specificity": 1.57
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -576,13 +597,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.98,
-          "evidence": 1.59,
+          "evidence": 1.64,
           "reasoning": 1.96,
           "outcome": 2,
-          "specificity": 1.92
+          "specificity": 1.88
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -601,14 +623,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.84,
-          "evidence": 1.98,
+          "addresses_ask": 1.88,
+          "evidence": 1.99,
           "reasoning": 1.95,
-          "outcome": 1.92,
-          "specificity": 1.85
+          "outcome": 1.93,
+          "specificity": 1.83
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -629,12 +652,13 @@
         "scores": {
           "addresses_ask": 1.95,
           "evidence": 2,
-          "reasoning": 1.75,
-          "outcome": 1.98,
-          "specificity": 1.28
+          "reasoning": 1.74,
+          "outcome": 1.96,
+          "specificity": 1.22
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -653,14 +677,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.25,
-          "evidence": 0.93,
-          "reasoning": 1.65,
-          "outcome": 1.56,
-          "specificity": 1.78
+          "addresses_ask": 1.31,
+          "evidence": 0.91,
+          "reasoning": 1.63,
+          "outcome": 0.47,
+          "specificity": 1.77
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -681,12 +706,13 @@
         "scores": {
           "addresses_ask": 1.98,
           "evidence": 1.04,
-          "reasoning": 1.78,
-          "outcome": 1.91,
-          "specificity": 1.53
+          "reasoning": 1.77,
+          "outcome": 1.64,
+          "specificity": 1.52
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -705,14 +731,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 0.86,
+          "addresses_ask": 0.78,
           "evidence": 2,
-          "reasoning": 1.37,
-          "outcome": 1.9,
-          "specificity": 0.44
+          "reasoning": 1.34,
+          "outcome": 1.23,
+          "specificity": 0.38
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -731,14 +758,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.14,
-          "evidence": 1.08,
-          "reasoning": 1.16,
-          "outcome": 1.97,
-          "specificity": 1.2
+          "addresses_ask": 1.11,
+          "evidence": 0.98,
+          "reasoning": 1.13,
+          "outcome": 1.8,
+          "specificity": 1.19
         },
         "stance": "declines",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -758,13 +786,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.97,
-          "evidence": 0.97,
-          "reasoning": 1.86,
-          "outcome": 1.86,
-          "specificity": 1.7
+          "evidence": 0.98,
+          "reasoning": 1.83,
+          "outcome": 1.62,
+          "specificity": 1.71
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -784,13 +813,14 @@
       "model": {
         "scores": {
           "addresses_ask": 2,
-          "evidence": 0.39,
+          "evidence": 0.34,
           "reasoning": 1.98,
-          "outcome": 1.99,
-          "specificity": 1.19
+          "outcome": 1.97,
+          "specificity": 1.26
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -809,14 +839,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.32,
+          "addresses_ask": 1.27,
           "evidence": 1.89,
-          "reasoning": 1.69,
-          "outcome": 1.05,
-          "specificity": 1.84
+          "reasoning": 1.68,
+          "outcome": 0.35,
+          "specificity": 1.86
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -836,13 +867,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.9,
-          "evidence": 0.61,
+          "evidence": 0.52,
           "reasoning": 1.98,
-          "outcome": 1.86,
-          "specificity": 1.82
+          "outcome": 1.78,
+          "specificity": 1.85
         },
-        "stance": "declines",
-        "verdict": "thorough"
+        "stance": "deflects",
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -861,14 +893,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.6,
+          "addresses_ask": 1.63,
           "evidence": 1.97,
           "reasoning": 2,
-          "outcome": 1.99,
-          "specificity": 1.95
+          "outcome": 1.94,
+          "specificity": 1.94
         },
         "stance": "partially_accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -887,14 +920,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.97,
-          "evidence": 0.46,
+          "addresses_ask": 1.96,
+          "evidence": 0.41,
           "reasoning": 1.71,
-          "outcome": 1.87,
-          "specificity": 1.21
+          "outcome": 1.81,
+          "specificity": 1.2
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -913,14 +947,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.96,
-          "evidence": 1.44,
+          "addresses_ask": 1.97,
+          "evidence": 1.49,
           "reasoning": 0.99,
-          "outcome": 1.61,
+          "outcome": 1.5,
           "specificity": 1.92
         },
         "stance": "accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -939,14 +974,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.13,
+          "addresses_ask": 1.05,
           "evidence": 1.98,
           "reasoning": 1.63,
-          "outcome": 1.84,
-          "specificity": 1.29
+          "outcome": 1.2,
+          "specificity": 1.27
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -968,11 +1004,12 @@
           "addresses_ask": 1.98,
           "evidence": 2,
           "reasoning": 1.99,
-          "outcome": 1.98,
-          "specificity": 1.48
+          "outcome": 1.9,
+          "specificity": 1.51
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -991,14 +1028,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 0.84,
+          "addresses_ask": 0.82,
           "evidence": 2,
-          "reasoning": 1.94,
-          "outcome": 1.63,
-          "specificity": 1.4
+          "reasoning": 1.95,
+          "outcome": 1.29,
+          "specificity": 1.37
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -1017,14 +1055,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.1,
+          "addresses_ask": 1.12,
           "evidence": 2,
-          "reasoning": 1.52,
-          "outcome": 1.7,
-          "specificity": 0.94
+          "reasoning": 1.54,
+          "outcome": 1.05,
+          "specificity": 0.86
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -1046,11 +1085,12 @@
           "addresses_ask": 1.92,
           "evidence": 2,
           "reasoning": 0.95,
-          "outcome": 1.91,
-          "specificity": 1.88
+          "outcome": 0.88,
+          "specificity": 1.89
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -1069,14 +1109,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.83,
-          "evidence": 1.18,
+          "addresses_ask": 1.85,
+          "evidence": 1.22,
           "reasoning": 1.85,
-          "outcome": 2,
-          "specificity": 1.69
+          "outcome": 1.99,
+          "specificity": 1.71
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -1095,14 +1136,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.37,
-          "evidence": 1.07,
+          "addresses_ask": 1.42,
+          "evidence": 1.08,
           "reasoning": 1.94,
-          "outcome": 1.77,
-          "specificity": 1.8
+          "outcome": 1.5,
+          "specificity": 1.81
         },
-        "stance": "deflects",
-        "verdict": "thorough"
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -1121,14 +1163,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.27,
-          "evidence": 1.97,
+          "addresses_ask": 1.36,
+          "evidence": 1.98,
           "reasoning": 2,
-          "outcome": 1.86,
-          "specificity": 1.14
+          "outcome": 1.59,
+          "specificity": 1.08
         },
-        "stance": "deflects",
-        "verdict": "thorough"
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -1147,14 +1190,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.89,
-          "evidence": 1.01,
+          "addresses_ask": 1.9,
+          "evidence": 1,
           "reasoning": 2,
-          "outcome": 1.88,
-          "specificity": 1.19
+          "outcome": 1.5,
+          "specificity": 1.13
         },
         "stance": "partially_accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -1173,14 +1217,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 0.05,
+          "addresses_ask": 0.06,
           "evidence": 0,
-          "reasoning": 0,
-          "outcome": 0.08,
-          "specificity": 1.47
+          "reasoning": 0.01,
+          "outcome": 0.02,
+          "specificity": 1.45
         },
         "stance": "deflects",
-        "verdict": "low"
+        "verdict": "low",
+        "needsReview": false
       }
     },
     {
@@ -1200,13 +1245,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.99,
-          "evidence": 0.98,
+          "evidence": 0.89,
           "reasoning": 1.44,
-          "outcome": 2,
-          "specificity": 1.42
+          "outcome": 1.97,
+          "specificity": 1.41
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -1226,13 +1272,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.93,
-          "evidence": 0.19,
-          "reasoning": 1.72,
-          "outcome": 1.95,
+          "evidence": 0.18,
+          "reasoning": 1.67,
+          "outcome": 1.66,
           "specificity": 1.81
         },
         "stance": "partially_accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -1251,14 +1298,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 0.92,
-          "evidence": 1.52,
-          "reasoning": 1.3,
-          "outcome": 1.64,
-          "specificity": 1.68
+          "addresses_ask": 0.97,
+          "evidence": 1.49,
+          "reasoning": 1.28,
+          "outcome": 0.82,
+          "specificity": 1.74
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -1278,13 +1326,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.95,
-          "evidence": 1.69,
-          "reasoning": 1.85,
-          "outcome": 1.98,
-          "specificity": 1.86
+          "evidence": 1.7,
+          "reasoning": 1.86,
+          "outcome": 1.87,
+          "specificity": 1.83
         },
         "stance": "accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -1303,14 +1352,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.96,
-          "evidence": 0.6,
+          "addresses_ask": 1.94,
+          "evidence": 0.61,
           "reasoning": 2,
-          "outcome": 1.99,
-          "specificity": 1.74
+          "outcome": 1.96,
+          "specificity": 1.78
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -1329,14 +1379,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.86,
-          "evidence": 0.22,
-          "reasoning": 1.81,
-          "outcome": 1.89,
-          "specificity": 1.63
+          "addresses_ask": 1.88,
+          "evidence": 0.19,
+          "reasoning": 1.8,
+          "outcome": 1.46,
+          "specificity": 1.6
         },
         "stance": "partially_accepts",
-        "verdict": "thorough"
+        "verdict": "some",
+        "needsReview": false
       }
     },
     {
@@ -1355,14 +1406,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.96,
-          "evidence": 0.55,
-          "reasoning": 1.96,
+          "addresses_ask": 1.97,
+          "evidence": 0.48,
+          "reasoning": 1.97,
           "outcome": 2,
-          "specificity": 0.76
+          "specificity": 0.8
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -1382,13 +1434,14 @@
       "model": {
         "scores": {
           "addresses_ask": 0.92,
-          "evidence": 0.48,
-          "reasoning": 1.41,
-          "outcome": 1.83,
-          "specificity": 0.59
+          "evidence": 0.52,
+          "reasoning": 1.42,
+          "outcome": 1.14,
+          "specificity": 0.61
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -1408,13 +1461,14 @@
       "model": {
         "scores": {
           "addresses_ask": 2,
-          "evidence": 0.61,
+          "evidence": 0.64,
           "reasoning": 2,
           "outcome": 2,
-          "specificity": 1.59
+          "specificity": 1.62
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -1433,14 +1487,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 0.23,
-          "evidence": 0.04,
-          "reasoning": 1.5,
-          "outcome": 1.66,
+          "addresses_ask": 0.26,
+          "evidence": 0.05,
+          "reasoning": 1.47,
+          "outcome": 1.73,
           "specificity": 0.03
         },
         "stance": "deflects",
-        "verdict": "low"
+        "verdict": "low",
+        "needsReview": false
       }
     },
     {
@@ -1460,13 +1515,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.96,
-          "evidence": 1.89,
-          "reasoning": 1.76,
-          "outcome": 1.99,
-          "specificity": 1.63
+          "evidence": 1.88,
+          "reasoning": 1.75,
+          "outcome": 1.94,
+          "specificity": 1.58
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -1486,13 +1542,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.99,
-          "evidence": 1.93,
-          "reasoning": 1.9,
-          "outcome": 2,
-          "specificity": 1.87
+          "evidence": 1.94,
+          "reasoning": 1.89,
+          "outcome": 1.98,
+          "specificity": 1.89
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -1511,14 +1568,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.87,
+          "addresses_ask": 1.85,
           "evidence": 2,
           "reasoning": 1.95,
-          "outcome": 1.99,
+          "outcome": 1.97,
           "specificity": 1.81
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -1537,14 +1595,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.37,
-          "evidence": 0.82,
-          "reasoning": 1.46,
-          "outcome": 1.94,
-          "specificity": 1.34
+          "addresses_ask": 1.38,
+          "evidence": 0.81,
+          "reasoning": 1.5,
+          "outcome": 1.85,
+          "specificity": 1.3
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -1563,14 +1622,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.36,
-          "evidence": 0.43,
-          "reasoning": 1.94,
-          "outcome": 1.99,
+          "addresses_ask": 1.29,
+          "evidence": 0.4,
+          "reasoning": 1.93,
+          "outcome": 1.94,
           "specificity": 1.96
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -1589,14 +1649,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.66,
+          "addresses_ask": 1.63,
           "evidence": 2,
           "reasoning": 1.1,
-          "outcome": 1.93,
-          "specificity": 1.97
+          "outcome": 1.79,
+          "specificity": 1.96
         },
         "stance": "partially_accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -1616,13 +1677,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.93,
-          "evidence": 1.56,
+          "evidence": 1.53,
           "reasoning": 1.81,
-          "outcome": 2,
+          "outcome": 1.99,
           "specificity": 1.81
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -1641,14 +1703,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.2,
-          "evidence": 1.15,
-          "reasoning": 1.67,
-          "outcome": 1.2,
-          "specificity": 1.37
+          "addresses_ask": 1.16,
+          "evidence": 1.21,
+          "reasoning": 1.65,
+          "outcome": 0.59,
+          "specificity": 1.36
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -1667,14 +1730,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.93,
-          "evidence": 1.16,
+          "addresses_ask": 1.92,
+          "evidence": 1.17,
           "reasoning": 2,
-          "outcome": 1.99,
-          "specificity": 1.12
+          "outcome": 1.97,
+          "specificity": 1.1
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -1693,14 +1757,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 0.87,
-          "evidence": 1.96,
-          "reasoning": 1.85,
-          "outcome": 1.35,
-          "specificity": 0.83
+          "addresses_ask": 0.9,
+          "evidence": 1.95,
+          "reasoning": 1.84,
+          "outcome": 0.35,
+          "specificity": 0.76
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": false
       }
     },
     {
@@ -1719,14 +1784,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.66,
+          "addresses_ask": 1.64,
           "evidence": 2,
           "reasoning": 2,
           "outcome": 2,
-          "specificity": 1.12
+          "specificity": 1.03
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -1746,13 +1812,14 @@
       "model": {
         "scores": {
           "addresses_ask": 0.32,
-          "evidence": 1.05,
-          "reasoning": 1.23,
-          "outcome": 1.98,
-          "specificity": 1.29
+          "evidence": 0.99,
+          "reasoning": 1.22,
+          "outcome": 1.54,
+          "specificity": 1.33
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -1771,14 +1838,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.52,
-          "evidence": 1.39,
+          "addresses_ask": 1.46,
+          "evidence": 1.5,
           "reasoning": 1,
-          "outcome": 1.87,
-          "specificity": 1.18
+          "outcome": 0.42,
+          "specificity": 1.13
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -1797,14 +1865,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.67,
-          "evidence": 0.86,
-          "reasoning": 1.19,
-          "outcome": 1.41,
-          "specificity": 0.95
+          "addresses_ask": 1.69,
+          "evidence": 0.88,
+          "reasoning": 1.18,
+          "outcome": 1.39,
+          "specificity": 0.94
         },
         "stance": "accepts",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -1826,11 +1895,12 @@
           "addresses_ask": 2,
           "evidence": 1.97,
           "reasoning": 2,
-          "outcome": 2,
+          "outcome": 1.99,
           "specificity": 1.95
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -1850,13 +1920,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.98,
-          "evidence": 1.86,
-          "reasoning": 1.93,
-          "outcome": 1.99,
-          "specificity": 1.69
+          "evidence": 1.87,
+          "reasoning": 1.92,
+          "outcome": 1.98,
+          "specificity": 1.67
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -1875,14 +1946,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.65,
+          "addresses_ask": 1.72,
           "evidence": 1.05,
-          "reasoning": 1.73,
-          "outcome": 1.89,
-          "specificity": 1.61
+          "reasoning": 1.75,
+          "outcome": 1.81,
+          "specificity": 1.6
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -1901,14 +1973,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.53,
+          "addresses_ask": 1.55,
           "evidence": 0.03,
           "reasoning": 1.47,
-          "outcome": 1.93,
-          "specificity": 1.47
+          "outcome": 1.84,
+          "specificity": 1.49
         },
         "stance": "declines",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -1927,14 +2000,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.98,
+          "addresses_ask": 1.97,
           "evidence": 1,
           "reasoning": 1.99,
-          "outcome": 1.84,
-          "specificity": 1.19
+          "outcome": 1.37,
+          "specificity": 1.18
         },
         "stance": "partially_accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -1953,14 +2027,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.89,
-          "evidence": 1.74,
-          "reasoning": 1.83,
-          "outcome": 1.97,
-          "specificity": 1.64
+          "addresses_ask": 1.87,
+          "evidence": 1.73,
+          "reasoning": 1.84,
+          "outcome": 1.94,
+          "specificity": 1.69
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -1979,14 +2054,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.96,
-          "evidence": 1.73,
-          "reasoning": 1.95,
-          "outcome": 2,
-          "specificity": 0.98
+          "addresses_ask": 1.97,
+          "evidence": 1.72,
+          "reasoning": 1.94,
+          "outcome": 1.98,
+          "specificity": 1.03
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -2005,14 +2081,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.55,
-          "evidence": 1.96,
-          "reasoning": 1.64,
-          "outcome": 1.84,
-          "specificity": 0.92
+          "addresses_ask": 1.59,
+          "evidence": 1.95,
+          "reasoning": 1.68,
+          "outcome": 1.48,
+          "specificity": 0.91
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -2031,14 +2108,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.89,
-          "evidence": 1.76,
+          "addresses_ask": 1.9,
+          "evidence": 1.75,
           "reasoning": 1.99,
-          "outcome": 1.99,
+          "outcome": 1.95,
           "specificity": 1.79
         },
         "stance": "partially_accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -2061,10 +2139,11 @@
           "evidence": 1.02,
           "reasoning": 2,
           "outcome": 2,
-          "specificity": 1.28
+          "specificity": 1.37
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -2083,14 +2162,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.81,
+          "addresses_ask": 1.79,
           "evidence": 0.1,
           "reasoning": 2,
-          "outcome": 1.99,
-          "specificity": 1.3
+          "outcome": 1.92,
+          "specificity": 1.2
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -2109,14 +2189,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.97,
-          "evidence": 1.6,
-          "reasoning": 1.58,
-          "outcome": 1.98,
-          "specificity": 1.76
+          "addresses_ask": 1.96,
+          "evidence": 1.62,
+          "reasoning": 1.62,
+          "outcome": 1.91,
+          "specificity": 1.78
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -2135,14 +2216,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.47,
-          "evidence": 2,
+          "addresses_ask": 1.53,
+          "evidence": 1.99,
           "reasoning": 1.98,
-          "outcome": 1.98,
-          "specificity": 1.23
+          "outcome": 1.91,
+          "specificity": 1.2
         },
         "stance": "partially_accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -2162,13 +2244,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.99,
-          "evidence": 0.61,
-          "reasoning": 1.39,
-          "outcome": 1.89,
-          "specificity": 1.87
+          "evidence": 0.57,
+          "reasoning": 1.41,
+          "outcome": 0.97,
+          "specificity": 1.89
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -2187,14 +2270,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.49,
+          "addresses_ask": 1.47,
           "evidence": 0.38,
-          "reasoning": 1.3,
-          "outcome": 1.19,
-          "specificity": 1.75
+          "reasoning": 1.24,
+          "outcome": 0.23,
+          "specificity": 1.73
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": false
       }
     },
     {
@@ -2213,14 +2297,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.95,
-          "evidence": 1.65,
-          "reasoning": 1.98,
-          "outcome": 1.99,
-          "specificity": 1.48
+          "addresses_ask": 1.94,
+          "evidence": 1.78,
+          "reasoning": 1.97,
+          "outcome": 1.98,
+          "specificity": 1.29
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -2242,11 +2327,12 @@
           "addresses_ask": 1.97,
           "evidence": 1.99,
           "reasoning": 1.02,
-          "outcome": 1.96,
-          "specificity": 1.68
+          "outcome": 1.9,
+          "specificity": 1.67
         },
         "stance": "accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -2265,14 +2351,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.62,
-          "evidence": 0.35,
-          "reasoning": 1.35,
-          "outcome": 1.78,
-          "specificity": 1.59
+          "addresses_ask": 1.61,
+          "evidence": 0.4,
+          "reasoning": 1.38,
+          "outcome": 1.35,
+          "specificity": 1.55
         },
         "stance": "declines",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -2291,14 +2378,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.33,
-          "evidence": 1.28,
-          "reasoning": 1.21,
-          "outcome": 1.38,
-          "specificity": 1.55
+          "addresses_ask": 1.3,
+          "evidence": 1.23,
+          "reasoning": 1.19,
+          "outcome": 0.43,
+          "specificity": 1.59
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -2317,14 +2405,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.88,
-          "evidence": 1.72,
-          "reasoning": 1.97,
-          "outcome": 1.98,
-          "specificity": 1.78
+          "addresses_ask": 1.9,
+          "evidence": 1.69,
+          "reasoning": 1.96,
+          "outcome": 1.91,
+          "specificity": 1.79
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -2346,11 +2435,12 @@
           "addresses_ask": 0.32,
           "evidence": 0.02,
           "reasoning": 0,
-          "outcome": 1.21,
+          "outcome": 1.06,
           "specificity": 0.62
         },
         "stance": "deflects",
-        "verdict": "low"
+        "verdict": "low",
+        "needsReview": true
       }
     },
     {
@@ -2369,14 +2459,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.81,
-          "evidence": 1.97,
+          "addresses_ask": 1.82,
+          "evidence": 1.96,
           "reasoning": 1.66,
-          "outcome": 1.89,
-          "specificity": 1.13
+          "outcome": 1.63,
+          "specificity": 1.06
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -2395,14 +2486,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.33,
+          "addresses_ask": 1.38,
           "evidence": 1.98,
           "reasoning": 1.98,
-          "outcome": 1.96,
-          "specificity": 1.49
+          "outcome": 1.87,
+          "specificity": 1.54
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -2421,14 +2513,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.96,
-          "evidence": 0.09,
-          "reasoning": 1.89,
-          "outcome": 2,
-          "specificity": 1.31
+          "addresses_ask": 1.95,
+          "evidence": 0.11,
+          "reasoning": 1.9,
+          "outcome": 1.98,
+          "specificity": 1.25
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -2447,14 +2540,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.89,
+          "addresses_ask": 1.9,
           "evidence": 1,
           "reasoning": 1.99,
-          "outcome": 1.97,
-          "specificity": 1.32
+          "outcome": 1.95,
+          "specificity": 1.31
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -2474,13 +2568,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.98,
-          "evidence": 0.61,
+          "evidence": 0.58,
           "reasoning": 1.95,
-          "outcome": 2,
+          "outcome": 1.99,
           "specificity": 1.97
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -2499,14 +2594,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.93,
+          "addresses_ask": 1.95,
           "evidence": 1.97,
-          "reasoning": 1.62,
-          "outcome": 1.98,
+          "reasoning": 1.61,
+          "outcome": 1.8,
           "specificity": 1.94
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -2527,12 +2623,13 @@
         "scores": {
           "addresses_ask": 1.92,
           "evidence": 2,
-          "reasoning": 1.86,
-          "outcome": 1.99,
-          "specificity": 1.51
+          "reasoning": 1.87,
+          "outcome": 1.98,
+          "specificity": 1.48
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -2551,14 +2648,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.88,
+          "addresses_ask": 1.92,
           "evidence": 1.29,
-          "reasoning": 0.68,
-          "outcome": 1.69,
-          "specificity": 1.88
+          "reasoning": 0.66,
+          "outcome": 1.54,
+          "specificity": 1.85
         },
         "stance": "accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -2578,13 +2676,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.93,
-          "evidence": 0.65,
-          "reasoning": 1.55,
-          "outcome": 1.98,
-          "specificity": 1.41
+          "evidence": 0.66,
+          "reasoning": 1.58,
+          "outcome": 1.83,
+          "specificity": 1.34
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -2603,14 +2702,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.91,
-          "evidence": 1.03,
-          "reasoning": 1.17,
-          "outcome": 1.81,
+          "addresses_ask": 1.93,
+          "evidence": 0.93,
+          "reasoning": 1.14,
+          "outcome": 1.21,
           "specificity": 1.94
         },
         "stance": "partially_accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -2632,11 +2732,12 @@
           "addresses_ask": 2,
           "evidence": 2,
           "reasoning": 2,
-          "outcome": 2,
-          "specificity": 1.87
+          "outcome": 1.99,
+          "specificity": 1.83
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -2655,14 +2756,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.82,
+          "addresses_ask": 1.83,
           "evidence": 1.71,
-          "reasoning": 1.57,
-          "outcome": 1.98,
+          "reasoning": 1.55,
+          "outcome": 1.91,
           "specificity": 1.75
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -2681,14 +2783,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.95,
+          "addresses_ask": 1.96,
           "evidence": 2,
           "reasoning": 2,
-          "outcome": 2,
-          "specificity": 1.79
+          "outcome": 1.98,
+          "specificity": 1.8
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -2707,14 +2810,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.26,
-          "evidence": 1.07,
-          "reasoning": 1.73,
-          "outcome": 1.75,
-          "specificity": 1.11
+          "addresses_ask": 1.36,
+          "evidence": 1.06,
+          "reasoning": 1.74,
+          "outcome": 0.82,
+          "specificity": 1.14
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -2733,14 +2837,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.4,
-          "evidence": 0.14,
-          "reasoning": 1.12,
-          "outcome": 1.56,
-          "specificity": 1.3
+          "addresses_ask": 1.39,
+          "evidence": 0.13,
+          "reasoning": 1.15,
+          "outcome": 0.89,
+          "specificity": 1.24
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -2760,13 +2865,14 @@
       "model": {
         "scores": {
           "addresses_ask": 2,
-          "evidence": 0.28,
-          "reasoning": 1.93,
-          "outcome": 1.99,
-          "specificity": 1.68
+          "evidence": 0.33,
+          "reasoning": 1.92,
+          "outcome": 1.98,
+          "specificity": 1.72
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -2787,12 +2893,13 @@
         "scores": {
           "addresses_ask": 2,
           "evidence": 1.8,
-          "reasoning": 1.99,
+          "reasoning": 1.98,
           "outcome": 2,
           "specificity": 1.99
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -2814,11 +2921,12 @@
           "addresses_ask": 0.04,
           "evidence": 0.02,
           "reasoning": 0.01,
-          "outcome": 0.51,
+          "outcome": 0.16,
           "specificity": 0.04
         },
         "stance": "deflects",
-        "verdict": "low"
+        "verdict": "low",
+        "needsReview": false
       }
     },
     {
@@ -2838,13 +2946,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.99,
-          "evidence": 0.82,
-          "reasoning": 1.74,
-          "outcome": 1.99,
-          "specificity": 1.68
+          "evidence": 0.83,
+          "reasoning": 1.71,
+          "outcome": 1.89,
+          "specificity": 1.67
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -2863,14 +2972,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.11,
-          "evidence": 1.21,
+          "addresses_ask": 1.13,
+          "evidence": 1.2,
           "reasoning": 1.05,
-          "outcome": 1.67,
-          "specificity": 1.52
+          "outcome": 1.06,
+          "specificity": 1.49
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -2889,14 +2999,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.16,
-          "evidence": 0.73,
-          "reasoning": 1.58,
-          "outcome": 1.75,
-          "specificity": 1.04
+          "addresses_ask": 1.14,
+          "evidence": 0.75,
+          "reasoning": 1.57,
+          "outcome": 1.11,
+          "specificity": 1.09
         },
-        "stance": "deflects",
-        "verdict": "some"
+        "stance": "declines",
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -2915,14 +3026,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.61,
+          "addresses_ask": 1.64,
           "evidence": 2,
           "reasoning": 2,
-          "outcome": 1.99,
-          "specificity": 1.06
+          "outcome": 1.96,
+          "specificity": 1.08
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -2941,14 +3053,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.31,
-          "evidence": 0.73,
-          "reasoning": 1.55,
-          "outcome": 1.84,
-          "specificity": 1.76
+          "addresses_ask": 1.37,
+          "evidence": 0.75,
+          "reasoning": 1.54,
+          "outcome": 1.31,
+          "specificity": 1.73
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -2968,13 +3081,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.96,
-          "evidence": 0.74,
-          "reasoning": 1.01,
-          "outcome": 1.81,
-          "specificity": 1.65
+          "evidence": 0.71,
+          "reasoning": 1.02,
+          "outcome": 1.46,
+          "specificity": 1.58
         },
         "stance": "accepts",
-        "verdict": "thorough"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -2993,14 +3107,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.72,
+          "addresses_ask": 1.66,
           "evidence": 1.93,
-          "reasoning": 1.95,
-          "outcome": 1.99,
-          "specificity": 1.49
+          "reasoning": 1.96,
+          "outcome": 1.98,
+          "specificity": 1.53
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -3021,12 +3136,13 @@
         "scores": {
           "addresses_ask": 1.99,
           "evidence": 2,
-          "reasoning": 2,
-          "outcome": 2,
-          "specificity": 1.61
+          "reasoning": 1.99,
+          "outcome": 1.99,
+          "specificity": 1.66
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -3047,12 +3163,13 @@
         "scores": {
           "addresses_ask": 1.97,
           "evidence": 2,
-          "reasoning": 1.42,
-          "outcome": 1.99,
-          "specificity": 1.65
+          "reasoning": 1.4,
+          "outcome": 1.94,
+          "specificity": 1.67
         },
         "stance": "partially_accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -3071,14 +3188,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.27,
-          "evidence": 1.78,
+          "addresses_ask": 1.23,
+          "evidence": 1.67,
           "reasoning": 0.99,
-          "outcome": 1.03,
-          "specificity": 0.52
+          "outcome": 0.04,
+          "specificity": 0.67
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -3097,14 +3215,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 0.95,
-          "evidence": 1.38,
-          "reasoning": 1.84,
-          "outcome": 1.98,
-          "specificity": 0.57
+          "addresses_ask": 0.98,
+          "evidence": 1.37,
+          "reasoning": 1.81,
+          "outcome": 1.94,
+          "specificity": 0.54
         },
         "stance": "declines",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -3123,14 +3242,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.05,
-          "evidence": 1.13,
-          "reasoning": 1.98,
-          "outcome": 1.99,
-          "specificity": 1.03
+          "addresses_ask": 1.06,
+          "evidence": 1.14,
+          "reasoning": 1.99,
+          "outcome": 1.94,
+          "specificity": 1
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -3149,14 +3269,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 0.88,
-          "evidence": 0.33,
-          "reasoning": 1.52,
-          "outcome": 0.98,
-          "specificity": 0.75
+          "addresses_ask": 0.87,
+          "evidence": 0.31,
+          "reasoning": 1.49,
+          "outcome": 0.19,
+          "specificity": 0.68
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "low",
+        "needsReview": true
       }
     },
     {
@@ -3177,12 +3298,13 @@
         "scores": {
           "addresses_ask": 1.79,
           "evidence": 1.97,
-          "reasoning": 1.19,
-          "outcome": 1.93,
-          "specificity": 1.24
+          "reasoning": 1.2,
+          "outcome": 1.85,
+          "specificity": 1.21
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -3202,13 +3324,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.99,
-          "evidence": 1.71,
+          "evidence": 1.73,
           "reasoning": 1.87,
-          "outcome": 2,
-          "specificity": 1.5
+          "outcome": 1.99,
+          "specificity": 1.49
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -3228,13 +3351,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.85,
-          "evidence": 1.96,
-          "reasoning": 1.9,
-          "outcome": 1.97,
-          "specificity": 1.58
+          "evidence": 1.95,
+          "reasoning": 1.89,
+          "outcome": 1.83,
+          "specificity": 1.62
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -3254,13 +3378,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.87,
-          "evidence": 1.17,
-          "reasoning": 1.15,
-          "outcome": 1.99,
-          "specificity": 0.46
+          "evidence": 1.15,
+          "reasoning": 1.18,
+          "outcome": 1.98,
+          "specificity": 0.43
         },
         "stance": "declines",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": false
       }
     },
     {
@@ -3282,11 +3407,12 @@
           "addresses_ask": 1.9,
           "evidence": 1.94,
           "reasoning": 1.45,
-          "outcome": 1.83,
-          "specificity": 1.86
+          "outcome": 1.07,
+          "specificity": 1.83
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -3305,14 +3431,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.62,
+          "addresses_ask": 1.59,
           "evidence": 1.05,
-          "reasoning": 1.2,
-          "outcome": 1.62,
-          "specificity": 1.32
+          "reasoning": 1.21,
+          "outcome": 0.65,
+          "specificity": 1.3
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -3332,13 +3459,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.99,
-          "evidence": 1.04,
+          "evidence": 1.03,
           "reasoning": 1.88,
           "outcome": 2,
           "specificity": 1.95
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -3357,14 +3485,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.31,
+          "addresses_ask": 1.3,
           "evidence": 1.51,
-          "reasoning": 1.05,
-          "outcome": 1.08,
-          "specificity": 1.15
+          "reasoning": 1.06,
+          "outcome": 0.29,
+          "specificity": 1.17
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -3383,14 +3512,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.77,
+          "addresses_ask": 1.75,
           "evidence": 0.36,
-          "reasoning": 1.23,
-          "outcome": 1.7,
-          "specificity": 1.65
+          "reasoning": 1.29,
+          "outcome": 0.5,
+          "specificity": 1.63
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -3409,14 +3539,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.55,
-          "evidence": 1.72,
-          "reasoning": 1.96,
-          "outcome": 1.98,
-          "specificity": 1.15
+          "addresses_ask": 1.58,
+          "evidence": 1.71,
+          "reasoning": 1.97,
+          "outcome": 1.85,
+          "specificity": 1.13
         },
-        "stance": "declines",
-        "verdict": "thorough"
+        "stance": "deflects",
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -3437,12 +3568,13 @@
         "scores": {
           "addresses_ask": 1.87,
           "evidence": 2,
-          "reasoning": 1.21,
-          "outcome": 1.99,
-          "specificity": 0.77
+          "reasoning": 1.18,
+          "outcome": 1.8,
+          "specificity": 0.7
         },
         "stance": "partially_accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -3462,13 +3594,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.78,
-          "evidence": 1.22,
-          "reasoning": 1.46,
-          "outcome": 1.65,
-          "specificity": 1.84
+          "evidence": 1.24,
+          "reasoning": 1.44,
+          "outcome": 1.35,
+          "specificity": 1.83
         },
         "stance": "partially_accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -3487,14 +3620,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.36,
+          "addresses_ask": 1.28,
           "evidence": 1.92,
           "reasoning": 1.98,
-          "outcome": 1.99,
-          "specificity": 1.65
+          "outcome": 1.96,
+          "specificity": 1.62
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -3514,13 +3648,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.98,
-          "evidence": 1.69,
+          "evidence": 1.66,
           "reasoning": 2,
-          "outcome": 1.99,
-          "specificity": 1.89
+          "outcome": 1.98,
+          "specificity": 1.9
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -3539,14 +3674,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.89,
-          "evidence": 1.41,
-          "reasoning": 1.55,
-          "outcome": 1.83,
-          "specificity": 1.75
+          "addresses_ask": 1.9,
+          "evidence": 1.37,
+          "reasoning": 1.57,
+          "outcome": 0.85,
+          "specificity": 1.76
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -3565,14 +3701,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.65,
-          "evidence": 1.02,
-          "reasoning": 1.9,
-          "outcome": 1.95,
-          "specificity": 1.62
+          "addresses_ask": 1.63,
+          "evidence": 0.94,
+          "reasoning": 1.93,
+          "outcome": 1.56,
+          "specificity": 1.66
         },
         "stance": "partially_accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -3592,13 +3729,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.63,
-          "evidence": 0.09,
+          "evidence": 0.1,
           "reasoning": 2,
-          "outcome": 1.74,
-          "specificity": 1.87
+          "outcome": 1.68,
+          "specificity": 1.88
         },
         "stance": "partially_accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -3617,14 +3755,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.71,
+          "addresses_ask": 1.69,
           "evidence": 1.96,
-          "reasoning": 1.1,
-          "outcome": 1.87,
-          "specificity": 1.64
+          "reasoning": 1.12,
+          "outcome": 1.54,
+          "specificity": 1.6
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -3643,14 +3782,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.71,
+          "addresses_ask": 1.68,
           "evidence": 2,
-          "reasoning": 1.82,
-          "outcome": 1.87,
-          "specificity": 1.47
+          "reasoning": 1.81,
+          "outcome": 1.48,
+          "specificity": 1.43
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -3669,14 +3809,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.58,
-          "evidence": 1.44,
-          "reasoning": 1.63,
-          "outcome": 1.83,
-          "specificity": 1.63
+          "addresses_ask": 1.54,
+          "evidence": 1.5,
+          "reasoning": 1.66,
+          "outcome": 1.05,
+          "specificity": 1.61
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -3695,14 +3836,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.83,
-          "evidence": 0.78,
-          "reasoning": 1.94,
-          "outcome": 1.93,
-          "specificity": 1.46
+          "addresses_ask": 1.85,
+          "evidence": 0.75,
+          "reasoning": 1.93,
+          "outcome": 1.8,
+          "specificity": 1.39
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -3721,14 +3863,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.59,
-          "evidence": 0.86,
-          "reasoning": 1.32,
-          "outcome": 1.97,
-          "specificity": 1.86
+          "addresses_ask": 1.57,
+          "evidence": 0.85,
+          "reasoning": 1.31,
+          "outcome": 1.68,
+          "specificity": 1.83
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -3748,13 +3891,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.96,
-          "evidence": 1.97,
-          "reasoning": 1.1,
-          "outcome": 1.9,
-          "specificity": 1.88
+          "evidence": 1.98,
+          "reasoning": 1.09,
+          "outcome": 1.59,
+          "specificity": 1.89
         },
         "stance": "accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -3773,14 +3917,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.12,
+          "addresses_ask": 1.14,
           "evidence": 2,
-          "reasoning": 1.29,
-          "outcome": 1.9,
-          "specificity": 0.38
+          "reasoning": 1.32,
+          "outcome": 1.3,
+          "specificity": 0.43
         },
         "stance": "partially_accepts",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -3799,14 +3944,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.55,
-          "evidence": 1.23,
-          "reasoning": 1.77,
-          "outcome": 1.94,
-          "specificity": 1.77
+          "addresses_ask": 1.54,
+          "evidence": 1.2,
+          "reasoning": 1.81,
+          "outcome": 1.53,
+          "specificity": 1.78
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -3825,14 +3971,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.9,
+          "addresses_ask": 1.88,
           "evidence": 1.96,
-          "reasoning": 1.73,
-          "outcome": 1.98,
-          "specificity": 1.73
+          "reasoning": 1.71,
+          "outcome": 1.83,
+          "specificity": 1.68
         },
-        "stance": "declines",
-        "verdict": "thorough"
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -3851,14 +3998,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.72,
-          "evidence": 1.78,
-          "reasoning": 1.85,
-          "outcome": 1.93,
-          "specificity": 1.3
+          "addresses_ask": 1.71,
+          "evidence": 1.72,
+          "reasoning": 1.87,
+          "outcome": 1.58,
+          "specificity": 1.33
         },
         "stance": "partially_accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -3878,13 +4026,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.98,
-          "evidence": 1.53,
+          "evidence": 1.55,
           "reasoning": 2,
-          "outcome": 2,
+          "outcome": 1.99,
           "specificity": 1.95
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -3903,14 +4052,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.72,
-          "evidence": 1.85,
-          "reasoning": 1.33,
-          "outcome": 1.95,
-          "specificity": 0.33
+          "addresses_ask": 1.47,
+          "evidence": 1.84,
+          "reasoning": 1.28,
+          "outcome": 1.18,
+          "specificity": 0.46
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -3936,7 +4086,8 @@
           "specificity": 1.52
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -3955,14 +4106,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.88,
-          "evidence": 1.87,
+          "addresses_ask": 1.86,
+          "evidence": 1.89,
           "reasoning": 1.99,
-          "outcome": 1.99,
-          "specificity": 1.65
+          "outcome": 1.98,
+          "specificity": 1.72
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -3981,14 +4133,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1,
-          "evidence": 1.42,
-          "reasoning": 1.59,
-          "outcome": 1.69,
-          "specificity": 1
+          "addresses_ask": 1.02,
+          "evidence": 1.41,
+          "reasoning": 1.6,
+          "outcome": 0.96,
+          "specificity": 1.05
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -4010,11 +4163,12 @@
           "addresses_ask": 1.97,
           "evidence": 0.17,
           "reasoning": 1.72,
-          "outcome": 2,
-          "specificity": 1.78
+          "outcome": 1.99,
+          "specificity": 1.81
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4033,14 +4187,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.81,
-          "evidence": 1.95,
+          "addresses_ask": 1.83,
+          "evidence": 1.96,
           "reasoning": 1.1,
-          "outcome": 1.99,
-          "specificity": 1.71
+          "outcome": 1.95,
+          "specificity": 1.75
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4061,12 +4216,13 @@
         "scores": {
           "addresses_ask": 1.82,
           "evidence": 1.64,
-          "reasoning": 1.22,
-          "outcome": 1.99,
-          "specificity": 1.91
+          "reasoning": 1.26,
+          "outcome": 1.89,
+          "specificity": 1.92
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4085,14 +4241,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.96,
+          "addresses_ask": 1.97,
           "evidence": 2,
           "reasoning": 2,
           "outcome": 1.99,
-          "specificity": 1.7
+          "specificity": 1.64
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4112,13 +4269,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.97,
-          "evidence": 1.23,
-          "reasoning": 1.96,
-          "outcome": 2,
-          "specificity": 1.95
+          "evidence": 1.31,
+          "reasoning": 1.94,
+          "outcome": 1.99,
+          "specificity": 1.94
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -4138,13 +4296,14 @@
       "model": {
         "scores": {
           "addresses_ask": 2,
-          "evidence": 0.68,
-          "reasoning": 1.95,
-          "outcome": 2,
+          "evidence": 0.65,
+          "reasoning": 1.97,
+          "outcome": 1.97,
           "specificity": 1.95
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4166,11 +4325,12 @@
           "addresses_ask": 1.72,
           "evidence": 1.99,
           "reasoning": 1.98,
-          "outcome": 1.99,
-          "specificity": 1.03
+          "outcome": 1.95,
+          "specificity": 1.01
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4189,14 +4349,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.8,
-          "evidence": 1.94,
+          "addresses_ask": 1.83,
+          "evidence": 1.95,
           "reasoning": 1.95,
-          "outcome": 1.95,
-          "specificity": 0.95
+          "outcome": 1.57,
+          "specificity": 1
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4216,13 +4377,14 @@
       "model": {
         "scores": {
           "addresses_ask": 2,
-          "evidence": 0.21,
-          "reasoning": 1.82,
-          "outcome": 1.98,
-          "specificity": 1.56
+          "evidence": 0.22,
+          "reasoning": 1.81,
+          "outcome": 1.87,
+          "specificity": 1.68
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4242,13 +4404,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.92,
-          "evidence": 1.53,
-          "reasoning": 1.62,
-          "outcome": 1.89,
-          "specificity": 1.46
+          "evidence": 1.5,
+          "reasoning": 1.65,
+          "outcome": 1.34,
+          "specificity": 1.49
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -4267,14 +4430,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.33,
+          "addresses_ask": 1.29,
           "evidence": 1.89,
-          "reasoning": 1.08,
-          "outcome": 1.57,
-          "specificity": 1.35
+          "reasoning": 1.07,
+          "outcome": 0.38,
+          "specificity": 1.38
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -4293,14 +4457,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.8,
-          "evidence": 1.43,
-          "reasoning": 1.7,
-          "outcome": 1.92,
+          "addresses_ask": 1.76,
+          "evidence": 1.47,
+          "reasoning": 1.77,
+          "outcome": 1.79,
           "specificity": 1.73
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4319,14 +4484,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.94,
+          "addresses_ask": 1.93,
           "evidence": 1.93,
           "reasoning": 2,
-          "outcome": 1.99,
-          "specificity": 1.69
+          "outcome": 1.9,
+          "specificity": 1.67
         },
         "stance": "partially_accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -4345,14 +4511,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.89,
+          "addresses_ask": 1.91,
           "evidence": 2,
           "reasoning": 1.99,
-          "outcome": 2,
+          "outcome": 1.98,
           "specificity": 1.62
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4373,12 +4540,13 @@
         "scores": {
           "addresses_ask": 1.98,
           "evidence": 1.99,
-          "reasoning": 1.99,
-          "outcome": 2,
-          "specificity": 0.88
+          "reasoning": 1.98,
+          "outcome": 1.99,
+          "specificity": 0.86
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4397,14 +4565,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.45,
-          "evidence": 0.44,
-          "reasoning": 1.9,
-          "outcome": 1.92,
-          "specificity": 1.37
+          "addresses_ask": 1.5,
+          "evidence": 0.59,
+          "reasoning": 1.91,
+          "outcome": 1.81,
+          "specificity": 1.41
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -4426,11 +4595,12 @@
           "addresses_ask": 2,
           "evidence": 1.78,
           "reasoning": 1.81,
-          "outcome": 2,
-          "specificity": 1.85
+          "outcome": 1.98,
+          "specificity": 1.86
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4449,14 +4619,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.64,
-          "evidence": 1.96,
+          "addresses_ask": 1.74,
+          "evidence": 1.95,
           "reasoning": 1.99,
-          "outcome": 1.98,
-          "specificity": 1.48
+          "outcome": 1.92,
+          "specificity": 1.59
         },
         "stance": "partially_accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4475,14 +4646,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.23,
-          "evidence": 0.92,
-          "reasoning": 1.85,
-          "outcome": 1.93,
-          "specificity": 0.88
+          "addresses_ask": 1.28,
+          "evidence": 0.94,
+          "reasoning": 1.83,
+          "outcome": 1.52,
+          "specificity": 0.97
         },
         "stance": "declines",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -4503,12 +4675,13 @@
         "scores": {
           "addresses_ask": 1.97,
           "evidence": 1.99,
-          "reasoning": 1.58,
-          "outcome": 1.99,
-          "specificity": 0.91
+          "reasoning": 1.55,
+          "outcome": 1.98,
+          "specificity": 0.85
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4528,13 +4701,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.97,
-          "evidence": 0.81,
+          "evidence": 0.79,
           "reasoning": 2,
-          "outcome": 1.99,
-          "specificity": 1.7
+          "outcome": 1.97,
+          "specificity": 1.61
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4555,12 +4729,13 @@
         "scores": {
           "addresses_ask": 1.99,
           "evidence": 1.91,
-          "reasoning": 1.67,
-          "outcome": 1.98,
-          "specificity": 1.78
+          "reasoning": 1.68,
+          "outcome": 1.71,
+          "specificity": 1.75
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4582,11 +4757,12 @@
           "addresses_ask": 1.98,
           "evidence": 2,
           "reasoning": 1.89,
-          "outcome": 2,
-          "specificity": 1.86
+          "outcome": 1.99,
+          "specificity": 1.84
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4605,14 +4781,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.27,
-          "evidence": 1.13,
+          "addresses_ask": 1.33,
+          "evidence": 1.18,
           "reasoning": 1,
-          "outcome": 1.1,
-          "specificity": 0.94
+          "outcome": 0.14,
+          "specificity": 0.91
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": false
       }
     },
     {
@@ -4631,14 +4808,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.66,
-          "evidence": 1.32,
-          "reasoning": 1.69,
-          "outcome": 1.9,
-          "specificity": 1.46
+          "addresses_ask": 1.71,
+          "evidence": 1.28,
+          "reasoning": 1.67,
+          "outcome": 1.57,
+          "specificity": 1.54
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -4658,13 +4836,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.89,
-          "evidence": 1.98,
-          "reasoning": 1.51,
-          "outcome": 1.65,
+          "evidence": 1.97,
+          "reasoning": 1.52,
+          "outcome": 1.3,
           "specificity": 1.16
         },
         "stance": "partially_accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -4684,13 +4863,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.97,
-          "evidence": 1.96,
-          "reasoning": 1.92,
-          "outcome": 1.97,
-          "specificity": 1.55
+          "evidence": 1.97,
+          "reasoning": 1.93,
+          "outcome": 1.93,
+          "specificity": 1.62
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4709,14 +4889,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.43,
+          "addresses_ask": 1.47,
           "evidence": 2,
-          "reasoning": 1.45,
-          "outcome": 1.83,
-          "specificity": 1.6
+          "reasoning": 1.43,
+          "outcome": 0.96,
+          "specificity": 1.63
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -4735,14 +4916,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.84,
-          "evidence": 1.65,
+          "addresses_ask": 1.82,
+          "evidence": 1.54,
           "reasoning": 1.84,
-          "outcome": 1.99,
-          "specificity": 1.59
+          "outcome": 1.98,
+          "specificity": 1.6
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4762,13 +4944,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.97,
-          "evidence": 1.44,
-          "reasoning": 1.86,
-          "outcome": 1.99,
-          "specificity": 1.17
+          "evidence": 1.48,
+          "reasoning": 1.87,
+          "outcome": 1.96,
+          "specificity": 1.1
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4787,14 +4970,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.52,
+          "addresses_ask": 1.53,
           "evidence": 1.99,
-          "reasoning": 1.6,
-          "outcome": 1.98,
+          "reasoning": 1.64,
+          "outcome": 1.7,
           "specificity": 1.45
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -4813,14 +4997,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.78,
+          "addresses_ask": 1.76,
           "evidence": 1.98,
-          "reasoning": 1.98,
-          "outcome": 1.91,
-          "specificity": 1.72
+          "reasoning": 1.97,
+          "outcome": 1.46,
+          "specificity": 1.77
         },
         "stance": "partially_accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -4839,14 +5024,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.72,
+          "addresses_ask": 1.74,
           "evidence": 2,
-          "reasoning": 1.41,
-          "outcome": 1.95,
-          "specificity": 1.84
+          "reasoning": 1.39,
+          "outcome": 1.78,
+          "specificity": 1.86
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -4865,14 +5051,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.2,
-          "evidence": 0.18,
+          "addresses_ask": 1.29,
+          "evidence": 0.24,
           "reasoning": 1.13,
-          "outcome": 1.83,
-          "specificity": 1.28
+          "outcome": 0.88,
+          "specificity": 1.25
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -4891,14 +5078,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 0.81,
+          "addresses_ask": 0.79,
           "evidence": 1.99,
-          "reasoning": 1.34,
-          "outcome": 1.97,
-          "specificity": 1.02
+          "reasoning": 1.4,
+          "outcome": 1.93,
+          "specificity": 0.96
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -4917,14 +5105,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.53,
+          "addresses_ask": 1.49,
           "evidence": 2,
-          "reasoning": 1.54,
-          "outcome": 1.99,
-          "specificity": 1.9
+          "reasoning": 1.51,
+          "outcome": 1.95,
+          "specificity": 1.92
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4944,13 +5133,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.99,
-          "evidence": 1.54,
-          "reasoning": 1.74,
-          "outcome": 1.99,
-          "specificity": 1.83
+          "evidence": 1.52,
+          "reasoning": 1.73,
+          "outcome": 1.93,
+          "specificity": 1.8
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4969,14 +5159,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 2,
+          "addresses_ask": 1.99,
           "evidence": 1.99,
           "reasoning": 2,
-          "outcome": 1.99,
-          "specificity": 1.82
+          "outcome": 1.96,
+          "specificity": 1.77
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -4996,13 +5187,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.93,
-          "evidence": 0.65,
-          "reasoning": 1.34,
-          "outcome": 1.99,
+          "evidence": 0.69,
+          "reasoning": 1.32,
+          "outcome": 1.93,
           "specificity": 1.96
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -5021,14 +5213,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.51,
-          "evidence": 1.14,
+          "addresses_ask": 1.48,
+          "evidence": 0.95,
           "reasoning": 1.15,
-          "outcome": 1.73,
-          "specificity": 1.36
+          "outcome": 0.95,
+          "specificity": 1.42
         },
-        "stance": "deflects",
-        "verdict": "some"
+        "stance": "partially_accepts",
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -5048,13 +5241,14 @@
       "model": {
         "scores": {
           "addresses_ask": 2,
-          "evidence": 0.38,
-          "reasoning": 1.85,
-          "outcome": 1.96,
+          "evidence": 0.4,
+          "reasoning": 1.87,
+          "outcome": 1.91,
           "specificity": 1.97
         },
         "stance": "accepts",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -5073,14 +5267,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.67,
-          "evidence": 1.43,
-          "reasoning": 1.39,
-          "outcome": 1.95,
-          "specificity": 1.13
+          "addresses_ask": 1.69,
+          "evidence": 1.5,
+          "reasoning": 1.4,
+          "outcome": 1.69,
+          "specificity": 1.18
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -5100,13 +5295,14 @@
       "model": {
         "scores": {
           "addresses_ask": 1.96,
-          "evidence": 0.78,
-          "reasoning": 1.98,
-          "outcome": 1.99,
-          "specificity": 1.8
+          "evidence": 0.77,
+          "reasoning": 1.97,
+          "outcome": 1.97,
+          "specificity": 1.76
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -5125,14 +5321,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.97,
-          "evidence": 0.59,
+          "addresses_ask": 1.98,
+          "evidence": 0.6,
           "reasoning": 1.99,
           "outcome": 2,
-          "specificity": 1.92
+          "specificity": 1.9
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": false
       }
     },
     {
@@ -5151,14 +5348,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.12,
+          "addresses_ask": 1.13,
           "evidence": 0.36,
-          "reasoning": 1.29,
-          "outcome": 1.34,
+          "reasoning": 1.34,
+          "outcome": 0.47,
           "specificity": 1
         },
         "stance": "deflects",
-        "verdict": "some"
+        "verdict": "some",
+        "needsReview": true
       }
     },
     {
@@ -5177,14 +5375,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.45,
-          "evidence": 1.31,
-          "reasoning": 1.59,
-          "outcome": 1.78,
-          "specificity": 1.8
+          "addresses_ask": 1.47,
+          "evidence": 1.28,
+          "reasoning": 1.58,
+          "outcome": 1.38,
+          "specificity": 1.81
         },
         "stance": "declines",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     },
     {
@@ -5203,14 +5402,15 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.84,
+          "addresses_ask": 1.81,
           "evidence": 0.99,
-          "reasoning": 1.59,
-          "outcome": 1.44,
+          "reasoning": 1.62,
+          "outcome": 0.9,
           "specificity": 1.94
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "thorough",
+        "needsReview": true
       }
     }
   ]

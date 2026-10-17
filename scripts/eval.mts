@@ -86,6 +86,7 @@ async function runOnce() {
             scores: row.scores,
             stance: row.stance,
             verdict: row.verdict,
+            needsReview: row.needsReview,
           },
         });
       }
@@ -148,6 +149,11 @@ console.log(
   `Prompt v${PROMPT_VERSION}, ${model}, ${gold.length} labels, ${runs} run(s)`,
 );
 console.table(table);
+const flagged = (items: EvalItem[]) =>
+  items.filter((i) => i.model.needsReview).length / items.length;
+console.log(
+  `Flagged low confidence: ${pct(allRuns.reduce((s, items) => s + flagged(items), 0) / allRuns.length)}`,
+);
 
 // Which way the misses lean, from the first run: "label->model": count.
 const first = allRuns[0];

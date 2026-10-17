@@ -18,7 +18,8 @@ import {
 
 export const MODEL = "typesafe/jev-1.14";
 // Bump when any question, criterion or option text changes; old verdicts stay for comparison.
-export const PROMPT_VERSION = 1;
+// v2: clarifies what counts as a commitment or a reasoned refusal (outcome 64% to 73% on 200 gold labels).
+export const PROMPT_VERSION = 2;
 
 const LOW_CONFIDENCE = 0.6;
 // Jev is often unsure on one or two criteria (v1 run: 90% of responses), so only flag
@@ -54,7 +55,7 @@ export const RUBRIC = {
     ],
   ),
   outcome: score(
-    "Does the government response commit to action, or give a reasoned refusal?",
+    "Does the government response commit to action, or give a reasoned refusal? Describing existing policy or saying it will keep the matter under review is not a commitment, and a refusal only counts as reasoned if it explains why the request will not be met.",
     [
       "Neither commits to anything nor explains a refusal",
       "Vague commitment, or a refusal with little reason",

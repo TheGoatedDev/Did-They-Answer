@@ -142,6 +142,7 @@ export type EvalItem = {
     scores: Record<Criterion, number>;
     stance: Stance;
     verdict: Verdict;
+    needsReview?: boolean;
   };
 };
 
