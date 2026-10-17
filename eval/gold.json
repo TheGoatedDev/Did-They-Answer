@@ -358,5 +358,365 @@
       "specificity": 1
     },
     "stance": "declines"
+  },
+  {
+    "petitionId": 603619,
+    "inputHash": "fdc991917e9d19acccb68afaaed78d0795e6064402c707e24fb6f0a27b8c515c",
+    "scores": {
+      "addresses_ask": 2,
+      "evidence": 2,
+      "reasoning": 2,
+      "outcome": 1,
+      "specificity": 2
+    },
+    "stance": "deflects"
+  },
+  {
+    "petitionId": 719124,
+    "inputHash": "536cff506b9867575c50426f0df652e1948e222bb939ffe2cd6e7f8820543774",
+    "scores": {
+      "addresses_ask": 2,
+      "evidence": 1,
+      "reasoning": 2,
+      "outcome": 2,
+      "specificity": 2
+    },
+    "stance": "declines"
+  },
+  {
+    "petitionId": 124333,
+    "inputHash": "6a6a59e5e2c229a123648ddd97b2d41acb96ba1b2307ab7f05a1cc08dc054ac3",
+    "scores": {
+      "addresses_ask": 2,
+      "evidence": 2,
+      "reasoning": 2,
+      "outcome": 2,
+      "specificity": 2
+    },
+    "stance": "partially_accepts"
+  },
+  {
+    "petitionId": 237487,
+    "inputHash": "3702ac026f0cc9e14c2fd9a335ce43cf79f6913ddf3a56b51ddb0bd1fa7808c8",
+    "scores": {
+      "addresses_ask": 2,
+      "evidence": 0,
+      "reasoning": 1,
+      "outcome": 1,
+      "specificity": 1
+    },
+    "stance": "declines"
+  },
+  {
+    "petitionId": 2199,
+    "inputHash": "8f4a8b79af1c96780915819ad974d95bf69023a7aa7901df7139dc80e98eff14",
+    "scores": {
+      "addresses_ask": 2,
+      "evidence": 0,
+      "reasoning": 1,
+      "outcome": 2,
+      "specificity": 2
+    },
+    "stance": "accepts"
+  },
+  {
+    "petitionId": 648649,
+    "inputHash": "2b594ce675caad1430a37bbba8223393441470db3a753049f0669b5db5ea04f4",
+    "scores": {
+      "addresses_ask": 1,
+      "evidence": 2,
+      "reasoning": 1,
+      "outcome": 1,
+      "specificity": 1
+    },
+    "stance": "deflects"
+  },
+  {
+    "petitionId": 754292,
+    "inputHash": "5ef327f014f560c5f0226909061b1c3ed9d07a7e10ab56439708714e763b580f",
+    "scores": {
+      "addresses_ask": 2,
+      "evidence": 2,
+      "reasoning": 2,
+      "outcome": 2,
+      "specificity": 2
+    },
+    "stance": "declines"
+  },
+  {
+    "petitionId": 105868,
+    "inputHash": "3bda8a158f10474e05bd4239cbcfc7c03b357613a6c158c0b7120eda873b2575",
+    "scores": {
+      "addresses_ask": 1,
+      "evidence": 2,
+      "reasoning": 2,
+      "outcome": 2,
+      "specificity": 2
+    },
+    "stance": "deflects"
+  },
+  {
+    "petitionId": 251627,
+    "inputHash": "52ceaaa79e140a7d8046fe44aea1a2f3f4432c2994c5bc82b15b1dca1c252020",
+    "scores": {
+      "addresses_ask": 1,
+      "evidence": 2,
+      "reasoning": 1,
+      "outcome": 2,
+      "specificity": 1
+    },
+    "stance": "deflects"
+  },
+  {
+    "petitionId": 32542,
+    "inputHash": "862cc6a625465e1a125b2c842d6e08a420cbcb240c90291a86dc997a32d5b0e4",
+    "scores": {
+      "addresses_ask": 2,
+      "evidence": 2,
+      "reasoning": 1,
+      "outcome": 2,
+      "specificity": 2
+    },
+    "stance": "partially_accepts"
+  },
+  {
+    "petitionId": 631561,
+    "inputHash": "d84a577420a56eb7fc53d870daa6cd8845a6c260dfde4a9fc7bf1b74fc228366",
+    "scores": {
+      "addresses_ask": 2,
+      "evidence": 2,
+      "reasoning": 2,
+      "outcome": 2,
+      "specificity": 2
+    },
+    "stance": "declines"
+  },
+  {
+    "petitionId": 725716,
+    "inputHash": "4f817a539bb7b67a99a449952a9c37279984fa34b1268732dfcc78269fb6d6d4",
+    "scores": {
+      "addresses_ask": 2,
+      "evidence": 1,
+      "reasoning": 2,
+      "outcome": 2,
+      "specificity": 2
+    },
+    "stance": "declines"
+  },
+  {
+    "petitionId": 167596,
+    "inputHash": "8bf360ea48fde59f1d0786225d2a85902b96ea065d6dbe7b3dd0dacd103d4ec1",
+    "scores": {
+      "addresses_ask": 2,
+      "evidence": 2,
+      "reasoning": 2,
+      "outcome": 1,
+      "specificity": 1
+    },
+    "stance": "declines"
+  },
+  {
+    "petitionId": 247912,
+    "inputHash": "b1964b4728e57b1d67a31e8cc4daa94c7c58db2875d0f9ecbb269b80c0841c43",
+    "scores": {
+      "addresses_ask": 2,
+      "evidence": 1,
+      "reasoning": 2,
+      "outcome": 1,
+      "specificity": 2
+    },
+    "stance": "deflects"
+  },
+  {
+    "petitionId": 30225,
+    "inputHash": "8d33c249a6552037444c84b3375af74408a96c458c2e1d4c9d97249b24f3e2f6",
+    "scores": {
+      "addresses_ask": 0,
+      "evidence": 0,
+      "reasoning": 0,
+      "outcome": 0,
+      "specificity": 0
+    },
+    "stance": "deflects"
+  },
+  {
+    "petitionId": 643987,
+    "inputHash": "39a338557e05995d6f7f5bffc8c31c824b6c378b0e320413d9610ab60607fc1f",
+    "scores": {
+      "addresses_ask": 2,
+      "evidence": 1,
+      "reasoning": 1,
+      "outcome": 1,
+      "specificity": 1
+    },
+    "stance": "declines"
+  },
+  {
+    "petitionId": 731497,
+    "inputHash": "26910b6b76ab09b78ba37d902eba301628a696de8bcc02fdc3c0220d5a2e9524",
+    "scores": {
+      "addresses_ask": 2,
+      "evidence": 0,
+      "reasoning": 1,
+      "outcome": 2,
+      "specificity": 2
+    },
+    "stance": "partially_accepts"
+  },
+  {
+    "petitionId": 111879,
+    "inputHash": "46dae28e7bab45f5c68078664969d45b017fb51b7bb2c11ec64ab828fdbb6f81",
+    "scores": {
+      "addresses_ask": 1,
+      "evidence": 1,
+      "reasoning": 1,
+      "outcome": 1,
+      "specificity": 2
+    },
+    "stance": "deflects"
+  },
+  {
+    "petitionId": 205348,
+    "inputHash": "a5439c4c999093c7b9a5492946eaad41807497feaee7c15e1354367325abb171",
+    "scores": {
+      "addresses_ask": 2,
+      "evidence": 1,
+      "reasoning": 2,
+      "outcome": 2,
+      "specificity": 2
+    },
+    "stance": "accepts"
+  },
+  {
+    "petitionId": 38011,
+    "inputHash": "97d720021bb3b0110cf88e03e3f8f1baa720f84711778a7556873ec1eed0e7fc",
+    "scores": {
+      "addresses_ask": 2,
+      "evidence": 1,
+      "reasoning": 2,
+      "outcome": 2,
+      "specificity": 2
+    },
+    "stance": "declines"
+  },
+  {
+    "petitionId": 661407,
+    "inputHash": "e5c807f6606f72ea21a0bf8e559f681e7ac32b23ac9f47d2ed1e46ea6734d253",
+    "scores": {
+      "addresses_ask": 2,
+      "evidence": 0,
+      "reasoning": 2,
+      "outcome": 2,
+      "specificity": 2
+    },
+    "stance": "partially_accepts"
+  },
+  {
+    "petitionId": 771833,
+    "inputHash": "19cfc1e9a6d3ff1a772149cfaf278a7b1b7889b1755ea8acaa13fc91e89d4302",
+    "scores": {
+      "addresses_ask": 2,
+      "evidence": 0,
+      "reasoning": 2,
+      "outcome": 2,
+      "specificity": 1
+    },
+    "stance": "declines"
+  },
+  {
+    "petitionId": 190708,
+    "inputHash": "621513d90885f60147d5af605e8659e89438844a2f361ea206e9868c3ff301d5",
+    "scores": {
+      "addresses_ask": 0,
+      "evidence": 0,
+      "reasoning": 1,
+      "outcome": 0,
+      "specificity": 1
+    },
+    "stance": "deflects"
+  },
+  {
+    "petitionId": 206568,
+    "inputHash": "129088a49e337774130ae4e4d3d0ec9c497ed17cb53541391aa1e9d76da3b04a",
+    "scores": {
+      "addresses_ask": 2,
+      "evidence": 1,
+      "reasoning": 2,
+      "outcome": 2,
+      "specificity": 2
+    },
+    "stance": "declines"
+  },
+  {
+    "petitionId": 46695,
+    "inputHash": "e6369a28e170dc1f075bba12348ff4f1125da357b106ae8215e4aba3ec7ff30b",
+    "scores": {
+      "addresses_ask": 0,
+      "evidence": 0,
+      "reasoning": 1,
+      "outcome": 0,
+      "specificity": 0
+    },
+    "stance": "deflects"
+  },
+  {
+    "petitionId": 631763,
+    "inputHash": "091280a58b0bb39d733f0ff6598facfe5fc72b4cd5c6bec64affc502f11011aa",
+    "scores": {
+      "addresses_ask": 2,
+      "evidence": 2,
+      "reasoning": 2,
+      "outcome": 2,
+      "specificity": 2
+    },
+    "stance": "declines"
+  },
+  {
+    "petitionId": 704793,
+    "inputHash": "90eff26b4a84da259b2bf74b1abef1ec8fa0dc4352b37017a8ca8e118c3a6c6b",
+    "scores": {
+      "addresses_ask": 2,
+      "evidence": 2,
+      "reasoning": 2,
+      "outcome": 2,
+      "specificity": 2
+    },
+    "stance": "declines"
+  },
+  {
+    "petitionId": 183943,
+    "inputHash": "c503ee2f5917f2ce683c2ce0f25ff01fe0a97f4c16e180a44798f0cdc2d50cba",
+    "scores": {
+      "addresses_ask": 2,
+      "evidence": 2,
+      "reasoning": 2,
+      "outcome": 2,
+      "specificity": 2
+    },
+    "stance": "declines"
+  },
+  {
+    "petitionId": 239406,
+    "inputHash": "7cdec51a9bc3d2d7dbbb64861719e2ec2cf6ed1a98f56f232d8244846e4910fa",
+    "scores": {
+      "addresses_ask": 1,
+      "evidence": 1,
+      "reasoning": 2,
+      "outcome": 1,
+      "specificity": 1
+    },
+    "stance": "deflects"
+  },
+  {
+    "petitionId": 53083,
+    "inputHash": "85de819e934bb0ae7cc570b3eeb1138156f57390ca7ebb0381ea4cab100f7db2",
+    "scores": {
+      "addresses_ask": 2,
+      "evidence": 1,
+      "reasoning": 2,
+      "outcome": 2,
+      "specificity": 2
+    },
+    "stance": "partially_accepts"
   }
 ]

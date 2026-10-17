@@ -1,16 +1,16 @@
 {
   "model": "typesafe/jev-1.14-20261014",
   "promptVersion": 1,
-  "ranAt": "2026-10-17T17:51:58.552Z",
-  "n": 30,
+  "ranAt": "2026-10-17T18:27:37.355Z",
+  "n": 60,
   "agreement": {
     "addresses_ask": 0.8666666666666667,
-    "evidence": 0.8333333333333334,
-    "reasoning": 0.9,
-    "outcome": 0.7333333333333333,
-    "specificity": 0.5333333333333333,
-    "stance": 0.9,
-    "verdict": 0.7666666666666667
+    "evidence": 0.8166666666666667,
+    "reasoning": 0.85,
+    "outcome": 0.7166666666666667,
+    "specificity": 0.7333333333333333,
+    "stance": 0.8666666666666667,
+    "verdict": 0.8333333333333334
   },
   "items": [
     {
@@ -29,10 +29,10 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.61,
-          "evidence": 1.01,
-          "reasoning": 1.88,
-          "outcome": 1.14,
+          "addresses_ask": 1.64,
+          "evidence": 1.04,
+          "reasoning": 1.87,
+          "outcome": 1.1,
           "specificity": 0.85
         },
         "stance": "deflects",
@@ -55,10 +55,10 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.6,
+          "addresses_ask": 1.59,
           "evidence": 2,
-          "reasoning": 1.81,
-          "outcome": 1.92,
+          "reasoning": 1.79,
+          "outcome": 1.91,
           "specificity": 1.36
         },
         "stance": "declines",
@@ -81,11 +81,11 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.82,
-          "evidence": 0.63,
-          "reasoning": 1.73,
+          "addresses_ask": 1.83,
+          "evidence": 0.62,
+          "reasoning": 1.72,
           "outcome": 1.97,
-          "specificity": 1.26
+          "specificity": 1.38
         },
         "stance": "partially_accepts",
         "verdict": "thorough"
@@ -108,10 +108,10 @@
       "model": {
         "scores": {
           "addresses_ask": 1.96,
-          "evidence": 1.95,
-          "reasoning": 0.96,
-          "outcome": 1.89,
-          "specificity": 1.93
+          "evidence": 1.94,
+          "reasoning": 0.92,
+          "outcome": 1.9,
+          "specificity": 1.94
         },
         "stance": "accepts",
         "verdict": "thorough"
@@ -133,11 +133,11 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.66,
-          "evidence": 0.6,
-          "reasoning": 1.64,
-          "outcome": 1.82,
-          "specificity": 1.76
+          "addresses_ask": 1.72,
+          "evidence": 0.66,
+          "reasoning": 1.61,
+          "outcome": 1.76,
+          "specificity": 1.77
         },
         "stance": "declines",
         "verdict": "thorough"
@@ -163,7 +163,7 @@
           "evidence": 1,
           "reasoning": 1.99,
           "outcome": 2,
-          "specificity": 1.23
+          "specificity": 1.2
         },
         "stance": "declines",
         "verdict": "thorough"
@@ -185,11 +185,11 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.88,
+          "addresses_ask": 1.89,
           "evidence": 0.44,
-          "reasoning": 1.39,
-          "outcome": 1.97,
-          "specificity": 1.17
+          "reasoning": 1.43,
+          "outcome": 1.98,
+          "specificity": 1.15
         },
         "stance": "declines",
         "verdict": "some"
@@ -211,11 +211,11 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.45,
+          "addresses_ask": 1.58,
           "evidence": 1.98,
-          "reasoning": 1.67,
+          "reasoning": 1.7,
           "outcome": 1.99,
-          "specificity": 1.43
+          "specificity": 1.53
         },
         "stance": "declines",
         "verdict": "thorough"
@@ -237,11 +237,11 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.67,
+          "addresses_ask": 1.7,
           "evidence": 1.98,
-          "reasoning": 1.9,
+          "reasoning": 1.88,
           "outcome": 1.94,
-          "specificity": 1.17
+          "specificity": 1.2
         },
         "stance": "declines",
         "verdict": "thorough"
@@ -263,11 +263,11 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 0.84,
+          "addresses_ask": 0.96,
           "evidence": 0,
-          "reasoning": 0.83,
-          "outcome": 1.78,
-          "specificity": 0.39
+          "reasoning": 0.81,
+          "outcome": 1.77,
+          "specificity": 0.4
         },
         "stance": "deflects",
         "verdict": "low"
@@ -289,14 +289,14 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.28,
+          "addresses_ask": 1.33,
           "evidence": 1.01,
           "reasoning": 1.89,
           "outcome": 1.98,
-          "specificity": 0.83
+          "specificity": 0.84
         },
         "stance": "declines",
-        "verdict": "some"
+        "verdict": "thorough"
       }
     },
     {
@@ -319,7 +319,7 @@
           "evidence": 1.99,
           "reasoning": 1.98,
           "outcome": 2,
-          "specificity": 0.83
+          "specificity": 0.93
         },
         "stance": "declines",
         "verdict": "thorough"
@@ -342,10 +342,10 @@
       "model": {
         "scores": {
           "addresses_ask": 2,
-          "evidence": 1.9,
-          "reasoning": 1.79,
+          "evidence": 1.85,
+          "reasoning": 1.78,
           "outcome": 2,
-          "specificity": 1.1
+          "specificity": 1.04
         },
         "stance": "accepts",
         "verdict": "thorough"
@@ -367,11 +367,11 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.84,
-          "evidence": 1.42,
+          "addresses_ask": 1.8,
+          "evidence": 1.41,
           "reasoning": 1.97,
-          "outcome": 1.43,
-          "specificity": 1.85
+          "outcome": 1.39,
+          "specificity": 1.83
         },
         "stance": "partially_accepts",
         "verdict": "thorough"
@@ -393,11 +393,11 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.84,
-          "evidence": 1.46,
-          "reasoning": 1.59,
+          "addresses_ask": 1.83,
+          "evidence": 1.48,
+          "reasoning": 1.56,
           "outcome": 1.95,
-          "specificity": 1.96
+          "specificity": 1.95
         },
         "stance": "deflects",
         "verdict": "thorough"
@@ -419,11 +419,11 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.13,
-          "evidence": 0.96,
-          "reasoning": 1.36,
+          "addresses_ask": 1.04,
+          "evidence": 0.99,
+          "reasoning": 1.35,
           "outcome": 1.98,
-          "specificity": 0.85
+          "specificity": 0.83
         },
         "stance": "declines",
         "verdict": "some"
@@ -446,10 +446,10 @@
       "model": {
         "scores": {
           "addresses_ask": 1.99,
-          "evidence": 1.16,
-          "reasoning": 1.66,
+          "evidence": 1.29,
+          "reasoning": 1.67,
           "outcome": 1.98,
-          "specificity": 1.65
+          "specificity": 1.71
         },
         "stance": "accepts",
         "verdict": "thorough"
@@ -471,11 +471,11 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 0.84,
-          "evidence": 0.63,
-          "reasoning": 1.77,
+          "addresses_ask": 0.85,
+          "evidence": 0.62,
+          "reasoning": 1.73,
           "outcome": 1.62,
-          "specificity": 0.22
+          "specificity": 0.18
         },
         "stance": "deflects",
         "verdict": "some"
@@ -498,10 +498,10 @@
       "model": {
         "scores": {
           "addresses_ask": 2,
-          "evidence": 1.32,
+          "evidence": 1.29,
           "reasoning": 2,
           "outcome": 2,
-          "specificity": 1.56
+          "specificity": 1.55
         },
         "stance": "declines",
         "verdict": "thorough"
@@ -523,11 +523,11 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.83,
+          "addresses_ask": 1.79,
           "evidence": 2,
-          "reasoning": 1.32,
-          "outcome": 1.94,
-          "specificity": 1.5
+          "reasoning": 1.31,
+          "outcome": 1.96,
+          "specificity": 1.48
         },
         "stance": "partially_accepts",
         "verdict": "thorough"
@@ -549,9 +549,9 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.95,
+          "addresses_ask": 1.94,
           "evidence": 1.99,
-          "reasoning": 1.54,
+          "reasoning": 1.59,
           "outcome": 1.99,
           "specificity": 1.54
         },
@@ -576,10 +576,10 @@
       "model": {
         "scores": {
           "addresses_ask": 1.98,
-          "evidence": 1.63,
-          "reasoning": 1.97,
+          "evidence": 1.61,
+          "reasoning": 1.96,
           "outcome": 2,
-          "specificity": 1.94
+          "specificity": 1.92
         },
         "stance": "declines",
         "verdict": "thorough"
@@ -601,9 +601,9 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.82,
-          "evidence": 1.98,
-          "reasoning": 1.95,
+          "addresses_ask": 1.88,
+          "evidence": 1.99,
+          "reasoning": 1.96,
           "outcome": 1.91,
           "specificity": 1.84
         },
@@ -627,11 +627,11 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.95,
+          "addresses_ask": 1.96,
           "evidence": 2,
-          "reasoning": 1.77,
+          "reasoning": 1.8,
           "outcome": 1.98,
-          "specificity": 1.21
+          "specificity": 1.24
         },
         "stance": "declines",
         "verdict": "thorough"
@@ -653,14 +653,14 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.23,
-          "evidence": 0.98,
-          "reasoning": 1.61,
-          "outcome": 1.62,
-          "specificity": 1.72
+          "addresses_ask": 1.2,
+          "evidence": 0.9,
+          "reasoning": 1.63,
+          "outcome": 1.53,
+          "specificity": 1.73
         },
         "stance": "deflects",
-        "verdict": "thorough"
+        "verdict": "some"
       }
     },
     {
@@ -681,8 +681,8 @@
         "scores": {
           "addresses_ask": 1.98,
           "evidence": 1.04,
-          "reasoning": 1.75,
-          "outcome": 1.9,
+          "reasoning": 1.77,
+          "outcome": 1.91,
           "specificity": 1.52
         },
         "stance": "declines",
@@ -705,11 +705,11 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 0.82,
+          "addresses_ask": 0.8,
           "evidence": 2,
-          "reasoning": 1.37,
+          "reasoning": 1.34,
           "outcome": 1.89,
-          "specificity": 0.42
+          "specificity": 0.41
         },
         "stance": "deflects",
         "verdict": "some"
@@ -731,11 +731,11 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.19,
-          "evidence": 1.13,
-          "reasoning": 1.14,
+          "addresses_ask": 1.2,
+          "evidence": 0.97,
+          "reasoning": 1.16,
           "outcome": 1.97,
-          "specificity": 1.36
+          "specificity": 1.24
         },
         "stance": "declines",
         "verdict": "some"
@@ -757,11 +757,11 @@
       },
       "model": {
         "scores": {
-          "addresses_ask": 1.98,
+          "addresses_ask": 1.97,
           "evidence": 0.98,
-          "reasoning": 1.85,
-          "outcome": 1.86,
-          "specificity": 1.71
+          "reasoning": 1.86,
+          "outcome": 1.84,
+          "specificity": 1.69
         },
         "stance": "deflects",
         "verdict": "thorough"
@@ -784,10 +784,790 @@
       "model": {
         "scores": {
           "addresses_ask": 2,
-          "evidence": 0.38,
+          "evidence": 0.4,
+          "reasoning": 1.98,
+          "outcome": 1.99,
+          "specificity": 1.22
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 603619,
+      "action": "Do not build two new prisons at Wethersfield Air Base",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.26,
+          "evidence": 1.85,
+          "reasoning": 1.67,
+          "outcome": 1.04,
+          "specificity": 1.85
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 719124,
+      "action": "Transfer UK Warrior Infantry Fighting Vehicles to Ukraine",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.9,
+          "evidence": 0.61,
+          "reasoning": 1.98,
+          "outcome": 1.87,
+          "specificity": 1.85
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 124333,
+      "action": "Save UK Air Cadet Gliding",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.57,
+          "evidence": 1.97,
+          "reasoning": 2,
+          "outcome": 1.99,
+          "specificity": 1.88
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 237487,
+      "action": "The Prime Minister should advise Her Majesty the Queen to prorogue Parliament.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.97,
+          "evidence": 0.45,
+          "reasoning": 1.72,
+          "outcome": 1.87,
+          "specificity": 1.14
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 2199,
+      "action": "Full disclosure of all government documents relating to 1989 Hillsborough disaster",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.96,
+          "evidence": 1.51,
+          "reasoning": 0.98,
+          "outcome": 1.65,
+          "specificity": 1.93
+        },
+        "stance": "accepts",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 648649,
+      "action": "Introduce economic sanctions on Israel",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.06,
+          "evidence": 1.99,
+          "reasoning": 1.64,
+          "outcome": 1.84,
+          "specificity": 1.31
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 754292,
+      "action": "Fund Free TV licences for all pensioners.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.98,
+          "evidence": 2,
+          "reasoning": 1.99,
+          "outcome": 1.98,
+          "specificity": 1.51
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 105868,
+      "action": "An independent investigation into the new layout at Dartford river crossing.",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 0.86,
+          "evidence": 2,
+          "reasoning": 1.95,
+          "outcome": 1.65,
+          "specificity": 1.39
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 251627,
+      "action": "Hold an Inquiry into the state of the Police Complaints System and role of IOPC",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 2,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.18,
+          "evidence": 2,
+          "reasoning": 1.54,
+          "outcome": 1.72,
+          "specificity": 0.89
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 32542,
+      "action": "Peace in Burma - Please do something more Mr Cameron",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.94,
+          "evidence": 2,
+          "reasoning": 0.94,
+          "outcome": 1.92,
+          "specificity": 1.89
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 631561,
+      "action": "Reverse the decision to block the Gender Recognition Reform (Scotland) Bill",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.83,
+          "evidence": 1.19,
+          "reasoning": 1.84,
+          "outcome": 2,
+          "specificity": 1.74
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 725716,
+      "action": "Protect Northern Ireland Veterans from Prosecutions",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.42,
+          "evidence": 1.06,
+          "reasoning": 1.93,
+          "outcome": 1.81,
+          "specificity": 1.81
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 167596,
+      "action": "Ban all non-recyclable/non-compostable packaging in the UK",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.32,
+          "evidence": 1.97,
+          "reasoning": 2,
+          "outcome": 1.85,
+          "specificity": 1.03
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 247912,
+      "action": "Anonymity for those accused of sexual offences until charge.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.9,
+          "evidence": 1.01,
+          "reasoning": 2,
+          "outcome": 1.88,
+          "specificity": 1.17
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 30225,
+      "action": "Save the Portland Coastguard Helicopter",
+      "label": {
+        "scores": {
+          "addresses_ask": 0,
+          "evidence": 0,
+          "reasoning": 0,
+          "outcome": 0,
+          "specificity": 0
+        },
+        "stance": "deflects",
+        "verdict": "low"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 0.04,
+          "evidence": 0,
+          "reasoning": 0.01,
+          "outcome": 0.09,
+          "specificity": 1.61
+        },
+        "stance": "deflects",
+        "verdict": "low"
+      }
+    },
+    {
+      "petitionId": 643987,
+      "action": "Hold a referendum on ending devolution in Wales",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.99,
+          "evidence": 0.91,
+          "reasoning": 1.42,
+          "outcome": 1.99,
+          "specificity": 1.4
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 731497,
+      "action": "New Disclosure and Safeguarding Mechanism for At-Risk Children",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.92,
+          "evidence": 0.19,
+          "reasoning": 1.68,
+          "outcome": 1.95,
+          "specificity": 1.81
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 111879,
+      "action": "Stop the Government from cutting funding for Routes into Languages.",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 1,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 0.93,
+          "evidence": 1.54,
+          "reasoning": 1.28,
+          "outcome": 1.67,
+          "specificity": 1.7
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 205348,
+      "action": "Pass legislation making animals legally \"Sentient Beings\" in UK law.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.95,
+          "evidence": 1.72,
+          "reasoning": 1.87,
+          "outcome": 1.98,
+          "specificity": 1.86
+        },
+        "stance": "accepts",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 38011,
+      "action": "Method of production labelling for all meat and dairy foods sold in the UK",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.95,
+          "evidence": 0.6,
+          "reasoning": 2,
+          "outcome": 1.99,
+          "specificity": 1.75
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 661407,
+      "action": "Give parents/guardians a right to access social media accounts of their children",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.88,
+          "evidence": 0.19,
+          "reasoning": 1.84,
+          "outcome": 1.89,
+          "specificity": 1.47
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 771833,
+      "action": "General election now – and always call one if a PM is replaced",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.97,
+          "evidence": 0.55,
           "reasoning": 1.97,
           "outcome": 2,
-          "specificity": 1.25
+          "specificity": 0.73
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 190708,
+      "action": "Allow Walid Durani to stay in the UK.",
+      "label": {
+        "scores": {
+          "addresses_ask": 0,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 0,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "low"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 0.91,
+          "evidence": 0.48,
+          "reasoning": 1.4,
+          "outcome": 1.8,
+          "specificity": 0.56
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      }
+    },
+    {
+      "petitionId": 206568,
+      "action": "Introduce automatic approval of visit visas for families of British Citizens",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0.65,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 1.58
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 46695,
+      "action": "Justice for David Bartholomew",
+      "label": {
+        "scores": {
+          "addresses_ask": 0,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 0,
+          "specificity": 0
+        },
+        "stance": "deflects",
+        "verdict": "low"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 0.24,
+          "evidence": 0.04,
+          "reasoning": 1.52,
+          "outcome": 1.69,
+          "specificity": 0.03
+        },
+        "stance": "deflects",
+        "verdict": "low"
+      }
+    },
+    {
+      "petitionId": 631763,
+      "action": "Hold a referendum on removing the London Assembly and London Mayor",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.96,
+          "evidence": 1.87,
+          "reasoning": 1.77,
+          "outcome": 1.99,
+          "specificity": 1.61
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 704793,
+      "action": "Legally enshrine the right of adults to physically transition using NHS services",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.98,
+          "evidence": 1.93,
+          "reasoning": 1.89,
+          "outcome": 2,
+          "specificity": 1.89
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 183943,
+      "action": "Keep open the 'Dubs scheme' to resettle 3000 unaccompanied refugee children.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.84,
+          "evidence": 2,
+          "reasoning": 1.95,
+          "outcome": 1.98,
+          "specificity": 1.79
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      }
+    },
+    {
+      "petitionId": 239406,
+      "action": "Undertake an independent enquiry into the role of Russia in Brexit.",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.32,
+          "evidence": 0.84,
+          "reasoning": 1.48,
+          "outcome": 1.94,
+          "specificity": 1.26
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      }
+    },
+    {
+      "petitionId": 53083,
+      "action": "Block Passage of Anti-Social Behaviour, Crime and Policing Bill",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.33,
+          "evidence": 0.29,
+          "reasoning": 1.94,
+          "outcome": 1.99,
+          "specificity": 1.96
         },
         "stance": "declines",
         "verdict": "thorough"
