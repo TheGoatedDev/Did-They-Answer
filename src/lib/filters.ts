@@ -91,23 +91,36 @@ export function hrefWith(f: Filters, change: Partial<Filters>) {
   return qs ? `/?${qs}` : "/";
 }
 
-export function verdictShares(
+export type Share<K extends string> = {
+  group: string;
+  counts: Record<K, number>;
+  n: number;
+};
+
+/** Count each row's value per group; rows without a value (not yet assessed) are skipped. */
+export function shares<K extends string>(
   rows: IndexRow[],
+  keys: readonly K[],
+  pick: (r: IndexRow) => K | undefined,
   groupBy: (r: IndexRow) => string[],
-) {
-  const groups = new Map<string, Record<Verdict, number>>();
+): Share<K>[] {
+  const groups = new Map<string, Share<K>>();
   for (const r of rows) {
-    const verdict = r.assessment?.verdict;
-    if (!verdict) continue;
-    for (const key of groupBy(r)) {
-      const counts = groups.get(key) ?? { low: 0, some: 0, thorough: 0 };
-      counts[verdict] += 1;
-      groups.set(key, counts);
+    const value = pick(r);
+    if (!value) continue;
+    for (const group of groupBy(r)) {
+      const share = groups.get(group) ?? {
+        group,
+        counts: Object.fromEntries(keys.map((k) => [k, 0])) as Record<
+          K,
+          number
+        >,
+        n: 0,
+      };
+      share.counts[value] += 1;
+      share.n += 1;
+      groups.set(group, share);
     }
   }
-  return [...groups].map(([group, counts]) => ({
-    group,
-    counts,
-    n: counts.low + counts.some + counts.thorough,
-  }));
+  return [...groups.values()];
 }

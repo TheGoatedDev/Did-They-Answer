@@ -1,11 +1,12 @@
 import { describe, expect, it } from "vitest";
+import { STANCES, VERDICTS } from "@/db/schema";
 import {
   applyFilters,
   facets,
   hrefWith,
   PAGE_SIZE,
   parseFilters,
-  verdictShares,
+  shares,
 } from "./filters";
 import type { IndexRow } from "./queries";
 
@@ -96,14 +97,35 @@ describe("hrefWith", () => {
   });
 });
 
-describe("facets and verdictShares", () => {
+describe("facets and shares", () => {
   it("collects departments and counts verdicts per group, skipping unjudged", () => {
     const rows = [row(1), row(2), row(3, { assessment: null })];
     expect(facets(rows).departments).toEqual([
       ["DfE", "Department for Education"],
     ]);
-    expect(verdictShares(rows, (r) => [r.parliament])).toEqual([
+    expect(
+      shares(
+        rows,
+        VERDICTS,
+        (r) => r.assessment?.verdict,
+        (r) => [r.parliament],
+      ),
+    ).toEqual([
       { group: "2019-24", counts: { low: 0, some: 2, thorough: 0 }, n: 2 },
+    ]);
+    expect(
+      shares(
+        rows,
+        STANCES,
+        (r) => r.assessment?.stance,
+        () => ["all"],
+      ),
+    ).toEqual([
+      {
+        group: "all",
+        counts: { accepts: 0, partially_accepts: 0, declines: 2, deflects: 0 },
+        n: 2,
+      },
     ]);
   });
 });
