@@ -11,7 +11,10 @@
     "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "prepare": "husky"
+    "prepare": "husky",
+    "db:generate": "drizzle-kit generate",
+    "gold:label": "tsx --env-file-if-exists=.env.local scripts/gold-label.ts",
+    "eval": "tsx --env-file-if-exists=.env.local scripts/eval.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",
