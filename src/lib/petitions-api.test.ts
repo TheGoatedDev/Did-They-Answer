@@ -1,6 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
 import archivedPage from "./__fixtures__/archived-page.json";
 import currentPage from "./__fixtures__/current-page.json";
+import nullBackgroundPage from "./__fixtures__/null-background-page.json";
 import { fetchPetitionPage, sourceUrl, toRow } from "./petitions-api";
 
 const json = (body: unknown, status = 200) =>
@@ -55,6 +56,13 @@ describe("fetchPetitionPage", () => {
 });
 
 describe("toRow", () => {
+  it("accepts 2010-15 petitions, which have no background", async () => {
+    const page = await fetchPetitionPage("https://x/p", {
+      fetch: async () => json(nullBackgroundPage),
+    });
+    expect(toRow(page.petitions[0], "2010-15").background).toBeNull();
+  });
+
   it("maps the government response and blanks empty additional details", async () => {
     const page = await fetchPetitionPage("https://x/p", {
       fetch: async () => json(archivedPage),

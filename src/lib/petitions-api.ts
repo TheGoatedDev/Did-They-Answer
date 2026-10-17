@@ -42,7 +42,7 @@ const petitionSchema = z.object({
   id: z.number().int(),
   attributes: z.object({
     action: z.string(),
-    background: z.string(),
+    background: z.string().nullable(),
     additional_details: z.string().nullable(),
     state: z.string(),
     signature_count: z.number().int(),

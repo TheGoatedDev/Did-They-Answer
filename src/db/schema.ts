@@ -46,7 +46,7 @@ export const petitions = pgTable("petitions", {
   // "2024-" is the current parliament; the rest are archived, e.g. "2019-24".
   parliament: text("parliament").notNull(),
   action: text("action").notNull(),
-  background: text("background").notNull(),
+  background: text("background"),
   additionalDetails: text("additional_details"),
   state: text("state").notNull(),
   signatureCount: integer("signature_count").notNull(),

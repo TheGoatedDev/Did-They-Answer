@@ -1,5 +1,5 @@
 {
-  "id": "beb1cdfb-e2be-48ad-9b48-a9e481221498",
+  "id": "5525c86a-394b-417a-9543-bcdaff828b5e",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -146,8 +146,12 @@
           "name": "assessments_petition_id_petitions_id_fk",
           "tableFrom": "assessments",
           "tableTo": "petitions",
-          "columnsFrom": ["petition_id"],
-          "columnsTo": ["id"],
+          "columnsFrom": [
+            "petition_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
           "onDelete": "no action",
           "onUpdate": "no action"
         }
@@ -278,7 +282,7 @@
           "name": "background",
           "type": "text",
           "primaryKey": false,
-          "notNull": true
+          "notNull": false
         },
         "additional_details": {
           "name": "additional_details",

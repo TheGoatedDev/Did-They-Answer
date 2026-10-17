@@ -38,7 +38,7 @@ CREATE TABLE "petitions" (
 	"id" integer PRIMARY KEY NOT NULL,
 	"parliament" text NOT NULL,
 	"action" text NOT NULL,
-	"background" text NOT NULL,
+	"background" text,
 	"additional_details" text,
 	"state" text NOT NULL,
 	"signature_count" integer NOT NULL,
