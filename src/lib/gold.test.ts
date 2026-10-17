@@ -1,5 +1,13 @@
 import { describe, expect, it } from "vitest";
-import { disagrees, type EvalItem, sampleForGold, summarise } from "./gold";
+import {
+  compareLabellers,
+  disagrees,
+  type EvalItem,
+  type LabellerEntry,
+  mergeLabels,
+  sampleForGold,
+  summarise,
+} from "./gold";
 
 const rows = [
   ...Array.from({ length: 20 }, (_, i) => ({
@@ -55,5 +63,83 @@ describe("summarise", () => {
   it("flags any mismatch as a disagreement", () => {
     expect(disagrees(item())).toBe(false);
     expect(disagrees(item({ scores: { ...scores, outcome: 1.6 } }))).toBe(true);
+  });
+});
+
+describe("compareLabellers and mergeLabels", () => {
+  const entry = (
+    petitionId: number,
+    over: Partial<LabellerEntry> = {},
+  ): LabellerEntry => ({
+    petitionId,
+    scores: {
+      addresses_ask: 2,
+      evidence: 1,
+      reasoning: 1,
+      outcome: 1,
+      specificity: 2,
+    },
+    stance: "declines",
+    ...over,
+  });
+  const sample = [
+    { petitionId: 1, inputHash: "h1" },
+    { petitionId: 2, inputHash: "h2" },
+  ];
+  const a = [entry(1), entry(2)];
+  const b = [entry(1, { stance: "deflects" }), entry(2)];
+
+  it("reports agreement per field and lists the disputed cells", () => {
+    const { agreement, disagreements } = compareLabellers(a, b);
+    expect(agreement.stance).toBe(0.5);
+    expect(agreement.evidence).toBe(1);
+    expect(disagreements).toHaveLength(1);
+    expect(disagreements[0].disagreements).toEqual({
+      stance: ["declines", "deflects"],
+    });
+  });
+
+  it("takes the adjudicator's pick and tags the split", () => {
+    const gold = mergeLabels(
+      sample,
+      a,
+      b,
+      [{ petitionId: 1, resolved: { stance: "deflects" } }],
+      "holdout",
+    );
+    expect(gold[0]).toMatchObject({
+      petitionId: 1,
+      inputHash: "h1",
+      split: "holdout",
+      stance: "deflects",
+    });
+    expect(gold[1].stance).toBe("declines");
+  });
+
+  it("refuses unresolved disputes, picks nobody offered, and invalid labels", () => {
+    expect(() => mergeLabels(sample, a, b, [], "tune")).toThrow(
+      "not adjudicated",
+    );
+    expect(() =>
+      mergeLabels(
+        sample,
+        a,
+        b,
+        [{ petitionId: 1, resolved: { stance: "accepts" } }],
+        "tune",
+      ),
+    ).toThrow("not one of the labellers' values");
+    expect(() =>
+      compareLabellers([entry(1, { stance: "maybe" as never })], [entry(1)]),
+    ).toThrow("unknown stance");
+    expect(() =>
+      compareLabellers(
+        [entry(1, { scores: { ...entry(1).scores, outcome: 3 } })],
+        [entry(1)],
+      ),
+    ).toThrow("must be 0, 1 or 2");
+    expect(() => compareLabellers([entry(1)], [entry(2)])).toThrow(
+      "different petitions",
+    );
   });
 });

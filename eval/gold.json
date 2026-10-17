@@ -2,6 +2,7 @@
   {
     "petitionId": 570179,
     "inputHash": "26144f3348662a240e910b58c144b48678afc53c1b5baccc656b04f8ab3793ca",
+    "split": "tune",
     "scores": {
       "addresses_ask": 2,
       "evidence": 1,
@@ -14,6 +15,7 @@
   {
     "petitionId": 163203,
     "inputHash": "85bedaae0d802e669956700a163fc7e54cb251f7b03b87a3be5d31ff5244af70",
+    "split": "tune",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -26,6 +28,7 @@
   {
     "petitionId": 258756,
     "inputHash": "e3d9322b21b853f73ce433f9c89b57e597ab35213a969639b7c487176c135e78",
+    "split": "tune",
     "scores": {
       "addresses_ask": 2,
       "evidence": 1,
@@ -38,6 +41,7 @@
   {
     "petitionId": 756494,
     "inputHash": "754d6f1279e18729976c7638d4444bbfdf64be128b1467e1ea80079547f2c7c3",
+    "split": "tune",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -50,6 +54,7 @@
   {
     "petitionId": 29356,
     "inputHash": "6b811a1b9c5401f6cf9e06366c6fa8eb4720aac28ec41cfcc91b5b22bdd06bc4",
+    "split": "tune",
     "scores": {
       "addresses_ask": 1,
       "evidence": 0,
@@ -62,6 +67,7 @@
   {
     "petitionId": 318654,
     "inputHash": "b452530b3ca844b1974b15b067089e33b95ffcd05da5a5495e5bc6d994256a2f",
+    "split": "tune",
     "scores": {
       "addresses_ask": 1,
       "evidence": 1,
@@ -74,6 +80,7 @@
   {
     "petitionId": 178330,
     "inputHash": "ce823b261abf3358417ca562c5069e9bbcdea59c10190badeb934066c90763dd",
+    "split": "tune",
     "scores": {
       "addresses_ask": 2,
       "evidence": 0,
@@ -86,6 +93,7 @@
   {
     "petitionId": 223567,
     "inputHash": "bb03e18e97915f96b5d21a76fde4651568b9e2f1465011af611f10d738f8318f",
+    "split": "tune",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -98,6 +106,7 @@
   {
     "petitionId": 703827,
     "inputHash": "a1a869e7f0f77013d751121b93d86b4c52152084c37012713bbb0f1e856af334",
+    "split": "tune",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -110,6 +119,7 @@
   {
     "petitionId": 43153,
     "inputHash": "3902cb6299c9c4538abd4e4f614d0b928b2bca757fb9db27a17b118f530bef0a",
+    "split": "tune",
     "scores": {
       "addresses_ask": 1,
       "evidence": 0,
@@ -122,6 +132,7 @@
   {
     "petitionId": 331430,
     "inputHash": "6633d6bfce586e977d42a8462af2097be937f1fbd54683ef0bed98a604ec2445",
+    "split": "tune",
     "scores": {
       "addresses_ask": 2,
       "evidence": 1,
@@ -134,6 +145,7 @@
   {
     "petitionId": 150516,
     "inputHash": "abad3f118c28d143f865397d3490ee8eaeccf55c3dd5a6592213c740a55674de",
+    "split": "tune",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -146,6 +158,7 @@
   {
     "petitionId": 200311,
     "inputHash": "735b921e0b2ad6e86f397100acf2ae037bef9d214743a52738057c7ad479ea68",
+    "split": "tune",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -158,6 +171,7 @@
   {
     "petitionId": 766919,
     "inputHash": "9451026391b47523ce857f54ff805fc5ab24c6196a825d1255064018363f4a41",
+    "split": "tune",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -170,6 +184,7 @@
   {
     "petitionId": 55031,
     "inputHash": "411d8297d51245ee56b7fb632c7ae756387060311bab820bda3513f607aac665",
+    "split": "tune",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -182,6 +197,7 @@
   {
     "petitionId": 616636,
     "inputHash": "95eb650c396893f3b1af20c0eeb92bd3cf110601c620b1abf41fc083156f6657",
+    "split": "tune",
     "scores": {
       "addresses_ask": 1,
       "evidence": 1,
@@ -194,6 +210,7 @@
   {
     "petitionId": 112510,
     "inputHash": "4b896e5a10219d111992916622784c9d776bd22bf1e68ac9e02f1f44bb045652",
+    "split": "tune",
     "scores": {
       "addresses_ask": 2,
       "evidence": 1,
@@ -206,6 +223,7 @@
   {
     "petitionId": 272087,
     "inputHash": "460de5cdb9ab40a0c2b7773d7144517326bf54fcdd46df36d6517f5569f2d923",
+    "split": "tune",
     "scores": {
       "addresses_ask": 1,
       "evidence": 1,
@@ -218,6 +236,7 @@
   {
     "petitionId": 757426,
     "inputHash": "3e385665c246debd0725629d9d5d218d8a033852b0eb8c43657e172e3d2d663a",
+    "split": "tune",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -230,6 +249,7 @@
   {
     "petitionId": 68040,
     "inputHash": "22a61a17c7590aed5ac5e3ad073903f188afbd79075085bb277ee33f6c5f37aa",
+    "split": "tune",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -242,6 +262,7 @@
   {
     "petitionId": 628226,
     "inputHash": "c9752d21337e156ce2f980a385c4818f395127bb5fc0e2413cd3fa5de4adcb37",
+    "split": "tune",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -254,6 +275,7 @@
   {
     "petitionId": 106355,
     "inputHash": "350c8bc0dea8c31a170d78125b9dc4222d0d960244143b5eeaf6e92c99bdd46e",
+    "split": "tune",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -266,6 +288,7 @@
   {
     "petitionId": 208008,
     "inputHash": "0dbf5e7b3eefc380495a31797892c0f02e44b674a1c94588e50a4cc4518e75c4",
+    "split": "tune",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -278,6 +301,7 @@
   {
     "petitionId": 729235,
     "inputHash": "0f12b65de1bdfb2037c39c742777e2e44b17ce874b22058849203419151dd86d",
+    "split": "tune",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -290,6 +314,7 @@
   {
     "petitionId": 20685,
     "inputHash": "be38eb33b0db3edfb4a9609dfee0e4d792bbb2d9a08eb312fdd9c8fdfaef9986",
+    "split": "tune",
     "scores": {
       "addresses_ask": 1,
       "evidence": 1,
@@ -302,6 +327,7 @@
   {
     "petitionId": 330333,
     "inputHash": "56d7b2247d92545273aec77b696824336e558254f13904b2e9460ddd2c4ba338",
+    "split": "tune",
     "scores": {
       "addresses_ask": 2,
       "evidence": 1,
@@ -314,6 +340,7 @@
   {
     "petitionId": 177055,
     "inputHash": "ac4a1391e9002fa9d0114c4d299b640f2f5b7d2140ac79bdc86567bb260b47d5",
+    "split": "tune",
     "scores": {
       "addresses_ask": 1,
       "evidence": 2,
@@ -326,6 +353,7 @@
   {
     "petitionId": 227405,
     "inputHash": "7c7707262dbbc2b12e3757536d69c9aa0624835adad0255943eda8d20538c301",
+    "split": "tune",
     "scores": {
       "addresses_ask": 1,
       "evidence": 0,
@@ -338,6 +366,7 @@
   {
     "petitionId": 710283,
     "inputHash": "d0a1328a263124c23e0b03939db48ccf0b906f95e9ce21b2e51066aa22151f7c",
+    "split": "tune",
     "scores": {
       "addresses_ask": 2,
       "evidence": 1,
@@ -350,6 +379,7 @@
   {
     "petitionId": 53523,
     "inputHash": "d5be859779613df494c642c72c64e5c3950cd7b3fac61abfa1171488b78074b8",
+    "split": "tune",
     "scores": {
       "addresses_ask": 2,
       "evidence": 0,
@@ -362,6 +392,7 @@
   {
     "petitionId": 603619,
     "inputHash": "fdc991917e9d19acccb68afaaed78d0795e6064402c707e24fb6f0a27b8c515c",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -374,6 +405,7 @@
   {
     "petitionId": 719124,
     "inputHash": "536cff506b9867575c50426f0df652e1948e222bb939ffe2cd6e7f8820543774",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 2,
       "evidence": 1,
@@ -386,6 +418,7 @@
   {
     "petitionId": 124333,
     "inputHash": "6a6a59e5e2c229a123648ddd97b2d41acb96ba1b2307ab7f05a1cc08dc054ac3",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -398,6 +431,7 @@
   {
     "petitionId": 237487,
     "inputHash": "3702ac026f0cc9e14c2fd9a335ce43cf79f6913ddf3a56b51ddb0bd1fa7808c8",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 2,
       "evidence": 0,
@@ -410,6 +444,7 @@
   {
     "petitionId": 2199,
     "inputHash": "8f4a8b79af1c96780915819ad974d95bf69023a7aa7901df7139dc80e98eff14",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 2,
       "evidence": 0,
@@ -422,6 +457,7 @@
   {
     "petitionId": 648649,
     "inputHash": "2b594ce675caad1430a37bbba8223393441470db3a753049f0669b5db5ea04f4",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 1,
       "evidence": 2,
@@ -434,6 +470,7 @@
   {
     "petitionId": 754292,
     "inputHash": "5ef327f014f560c5f0226909061b1c3ed9d07a7e10ab56439708714e763b580f",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -446,6 +483,7 @@
   {
     "petitionId": 105868,
     "inputHash": "3bda8a158f10474e05bd4239cbcfc7c03b357613a6c158c0b7120eda873b2575",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 1,
       "evidence": 2,
@@ -458,6 +496,7 @@
   {
     "petitionId": 251627,
     "inputHash": "52ceaaa79e140a7d8046fe44aea1a2f3f4432c2994c5bc82b15b1dca1c252020",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 1,
       "evidence": 2,
@@ -470,6 +509,7 @@
   {
     "petitionId": 32542,
     "inputHash": "862cc6a625465e1a125b2c842d6e08a420cbcb240c90291a86dc997a32d5b0e4",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -482,6 +522,7 @@
   {
     "petitionId": 631561,
     "inputHash": "d84a577420a56eb7fc53d870daa6cd8845a6c260dfde4a9fc7bf1b74fc228366",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -494,6 +535,7 @@
   {
     "petitionId": 725716,
     "inputHash": "4f817a539bb7b67a99a449952a9c37279984fa34b1268732dfcc78269fb6d6d4",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 2,
       "evidence": 1,
@@ -506,6 +548,7 @@
   {
     "petitionId": 167596,
     "inputHash": "8bf360ea48fde59f1d0786225d2a85902b96ea065d6dbe7b3dd0dacd103d4ec1",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -518,6 +561,7 @@
   {
     "petitionId": 247912,
     "inputHash": "b1964b4728e57b1d67a31e8cc4daa94c7c58db2875d0f9ecbb269b80c0841c43",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 2,
       "evidence": 1,
@@ -530,6 +574,7 @@
   {
     "petitionId": 30225,
     "inputHash": "8d33c249a6552037444c84b3375af74408a96c458c2e1d4c9d97249b24f3e2f6",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 0,
       "evidence": 0,
@@ -542,6 +587,7 @@
   {
     "petitionId": 643987,
     "inputHash": "39a338557e05995d6f7f5bffc8c31c824b6c378b0e320413d9610ab60607fc1f",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 2,
       "evidence": 1,
@@ -554,6 +600,7 @@
   {
     "petitionId": 731497,
     "inputHash": "26910b6b76ab09b78ba37d902eba301628a696de8bcc02fdc3c0220d5a2e9524",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 2,
       "evidence": 0,
@@ -566,6 +613,7 @@
   {
     "petitionId": 111879,
     "inputHash": "46dae28e7bab45f5c68078664969d45b017fb51b7bb2c11ec64ab828fdbb6f81",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 1,
       "evidence": 1,
@@ -578,6 +626,7 @@
   {
     "petitionId": 205348,
     "inputHash": "a5439c4c999093c7b9a5492946eaad41807497feaee7c15e1354367325abb171",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 2,
       "evidence": 1,
@@ -590,6 +639,7 @@
   {
     "petitionId": 38011,
     "inputHash": "97d720021bb3b0110cf88e03e3f8f1baa720f84711778a7556873ec1eed0e7fc",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 2,
       "evidence": 1,
@@ -602,6 +652,7 @@
   {
     "petitionId": 661407,
     "inputHash": "e5c807f6606f72ea21a0bf8e559f681e7ac32b23ac9f47d2ed1e46ea6734d253",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 2,
       "evidence": 0,
@@ -614,6 +665,7 @@
   {
     "petitionId": 771833,
     "inputHash": "19cfc1e9a6d3ff1a772149cfaf278a7b1b7889b1755ea8acaa13fc91e89d4302",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 2,
       "evidence": 0,
@@ -626,6 +678,7 @@
   {
     "petitionId": 190708,
     "inputHash": "621513d90885f60147d5af605e8659e89438844a2f361ea206e9868c3ff301d5",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 0,
       "evidence": 0,
@@ -638,6 +691,7 @@
   {
     "petitionId": 206568,
     "inputHash": "129088a49e337774130ae4e4d3d0ec9c497ed17cb53541391aa1e9d76da3b04a",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 2,
       "evidence": 1,
@@ -650,6 +704,7 @@
   {
     "petitionId": 46695,
     "inputHash": "e6369a28e170dc1f075bba12348ff4f1125da357b106ae8215e4aba3ec7ff30b",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 0,
       "evidence": 0,
@@ -662,6 +717,7 @@
   {
     "petitionId": 631763,
     "inputHash": "091280a58b0bb39d733f0ff6598facfe5fc72b4cd5c6bec64affc502f11011aa",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -674,6 +730,7 @@
   {
     "petitionId": 704793,
     "inputHash": "90eff26b4a84da259b2bf74b1abef1ec8fa0dc4352b37017a8ca8e118c3a6c6b",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -686,6 +743,7 @@
   {
     "petitionId": 183943,
     "inputHash": "c503ee2f5917f2ce683c2ce0f25ff01fe0a97f4c16e180a44798f0cdc2d50cba",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 2,
       "evidence": 2,
@@ -698,6 +756,7 @@
   {
     "petitionId": 239406,
     "inputHash": "7cdec51a9bc3d2d7dbbb64861719e2ec2cf6ed1a98f56f232d8244846e4910fa",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 1,
       "evidence": 1,
@@ -710,6 +769,7 @@
   {
     "petitionId": 53083,
     "inputHash": "85de819e934bb0ae7cc570b3eeb1138156f57390ca7ebb0381ea4cab100f7db2",
+    "split": "holdout",
     "scores": {
       "addresses_ask": 2,
       "evidence": 1,

@@ -1,15 +1,17 @@
-// Hand-label a stratified sample of responses into eval/gold.json. Resumable.
+// Hand-label new responses into eval/gold.json, one at a time. Saves after each.
+// Usage: pnpm gold:label [count=10] [tune|holdout]
 import { readFile, writeFile } from "node:fs/promises";
 import { stdin, stdout } from "node:process";
 import { createInterface } from "node:readline/promises";
 import { isNotNull } from "drizzle-orm";
 import { db } from "@/db";
 import { CRITERIA, petitions, STANCES } from "@/db/schema";
-import { type GoldLabel, sampleForGold } from "@/lib/gold";
+import { type GoldLabel, type Split, sampleForGold } from "@/lib/gold";
 import { buildRequest, RUBRIC, STANCE_OPTIONS } from "@/lib/judge";
 
 const FILE = "eval/gold.json";
-const SIZE = 30;
+const SIZE = Number(process.argv[2] ?? 10);
+const split: Split = process.argv[3] === "holdout" ? "holdout" : "tune";
 
 const gold: GoldLabel[] = JSON.parse(await readFile(FILE, "utf8"));
 const rows = await db
@@ -17,7 +19,10 @@ const rows = await db
   .from(petitions)
   .where(isNotNull(petitions.responseDetails));
 const done = new Set(gold.map((g) => g.petitionId));
-const todo = sampleForGold(rows, SIZE).filter((r) => !done.has(r.id));
+const todo = sampleForGold(
+  rows.filter((r) => !done.has(r.id)),
+  SIZE,
+);
 const rl = createInterface({ input: stdin, output: stdout });
 
 async function ask(question: string, max: number) {
@@ -31,7 +36,7 @@ async function ask(question: string, max: number) {
 
 for (const [i, p] of todo.entries()) {
   console.log(
-    `\n${"=".repeat(72)}\n${gold.length + 1}/${SIZE}  #${p.id}  ${p.parliament}`,
+    `\n${"=".repeat(72)}\n${i + 1}/${todo.length}  #${p.id}  ${p.parliament}`,
   );
   console.log(
     `\nPETITION: ${p.action}\n${p.background}\n${p.additionalDetails ?? ""}`,
@@ -56,6 +61,7 @@ for (const [i, p] of todo.entries()) {
   gold.push({
     petitionId: p.id,
     inputHash: buildRequest(p).inputHash,
+    split,
     scores,
     stance,
   });
