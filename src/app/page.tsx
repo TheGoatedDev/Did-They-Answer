@@ -251,6 +251,12 @@ function FilterForm({
           "Topic",
           options.topics.map((t) => [t, t]),
         )}
+      {select("debate", "MPs in debate", [
+        ["debated", "Debated"],
+        ["for", "Mostly for"],
+        ["against", "Mostly against"],
+        ["none", "No debate"],
+      ])}
       {select(
         "sort",
         "Sort by",

@@ -3,6 +3,8 @@ import type { IndexRow } from "./queries";
 
 export const PAGE_SIZE = 50;
 const SORTS = ["signatures", "newest", "score"] as const;
+const DEBATE_FILTERS = ["debated", "for", "against", "none"] as const;
+type DebateFilter = (typeof DEBATE_FILTERS)[number];
 
 export type Filters = {
   verdict?: Verdict;
@@ -10,6 +12,7 @@ export type Filters = {
   department?: string;
   parliament?: string;
   topic?: string;
+  debate?: DebateFilter;
   sort: (typeof SORTS)[number];
   page: number;
 };
@@ -29,6 +32,7 @@ export function parseFilters(sp: SearchParams): Filters {
     department: one(sp.department),
     parliament: one(sp.parliament),
     topic: one(sp.topic),
+    debate: oneOf(DEBATE_FILTERS, one(sp.debate)),
     sort: oneOf(SORTS, one(sp.sort)) ?? "signatures",
     page: Number.isFinite(page) && page > 0 ? page : 1,
   };
@@ -43,7 +47,8 @@ export function applyFilters(rows: IndexRow[], f: Filters) {
       (!f.department ||
         r.departments.some((d) => d.acronym === f.department)) &&
       (!f.parliament || r.parliament === f.parliament) &&
-      (!f.topic || r.topics.includes(f.topic)),
+      (!f.topic || r.topics.includes(f.topic)) &&
+      (!f.debate || matchesDebate(r, f.debate)),
   );
   const sorted = matched.toSorted((a, b) => {
     if (f.sort === "newest")
@@ -60,6 +65,15 @@ export function applyFilters(rows: IndexRow[], f: Filters) {
     page,
     pages,
   };
+}
+
+// "for"/"against" mean more rated MPs on that side than the other.
+function matchesDebate({ debate }: IndexRow, f: DebateFilter) {
+  if (f === "none") return !debate;
+  if (f === "debated") return !!debate;
+  const c = debate?.counts;
+  if (!c) return false;
+  return f === "for" ? c.for > c.against : c.against > c.for;
 }
 
 export function facets(rows: IndexRow[]) {
