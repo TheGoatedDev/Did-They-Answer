@@ -11,7 +11,7 @@ Requires Node 24, pnpm and Docker.
 ```sh
 pnpm install
 docker compose up -d db
-cp .env.example .env.local   # or: pass-cli run --env-file .env.pass -- pnpm dev
+cp .env.example .env.local
 pnpm dev
 ```
 
@@ -36,12 +36,10 @@ Git hooks: `pre-commit` runs Biome on staged files. `pre-push` runs the typechec
 
 The judge calls `typesafe/jev-1.14` through OpenRouter and needs an OpenRouter API key in `OPENROUTER_API_KEY`.
 
-1. Add the key, either in `.env.local` (gitignored) or as a Proton Pass item referenced from `.env.pass`.
+1. Add the key to `.env.local`, which is gitignored.
 2. Run `pnpm sync:local` if the local database is empty.
 3. Run `pnpm jev:check` to make one call and check the result. It costs a fraction of a cent.
 4. Run `pnpm judge:local` to judge every response, about 2,600 calls, roughly $0.20 in total.
-
-With Proton Pass, prefix the command: `pass-cli run --env-file .env.pass -- pnpm jev:check`.
 
 ## Deployment
 

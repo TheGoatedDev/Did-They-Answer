@@ -194,10 +194,7 @@ Every page renders on the server and is cached by tag.
   - `CRON_SECRET`
   - `NEXT_PUBLIC_POSTHOG_KEY` and `NEXT_PUBLIC_POSTHOG_HOST`. These two are set as build-time variables in Coolify.
 - `docker-compose.yml` runs Postgres 18 for local development.
-- Run locally with `pass-cli run --env-file .env.pass -- pnpm dev`.
-  - `.env.pass` holds only `pass://` references, so it is committed.
-  - `.env.local` is gitignored.
-  - `.env.example` lists every variable.
+- Local secrets live in `.env.local`, which is gitignored. `.env.example` lists every variable.
 
 ## Delivery
 
