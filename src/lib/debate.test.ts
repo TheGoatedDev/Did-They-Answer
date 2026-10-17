@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { debateIdFrom, partyOn, speakers } from "./debate";
+import { debateIdFrom, matchDebate, partyOn, speakers } from "./debate";
 
 const span = (startDate: string, endDate: string | null, name: string) => ({
   startDate,
@@ -47,6 +47,36 @@ describe("debateIdFrom", () => {
   });
 });
 
+describe("matchDebate", () => {
+  const r = (
+    Title: string,
+    DebateSectionExtId: string,
+    DebateSection = "Commons Chamber",
+  ) => ({
+    Title,
+    DebateSection,
+    DebateSectionExtId,
+  });
+
+  it("matches the URL slug against the debate title", () => {
+    expect(
+      matchDebate(
+        [r("Fraud", "A"), r("EU Referendum Rules", "B")],
+        "EUReferendumRules",
+      ),
+    ).toBe("B");
+  });
+
+  it("never matches a whole sitting", () => {
+    expect(
+      matchDebate(
+        [r("Westminster Hall", "S", "Westminster Hall")],
+        "WestminsterHall",
+      ),
+    ).toBeNull();
+  });
+});
+
 describe("speakers", () => {
   const item = (
     MemberId: number | null,
@@ -60,6 +90,7 @@ describe("speakers", () => {
       item(null, "16:30:00", null, "Timestamp"),
       item(1, "first"),
       item(null, "Order."),
+      item(-1, "Hon. Members: Hear, hear!"),
       item(2, "other"),
       item(1, "second"),
     ]);

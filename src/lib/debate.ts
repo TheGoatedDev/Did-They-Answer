@@ -76,12 +76,61 @@ async function getJson(url: string) {
   return res.json();
 }
 
-export async function fetchDebate(extId: string) {
-  const debate = debateSchema.parse(
+const searchSchema = z.object({
+  Results: z.array(
+    z.object({
+      DebateSection: z.string(),
+      Title: z.string(),
+      DebateSectionExtId: z.string(),
+    }),
+  ),
+});
+
+const squash = (s: string) => s.replace(/[^a-z0-9]/gi, "").toLowerCase();
+
+/**
+ * The debate on the sitting whose title matches the URL's slug, e.g. "EUReferendumRules".
+ * Sitting headers ("Westminster Hall") are skipped: they hold every debate that day.
+ */
+export function matchDebate(
+  results: z.infer<typeof searchSchema>["Results"],
+  slug: string,
+) {
+  return (
+    results.find(
+      (r) => r.Title !== r.DebateSection && squash(r.Title) === squash(slug),
+    )?.DebateSectionExtId ?? null
+  );
+}
+
+async function getDebate(extId: string) {
+  return debateSchema.safeParse(
     await getJson(
       `https://hansard-api.parliament.uk/debates/debate/${extId}.json`,
-    ),
+    ).catch(() => null),
   );
+}
+
+export async function fetchDebate(transcriptUrl: string) {
+  let parsed = await getDebate(debateIdFrom(transcriptUrl) ?? "");
+  // Some petition links carry ids Hansard no longer resolves; find the debate by date and title.
+  const link =
+    /\/(commons|lords)\/(\d{4}-\d{2}-\d{2})\/debates\/[^/]+\/([^/?#]+)/i.exec(
+      transcriptUrl,
+    );
+  if (!parsed.success && link) {
+    const [, house, date, slug] = link;
+    const { Results } = searchSchema.parse(
+      await getJson(
+        `https://hansard-api.parliament.uk/search/debates.json?queryParameters.house=${house}&queryParameters.startDate=${date}&queryParameters.endDate=${date}&queryParameters.take=100`,
+      ),
+    );
+    const extId = matchDebate(Results, slug);
+    if (extId) parsed = await getDebate(extId);
+  }
+  if (!parsed.success)
+    throw new Error(`no Hansard debate for ${transcriptUrl}`);
+  const debate = parsed.data;
   // Long debates split into child sections; speakers can appear in any of them.
   return { ...debate, Items: flatten(debate) };
 }
@@ -124,12 +173,13 @@ export type Speaker = { speeches: string[]; role: DebateRole | null };
 
 /**
  * Each member's contributions in speaking order, with any role that makes their words
- * not a personal position. Contributions without a MemberId are dropped.
+ * not a personal position. Contributions without a real MemberId are dropped.
  */
 export function speakers(items: Item[]) {
   const out = new Map<number, Speaker>();
   const contributions = items.filter(
-    (i) => i.ItemType === "Contribution" && i.MemberId !== null,
+    // Hansard gives unidentified speakers MemberId -1.
+    (i) => i.ItemType === "Contribution" && (i.MemberId ?? 0) > 0,
   );
   for (const item of contributions) {
     const id = item.MemberId as number;
@@ -223,11 +273,13 @@ export async function runDebateStances(
   );
 
   // Several petitions are often debated together; rate each debate once for all of them.
-  const debates = new Map<string, DebatePetition[]>();
+  const debates = new Map<string, { url: string; group: DebatePetition[] }>();
   for (const p of debated) {
     const debateId = p.url && debateIdFrom(p.url);
-    if (!debateId || (!petitionIds.length && rated.has(p.id))) continue;
-    debates.set(debateId, [...(debates.get(debateId) ?? []), p]);
+    if (!p.url || !debateId || (!petitionIds.length && rated.has(p.id)))
+      continue;
+    const group = debates.get(debateId)?.group ?? [];
+    debates.set(debateId, { url: p.url, group: [...group, p] });
   }
 
   let items = 0;
@@ -237,9 +289,10 @@ export async function runDebateStances(
   const worker = async () => {
     // Check the deadline before taking a debate so an untaken one is never lost.
     while (queue.length > 0 && Date.now() <= deadline) {
-      const [debateId, group] = queue.shift() as (typeof queue)[number];
+      const [debateId, { url, group }] =
+        queue.shift() as (typeof queue)[number];
       try {
-        const debate = await fetchDebate(debateId);
+        const debate = await fetchDebate(url);
         const bySpeaker = speakers(debate.Items);
         const members = await fetchMembers(
           [...bySpeaker.keys()],
