@@ -35,9 +35,15 @@ export const CRITERIA = [
   "specificity",
 ] as const;
 
+export const DEBATE_STANCES = ["for", "neutral", "against"] as const;
+// Speakers whose words are not a personal position; kept out of party totals.
+export const DEBATE_ROLES = ["chair", "minister", "opener"] as const;
+
 export type Stance = (typeof STANCES)[number];
 export type Verdict = (typeof VERDICTS)[number];
 export type Criterion = (typeof CRITERIA)[number];
+export type DebateStance = (typeof DEBATE_STANCES)[number];
+export type DebateRole = (typeof DEBATE_ROLES)[number];
 
 const tz = { withTimezone: true } as const;
 
@@ -89,6 +95,30 @@ export const assessments = pgTable(
   (t) => [
     uniqueIndex().on(t.petitionId, t.model, t.promptVersion, t.inputHash),
   ],
+);
+
+export const debateStances = pgTable(
+  "debate_stances",
+  {
+    id: serial("id").primaryKey(),
+    petitionId: integer("petition_id")
+      .notNull()
+      .references(() => petitions.id),
+    // Hansard debate ExtId, shared by every petition debated together.
+    debateId: text("debate_id").notNull(),
+    memberId: integer("member_id").notNull(),
+    name: text("name").notNull(),
+    // Party held on the debate date, not the member's current one.
+    party: text("party").notNull(),
+    role: text("role", { enum: DEBATE_ROLES }),
+    speeches: integer("speeches").notNull(),
+    stance: text("stance", { enum: DEBATE_STANCES }).notNull(),
+    confidence: real("confidence").notNull(),
+    model: text("model").notNull(),
+    raw: jsonb("raw").notNull(),
+    createdAt: timestamp("created_at", tz).notNull().defaultNow(),
+  },
+  (t) => [uniqueIndex().on(t.petitionId, t.memberId)],
 );
 
 export const crawlCursors = pgTable("crawl_cursors", {

@@ -1,7 +1,7 @@
 import { and, desc, eq, isNotNull } from "drizzle-orm";
 import { cacheLife, cacheTag } from "next/cache";
 import { db } from "@/db";
-import { assessments, jobRuns, petitions } from "@/db/schema";
+import { assessments, debateStances, jobRuns, petitions } from "@/db/schema";
 import { PROMPT_VERSION } from "./judge";
 
 // Every cached read shares one tag; the internal job routes expire it after writing.
@@ -79,6 +79,30 @@ export async function getPetition(id: number) {
   if (!assessment) return { petition: rest, assessment: null };
   const { raw: _a, ...judged } = assessment;
   return { petition: rest, assessment: judged };
+}
+
+export type DebateStanceRow = Awaited<
+  ReturnType<typeof getDebateStances>
+>[number];
+
+export async function getDebateStances(petitionId: number) {
+  "use cache";
+  cacheTag(TAG);
+  cacheLife("max");
+  return db
+    .select({
+      memberId: debateStances.memberId,
+      name: debateStances.name,
+      party: debateStances.party,
+      role: debateStances.role,
+      speeches: debateStances.speeches,
+      stance: debateStances.stance,
+      confidence: debateStances.confidence,
+      model: debateStances.model,
+    })
+    .from(debateStances)
+    .where(eq(debateStances.petitionId, petitionId))
+    .orderBy(debateStances.party, debateStances.name);
 }
 
 export async function getLastSync() {

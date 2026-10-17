@@ -1,80 +1,102 @@
-// Rate every MP in a Hansard debate as for, neutral or against each petition it covers.
-// Usage: pnpm debate:stance <debateExtId> <petitionId...>
-// Writes nothing to the database; prints a per-member and per-party table.
+// Rate every MP in each petition's Hansard debate as for, neutral or against the petition,
+// and store the ratings in debate_stances.
+// Usage: pnpm debate:stance [petitionId...]   (no ids: every debated petition not yet rated)
+import { inArray, isNotNull, sql } from "drizzle-orm";
+import { db } from "@/db";
+import { debateStances, petitions } from "@/db/schema";
 import {
-  type DebatePetition,
+  debateIdFrom,
   fetchDebate,
   fetchMembers,
   rateMember,
-  speechesByMember,
+  speakers,
 } from "@/lib/debate";
-import { createJevClient } from "@/lib/judge";
+import { createJevClient, MODEL } from "@/lib/judge";
 
-const [extId, ...petitionIds] = process.argv.slice(2);
-if (!extId || petitionIds.length === 0) {
-  throw new Error("Usage: pnpm debate:stance <debateExtId> <petitionId...>");
-}
-
-const petitions: DebatePetition[] = await Promise.all(
-  petitionIds.map(async (id) => {
-    const res = await fetch(
-      `https://petition.parliament.uk/archived/petitions/${id}.json`,
-    );
-    if (!res.ok) throw new Error(`${res.status} petition ${id}`);
-    const json = await res.json();
-    return { id: Number(id), action: json.data.attributes.action as string };
-  }),
+const ids = process.argv.slice(2).map(Number);
+const debated = await db
+  .select({
+    id: petitions.id,
+    action: petitions.action,
+    url: sql<string>`${petitions.debate}->>'transcript_url'`,
+  })
+  .from(petitions)
+  .where(
+    ids.length
+      ? inArray(petitions.id, ids)
+      : isNotNull(sql`${petitions.debate}->>'transcript_url'`),
+  );
+const rated = new Set(
+  (
+    await db
+      .selectDistinct({ id: debateStances.petitionId })
+      .from(debateStances)
+  ).map((r) => r.id),
 );
 
-const debate = await fetchDebate(extId);
-const date = debate.Overview.Date.slice(0, 10);
-const speeches = speechesByMember(debate.Items);
-const members = await fetchMembers([...speeches.keys()], date);
+// Several petitions are often debated together; rate each debate once for all of them.
+const debates = new Map<string, typeof debated>();
+for (const p of debated) {
+  const debateId = p.url && debateIdFrom(p.url);
+  if (!debateId || (!ids.length && rated.has(p.id))) continue;
+  debates.set(debateId, [...(debates.get(debateId) ?? []), p]);
+}
+
 const client = createJevClient();
-
-const rows = await Promise.all(
-  [...speeches].map(async ([id, texts]) => {
-    const member = members.get(id) ?? {
-      name: `Member ${id}`,
-      party: "Unknown",
-    };
-    const ratings = await rateMember(
-      client,
-      debate.Overview.Title,
-      member,
-      texts,
-      petitions,
+let done = 0;
+for (const [debateId, group] of debates) {
+  try {
+    const debate = await fetchDebate(debateId);
+    const date = debate.Overview.Date.slice(0, 10);
+    const bySpeaker = speakers(debate.Items);
+    const members = await fetchMembers([...bySpeaker.keys()], date);
+    const rows = await Promise.all(
+      [...bySpeaker].map(async ([memberId, s]) => {
+        const member = members.get(memberId) ?? {
+          name: `Member ${memberId}`,
+          party: "Unknown",
+        };
+        const { raw, ratings } = await rateMember(
+          client,
+          debate.Overview.Title,
+          member,
+          s.speeches,
+          group,
+        );
+        return ratings.map((r) => ({
+          ...r,
+          ...member,
+          debateId,
+          memberId,
+          role: s.role,
+          speeches: s.speeches.length,
+          model: MODEL,
+          raw,
+        }));
+      }),
     );
-    return { ...member, speeches: texts.length, ratings };
-  }),
-);
-rows.sort(
-  (a, b) => a.party.localeCompare(b.party) || a.name.localeCompare(b.name),
-);
-
-console.log(`${debate.Overview.Title}, ${date}\n`);
-for (const p of petitions) console.log(`p${p.id}: ${p.action}`);
-
-console.log("\nBy member (stance, confidence)");
-for (const r of rows) {
-  const cells = r.ratings.map(
-    (x) => `p${x.petitionId} ${x.stance} ${x.confidence.toFixed(2)}`,
-  );
-  console.log(
-    `${r.party.padEnd(26)} ${r.name.padEnd(26)} ${String(r.speeches).padStart(3)}  ${cells.join("  ")}`,
-  );
+    await db
+      .insert(debateStances)
+      .values(rows.flat())
+      .onConflictDoUpdate({
+        target: [debateStances.petitionId, debateStances.memberId],
+        set: {
+          stance: sql`excluded.stance`,
+          confidence: sql`excluded.confidence`,
+          party: sql`excluded.party`,
+          role: sql`excluded.role`,
+          speeches: sql`excluded.speeches`,
+          raw: sql`excluded.raw`,
+          createdAt: sql`now()`,
+        },
+      });
+    done += 1;
+    console.log(
+      `${debateId} ${debate.Overview.Title}: ${bySpeaker.size} speakers, petitions ${group.map((p) => p.id).join(", ")}`,
+    );
+  } catch (error) {
+    console.error(`${debateId}: ${(error as Error).message}`);
+  }
 }
-
-console.log("\nBy party (members for / neutral / against)");
-for (const party of [...new Set(rows.map((r) => r.party))]) {
-  const inParty = rows.filter((r) => r.party === party);
-  const cells = petitions.map((p) => {
-    const n = (s: string) =>
-      inParty.filter(
-        (r) => r.ratings.find((x) => x.petitionId === p.id)?.stance === s,
-      ).length;
-    return `p${p.id} ${n("for")}/${n("neutral")}/${n("against")}`;
-  });
-  console.log(`${party.padEnd(26)} ${cells.join("  ")}`);
-}
-process.exit(0);
+console.log(`Rated ${done} of ${debates.size} debates`);
+process.exit(done === debates.size ? 0 : 1);

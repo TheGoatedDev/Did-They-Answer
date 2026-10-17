@@ -1,4 +1,4 @@
-import type { Stance, Verdict } from "@/db/schema";
+import type { DebateRole, DebateStance, Stance, Verdict } from "@/db/schema";
 import { CURRENT_PARLIAMENT } from "./petitions-api";
 
 export const VERDICT_LABELS: Record<Verdict, string> = {
@@ -12,6 +12,18 @@ export const STANCE_LABELS: Record<Stance, string> = {
   partially_accepts: "Partly accepts",
   declines: "Declines",
   deflects: "Deflects",
+};
+
+export const DEBATE_STANCE_LABELS: Record<DebateStance, string> = {
+  for: "For",
+  neutral: "Neutral",
+  against: "Against",
+};
+
+export const DEBATE_ROLE_LABELS: Record<DebateRole, string> = {
+  chair: "Chair",
+  minister: "Minister",
+  opener: "Opened the debate",
 };
 
 export const CRITERION_LABELS = {

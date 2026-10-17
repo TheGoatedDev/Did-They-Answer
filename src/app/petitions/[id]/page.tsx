@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
+import { DebateStances } from "@/components/debate-stances";
 import {
   LowConfidence,
   VERDICT_SWATCH,
@@ -16,7 +17,7 @@ import {
   STANCE_LABELS,
 } from "@/lib/labels";
 import { sourceUrl } from "@/lib/petitions-api";
-import { getPetition } from "@/lib/queries";
+import { getDebateStances, getPetition } from "@/lib/queries";
 
 const REPO = "https://github.com/TheGoatedDev/did-they-answer";
 
@@ -48,6 +49,7 @@ async function PetitionDetail({
   params,
 }: Pick<PageProps<"/petitions/[id]">, "params">) {
   const { petition: p, assessment: a } = await load(params);
+  const stances = await getDebateStances(p.id);
   const disputeUrl = `${REPO}/issues/new?${new URLSearchParams({
     template: "dispute.yml",
     title: `Dispute: petition ${p.id}`,
@@ -159,6 +161,12 @@ async function PetitionDetail({
                 </li>
               )}
             </ul>
+            {stances.length > 0 && (
+              <DebateStances
+                rows={stances}
+                governmentStance={a?.stance ?? null}
+              />
+            )}
           </section>
         )}
       </div>

@@ -1,26 +1,47 @@
 import { choice } from "@typesafe-ai/sdk";
 import { z } from "zod";
+import type { DebateRole, DebateStance } from "@/db/schema";
 import type { JevClient } from "@/lib/judge";
 
-export const DEBATE_STANCES = {
+export const STANCE_OPTIONS = {
   for: "Supports what the petition asks for",
   neutral:
     "Takes no clear position on what the petition asks for, is mixed, or does not discuss it",
   against: "Opposes what the petition asks for",
-};
-export type DebateStance = keyof typeof DEBATE_STANCES;
+} satisfies Record<DebateStance, string>;
 
+const itemSchema = z.object({
+  ItemType: z.string(),
+  MemberId: z.number().nullable(),
+  AttributedTo: z.string().nullable(),
+  Value: z.string(),
+});
+type Item = z.infer<typeof itemSchema>;
+type Section = { Items: Item[]; ChildDebates?: Section[] };
+const sectionSchema: z.ZodType<Section> = z.lazy(() =>
+  z.object({
+    Items: z.array(itemSchema),
+    ChildDebates: z.array(sectionSchema).optional(),
+  }),
+);
 const debateSchema = z.object({
   Overview: z.object({ Title: z.string(), Date: z.string() }),
-  Items: z.array(
-    z.object({
-      ItemType: z.string(),
-      MemberId: z.number().nullable(),
-      AttributedTo: z.string().nullable(),
-      Value: z.string(),
-    }),
-  ),
+  Items: z.array(itemSchema),
+  ChildDebates: z.array(sectionSchema).optional(),
 });
+
+const flatten = (s: Section): Item[] => [
+  ...s.Items,
+  ...(s.ChildDebates ?? []).flatMap(flatten),
+];
+
+/** The Hansard ExtId in a transcript URL, e.g. .../debates/DAEA92D0-.../LeavingTheEuropeanUnion. */
+export function debateIdFrom(transcriptUrl: string) {
+  return (
+    /hansard\.parliament\.uk\/.+\/debates\/([^/]+)/.exec(transcriptUrl)?.[1] ??
+    null
+  );
+}
 
 const historySchema = z.array(
   z.object({
@@ -49,11 +70,13 @@ async function getJson(url: string) {
 }
 
 export async function fetchDebate(extId: string) {
-  return debateSchema.parse(
+  const debate = debateSchema.parse(
     await getJson(
       `https://hansard-api.parliament.uk/debates/debate/${extId}.json`,
     ),
   );
+  // Long debates split into child sections; speakers can appear in any of them.
+  return { ...debate, Items: flatten(debate) };
 }
 
 /** The party a member sat for on `date` (YYYY-MM-DD), not their current one. */
@@ -90,13 +113,32 @@ export async function fetchMembers(ids: number[], date: string) {
   return members;
 }
 
-/** Each member's contributions in speaking order. Drops the chair, who has no MemberId. */
-export function speechesByMember(items: z.infer<typeof debateSchema>["Items"]) {
-  const out = new Map<number, string[]>();
-  for (const item of items) {
-    if (item.ItemType !== "Contribution" || item.MemberId === null) continue;
-    out.set(item.MemberId, [...(out.get(item.MemberId) ?? []), item.Value]);
+export type Speaker = { speeches: string[]; role: DebateRole | null };
+
+/**
+ * Each member's contributions in speaking order, with any role that makes their words
+ * not a personal position. Contributions without a MemberId are dropped.
+ */
+export function speakers(items: Item[]) {
+  const out = new Map<number, Speaker>();
+  const contributions = items.filter(
+    (i) => i.ItemType === "Contribution" && i.MemberId !== null,
+  );
+  for (const item of contributions) {
+    const id = item.MemberId as number;
+    const s = out.get(id) ?? { speeches: [], role: null };
+    s.speeches.push(item.Value);
+    const said = item.AttributedTo ?? "";
+    if (/in the Chair/i.test(said)) s.role = "chair";
+    // Office holders are attributed by title, e.g. "The Minister for Housing (Jane Doe)".
+    else if (s.role !== "chair" && /^The /.test(said)) s.role = "minister";
+    out.set(id, s);
   }
+  // The first non-chair speaker moves the motion: in petition debates, for the Petitions Committee.
+  const first = contributions
+    .map((i) => out.get(i.MemberId as number))
+    .find((s) => s?.role !== "chair");
+  if (first && first.role === null) first.role = "opener";
   return out;
 }
 
@@ -114,7 +156,7 @@ export async function rateMember(
       `p${p.id}`,
       choice(
         `Based only on what ${member.name} said in this debate, what is their position on the petition "${p.action}"?`,
-        DEBATE_STANCES,
+        STANCE_OPTIONS,
       ),
     ]),
   );
@@ -127,12 +169,15 @@ export async function rateMember(
     },
     questions,
   });
-  return petitions.map((p) => {
-    const a = result.answers[`p${p.id}`];
-    return {
-      petitionId: p.id,
-      stance: a.choice as DebateStance,
-      confidence: a.confidence ?? 0,
-    };
-  });
+  return {
+    raw: result,
+    ratings: petitions.map((p) => {
+      const a = result.answers[`p${p.id}`];
+      return {
+        petitionId: p.id,
+        stance: a.choice as DebateStance,
+        confidence: a.confidence ?? 0,
+      };
+    }),
+  };
 }

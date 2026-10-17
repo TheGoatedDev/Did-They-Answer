@@ -31,8 +31,10 @@ export function ShareBars<K extends string>({
   caption,
   categories,
   shares,
+  unit = "Responses",
 }: {
   caption: string;
+  unit?: string;
   categories: readonly Category<K>[];
   shares: (Share<K> & { label: string })[];
 }) {
@@ -90,7 +92,7 @@ export function ShareBars<K extends string>({
                 </th>
               ))}
               <th scope="col" className="py-1 text-right font-medium">
-                Responses
+                {unit}
               </th>
             </tr>
           </thead>
