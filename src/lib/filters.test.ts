@@ -24,6 +24,7 @@ const row = (id: number, over: Partial<IndexRow> = {}): IndexRow => ({
     stance: "declines",
     needsReview: false,
   },
+  debate: null,
   ...over,
 });
 

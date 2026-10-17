@@ -1,4 +1,4 @@
-import { and, desc, eq, isNotNull } from "drizzle-orm";
+import { and, desc, eq, isNotNull, sql } from "drizzle-orm";
 import { cacheLife, cacheTag } from "next/cache";
 import { db } from "@/db";
 import { assessments, debateStances, jobRuns, petitions } from "@/db/schema";
@@ -22,6 +22,24 @@ function latestAssessments() {
     .as("latest");
 }
 
+// Per-petition MP tally, leaving out the chair, minister and opener like the detail page.
+function debateTallies() {
+  const backbench = (stance: string) =>
+    sql<number>`(count(*) filter (where ${debateStances.role} is null and ${debateStances.stance} = ${stance}))::int`.mapWith(
+      Number,
+    );
+  return db
+    .select({
+      petitionId: debateStances.petitionId,
+      for: backbench("for").as("for"),
+      neutral: backbench("neutral").as("neutral"),
+      against: backbench("against").as("against"),
+    })
+    .from(debateStances)
+    .groupBy(debateStances.petitionId)
+    .as("tallies");
+}
+
 export type IndexRow = Awaited<ReturnType<typeof getIndex>>[number];
 
 export async function getIndex() {
@@ -29,6 +47,7 @@ export async function getIndex() {
   cacheTag(TAG);
   cacheLife("max");
   const latest = latestAssessments();
+  const tallies = debateTallies();
   const rows = await db
     .select({
       id: petitions.id,
@@ -42,17 +61,43 @@ export async function getIndex() {
       total: latest.total,
       stance: latest.stance,
       needsReview: latest.needsReview,
+      debated: sql<boolean>`${petitions.debate}->>'debated_on' is not null`,
+      mpsFor: tallies.for,
+      mpsNeutral: tallies.neutral,
+      mpsAgainst: tallies.against,
     })
     .from(petitions)
     .leftJoin(latest, eq(latest.petitionId, petitions.id))
+    .leftJoin(tallies, eq(tallies.petitionId, petitions.id))
     .where(isNotNull(petitions.responseDetails));
-  return rows.map(({ verdict, total, stance, needsReview, ...r }) => ({
-    ...r,
-    assessment:
-      verdict && total !== null && stance && needsReview !== null
-        ? { verdict, total, stance, needsReview }
+  return rows.map(
+    ({
+      verdict,
+      total,
+      stance,
+      needsReview,
+      debated,
+      mpsFor,
+      mpsNeutral,
+      mpsAgainst,
+      ...r
+    }) => ({
+      ...r,
+      assessment:
+        verdict && total !== null && stance && needsReview !== null
+          ? { verdict, total, stance, needsReview }
+          : null,
+      // null: no debate. counts null: debated but MPs not rated yet.
+      debate: debated
+        ? {
+            counts:
+              mpsFor !== null && mpsNeutral !== null && mpsAgainst !== null
+                ? { for: mpsFor, neutral: mpsNeutral, against: mpsAgainst }
+                : null,
+          }
         : null,
-  }));
+    }),
+  );
 }
 
 export async function getPetition(id: number) {

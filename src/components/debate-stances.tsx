@@ -11,7 +11,7 @@ import type { DebateStanceRow } from "@/lib/queries";
 
 const LOW_CONFIDENCE = 0.6;
 
-const SWATCH: Record<DebateStance, string> = {
+export const DEBATE_SWATCH: Record<DebateStance, string> = {
   for: "bg-stance-accepts",
   neutral: "bg-muted-foreground/40",
   against: "bg-stance-declines",
@@ -20,7 +20,7 @@ const SWATCH: Record<DebateStance, string> = {
 const CATEGORIES: Category<DebateStance>[] = DEBATE_STANCES.map((s) => ({
   key: s,
   label: DEBATE_STANCE_LABELS[s],
-  swatch: SWATCH[s],
+  swatch: DEBATE_SWATCH[s],
 }));
 
 function tally(rows: DebateStanceRow[], group: string): Share<DebateStance> {
@@ -114,7 +114,7 @@ export function DebateStances({
                       <span className="inline-flex items-center gap-1.5">
                         <span
                           aria-hidden
-                          className={`size-2.5 rounded-sm ${SWATCH[r.stance]}`}
+                          className={`size-2.5 rounded-sm ${DEBATE_SWATCH[r.stance]}`}
                         />
                         {DEBATE_STANCE_LABELS[r.stance]}
                       </span>
@@ -138,5 +138,26 @@ export function DebateStances({
         the totals. Neutral includes MPs who did not discuss this petition.
       </p>
     </div>
+  );
+}
+
+export function DebateSplit({
+  counts,
+}: {
+  counts: Record<DebateStance, number>;
+}) {
+  return (
+    <span className="inline-flex gap-3 tabular-nums">
+      {DEBATE_STANCES.map((s) => (
+        <span key={s} className="inline-flex items-center gap-1">
+          <span
+            aria-hidden
+            className={`size-2.5 rounded-sm ${DEBATE_SWATCH[s]}`}
+          />
+          {counts[s]}
+          <span className="sr-only"> {DEBATE_STANCE_LABELS[s]}</span>
+        </span>
+      ))}
+    </span>
   );
 }

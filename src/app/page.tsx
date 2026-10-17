@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Suspense } from "react";
+import { DebateSplit } from "@/components/debate-stances";
 import { Button } from "@/components/ui/button";
 import {
   NativeSelect,
@@ -93,6 +94,12 @@ async function PetitionList({
               <TableHead className="text-right">Signatures</TableHead>
               <TableHead>Stance</TableHead>
               <TableHead>Assessment</TableHead>
+              <TableHead>
+                MPs in debate
+                <span className="block text-xs font-normal">
+                  For · Neutral · Against
+                </span>
+              </TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -132,6 +139,15 @@ async function PetitionList({
                   ) : (
                     <span className="text-muted-foreground">
                       Not yet assessed
+                    </span>
+                  )}
+                </TableCell>
+                <TableCell>
+                  {r.debate?.counts ? (
+                    <DebateSplit counts={r.debate.counts} />
+                  ) : (
+                    <span className="text-muted-foreground">
+                      {r.debate ? "Not yet rated" : "No debate"}
                     </span>
                   )}
                 </TableCell>
