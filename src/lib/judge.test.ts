@@ -111,14 +111,27 @@ describe("mapAnswers", () => {
     expect(row.promptVersion).toBe(PROMPT_VERSION);
   });
 
-  it("flags low or missing confidence for review", () => {
+  it("flags review when the stance is unsure or 3+ criteria are", () => {
+    const withConfidence = (conf: Partial<Record<string, number>>) => {
+      const r = fakeResult([1, 1, 1, 1, 1]);
+      for (const [k, c] of Object.entries(conf)) {
+        // biome-ignore lint/suspicious/noExplicitAny: overriding fake answers per field
+        (r.answers as any)[k].confidence = c;
+      }
+      return mapAnswers(req, r).needsReview;
+    };
+    expect(withConfidence({})).toBe(false);
+    expect(withConfidence({ specificity: 0.1, evidence: 0.2 })).toBe(false);
     expect(
-      mapAnswers(req, fakeResult([1, 1, 1, 1, 1], { confidence: 0.5 }))
-        .needsReview,
+      withConfidence({ specificity: 0.1, evidence: 0.2, outcome: 0.5 }),
     ).toBe(true);
+    expect(withConfidence({ stance: 0.5 })).toBe(true);
+  });
+
+  it("counts a missing confidence as low", () => {
     const missing = fakeResult([1, 1, 1, 1, 1]);
     // biome-ignore lint/suspicious/noExplicitAny: simulating an omitted optional field
-    delete (missing.answers.reasoning as any).confidence;
+    delete (missing.answers.stance as any).confidence;
     expect(mapAnswers(req, missing).needsReview).toBe(true);
   });
 

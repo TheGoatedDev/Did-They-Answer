@@ -21,6 +21,9 @@ export const MODEL = "typesafe/jev-1.14";
 export const PROMPT_VERSION = 1;
 
 const LOW_CONFIDENCE = 0.6;
+// Jev is often unsure on one or two criteria (v1 run: 90% of responses), so only flag
+// when the stance is unsure or most criteria are; this flagged ~41% of the v1 run.
+const LOW_CRITERIA_TO_FLAG = 3;
 // Jev switches to a slower, less accurate long-context mode past ~32KB of input.
 const LONG_CONTEXT_BYTES = 32_000;
 const MAX_SENTENCES = 254;
@@ -155,6 +158,10 @@ export function mapAnswers(request: Request, result: JudgeResult) {
       (a) => a.confidence ?? 0,
     ),
   );
+  const lowCriteria = CRITERIA.filter(
+    (c) => (answers[c].confidence ?? 0) < LOW_CONFIDENCE,
+  ).length;
+  const stanceConfidence = answers.stance.confidence ?? 0;
   const pick = answers.evidence_sentence;
   const evidenceSentence =
     pick.choice !== "none" && (pick.confidence ?? 0) >= LOW_CONFIDENCE
@@ -166,12 +173,15 @@ export function mapAnswers(request: Request, result: JudgeResult) {
     promptVersion: PROMPT_VERSION,
     inputHash: request.inputHash,
     stance: answers.stance.choice as Stance,
-    stanceConfidence: answers.stance.confidence ?? 0,
+    stanceConfidence,
     scores,
     total,
     verdict: verdictFor(total),
     minConfidence,
-    needsReview: minConfidence < LOW_CONFIDENCE || request.longContext,
+    needsReview:
+      stanceConfidence < LOW_CONFIDENCE ||
+      lowCriteria >= LOW_CRITERIA_TO_FLAG ||
+      request.longContext,
     evidenceSentence,
     inputTokens: result.usage.input_tokens,
     raw: result,

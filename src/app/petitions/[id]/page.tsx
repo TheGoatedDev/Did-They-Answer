@@ -187,8 +187,8 @@ async function PetitionDetail({
             </p>
             {a.needsReview && (
               <p className="text-sm">
-                <LowConfidence /> The model was unsure about at least one
-                answer, so treat this assessment with care.
+                <LowConfidence /> The model was unsure about the stance or about
+                most of the criteria, so treat this assessment with care.
               </p>
             )}
             <ul className="grid gap-4">

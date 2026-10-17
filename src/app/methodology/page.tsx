@@ -107,10 +107,12 @@ export default function MethodologyPage() {
           page is a sentence from the response itself, picked by the model.
         </p>
         <p>
-          The model reports its confidence in each answer. If it falls below 60%
-          on any criterion or on the stance, the assessment is marked{" "}
-          <em>low confidence</em>. These assessments are still shown, because
-          hiding them selectively would be worse than showing the uncertainty.
+          The model reports its confidence in each answer. An assessment is
+          marked <em>low confidence</em> when the model is less than 60% sure of
+          the stance, or of three or more of the five criteria. Uncertainty on
+          one or two criteria is common and is not flagged. Low-confidence
+          assessments are still shown, because hiding them selectively would be
+          worse than showing the uncertainty.
         </p>
         <p>
           This is prompt version {PROMPT_VERSION}. When the questions change,
