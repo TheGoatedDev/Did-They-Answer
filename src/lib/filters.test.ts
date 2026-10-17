@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { STANCES, VERDICTS } from "@/db/schema";
 import {
   applyFilters,
+  type Filters,
   facets,
   hrefWith,
   PAGE_SIZE,
@@ -24,6 +25,7 @@ const row = (id: number, over: Partial<IndexRow> = {}): IndexRow => ({
     stance: "declines",
     needsReview: false,
   },
+  debate: null,
   ...over,
 });
 
@@ -35,6 +37,7 @@ describe("parseFilters", () => {
       department: undefined,
       parliament: undefined,
       topic: undefined,
+      debate: undefined,
       sort: "signatures",
       page: 1,
     });
@@ -70,6 +73,25 @@ describe("applyFilters", () => {
       applyFilters(rows, { ...f, stance: "declines" }).rows.map((r) => r.id),
     ).toEqual([2]);
     expect(applyFilters(rows, { ...f, parliament: "2024-" }).total).toBe(1);
+  });
+
+  it("filters by debate and which way MPs leaned", () => {
+    const f = parseFilters({});
+    const debated = [
+      row(1, { debate: { counts: { for: 5, neutral: 9, against: 2 } } }),
+      row(2, { debate: { counts: { for: 1, neutral: 0, against: 3 } } }),
+      row(3, { debate: { counts: { for: 2, neutral: 0, against: 2 } } }),
+      row(4, { debate: { counts: null } }),
+      row(5),
+    ];
+    const ids = (debate: Filters["debate"]) =>
+      applyFilters(debated, { ...f, debate })
+        .rows.map((r) => r.id)
+        .sort();
+    expect(ids("debated")).toEqual([1, 2, 3, 4]);
+    expect(ids("none")).toEqual([5]);
+    expect(ids("for")).toEqual([1]);
+    expect(ids("against")).toEqual([2]);
   });
 
   it("sorts by signatures by default and puts unjudged last when sorting by score", () => {
