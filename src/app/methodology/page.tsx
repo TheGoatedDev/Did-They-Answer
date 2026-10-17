@@ -121,17 +121,22 @@ export default function MethodologyPage() {
 
       <section className="grid gap-3">
         <h2 className="font-heading text-2xl font-semibold">
-          Checking the model against people
+          Checking the model against independent labels
         </h2>
         {results.agreement ? (
           <>
             <p>
-              {results.n} responses were labelled by hand using the same rubric,
-              then scored by the model. Agreement with the hand labels:
+              {results.n} responses were labelled with the same rubric, then
+              scored by the model. The labels were not written by people. Two
+              Claude AI agents labelled every response independently, without
+              seeing the model&apos;s scores or each other&apos;s labels, and a
+              third agent settled any disagreements. This checks the model
+              against a different AI. It is not a human review. Agreement with
+              the labels:
             </p>
             <table className="w-full text-left text-sm">
               <caption className="sr-only">
-                Agreement between the model and hand labels
+                Agreement between the model and the check-set labels
               </caption>
               <thead>
                 <tr className="border-b">
@@ -175,7 +180,7 @@ export default function MethodologyPage() {
             <p className="text-sm text-muted-foreground">
               Run {results.ranAt?.slice(0, 10)} with {results.model}. A
               criterion agrees when the model&apos;s score, rounded, equals the
-              hand label.
+              label.
             </p>
             {disagreements.length > 0 && (
               <>
@@ -191,7 +196,7 @@ export default function MethodologyPage() {
                       >
                         {d.action}
                       </Link>
-                      : hand label {VERDICT_LABELS[d.label.verdict]} (
+                      : label {VERDICT_LABELS[d.label.verdict]} (
                       {STANCE_LABELS[d.label.stance]}), model{" "}
                       {VERDICT_LABELS[d.model.verdict]} (
                       {STANCE_LABELS[d.model.stance]})
@@ -203,8 +208,8 @@ export default function MethodologyPage() {
           </>
         ) : (
           <p>
-            A hand-labelled check set is being prepared ({gold.length} of 30
-            labelled so far). Until it is published here, treat the scores as
+            A labelled check set is being prepared ({gold.length} of 30 labelled
+            so far). Until it is published here, treat the scores as
             unvalidated.
           </p>
         )}
@@ -223,7 +228,7 @@ export default function MethodologyPage() {
           >
             GitHub
           </a>
-          , where the code, rubric and hand labels also live.
+          , where the code, rubric and check-set labels also live.
         </p>
       </section>
 
