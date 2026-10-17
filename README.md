@@ -23,12 +23,25 @@ pnpm dev
 | `pnpm build` | Production build (standalone output) |
 | `pnpm db:generate` | Generate a Drizzle migration after editing `src/db/schema.ts` |
 | `pnpm sync:local` | Crawl the petitions API into the local database |
+| `pnpm jev:check [id]` | One real Jev call on one petition; prints the result and writes nothing |
+| `pnpm judge:local` | Judge every unassessed petition in the local database |
 | `pnpm gold:label` | Hand-label the 30-response gold set into `eval/gold.json` |
 | `pnpm eval` | Score the gold set with Jev and write `eval/results.json` (costs money) |
 
 Migrations run automatically when the server starts.
 
 Git hooks: `pre-commit` runs Biome on staged files. `pre-push` runs the typecheck and the tests.
+
+## Connecting Jev
+
+The judge calls `typesafe/jev-1.14` through OpenRouter and needs an OpenRouter API key in `OPENROUTER_API_KEY`.
+
+1. Add the key, either in `.env.local` (gitignored) or as a Proton Pass item referenced from `.env.pass`.
+2. Run `pnpm sync:local` if the local database is empty.
+3. Run `pnpm jev:check` to make one call and check the result. It costs a fraction of a cent.
+4. Run `pnpm judge:local` to judge every response, about 2,600 calls, roughly $0.20 in total.
+
+With Proton Pass, prefix the command: `pass-cli run --env-file .env.pass -- pnpm jev:check`.
 
 ## Deployment
 

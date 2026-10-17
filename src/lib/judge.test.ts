@@ -1,10 +1,11 @@
 import { isNotNull } from "drizzle-orm";
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import type { Db } from "@/db";
 import { assessments, petitions } from "@/db/schema";
 import { testDb } from "@/test/db";
 import {
   buildRequest,
+  createJevClient,
   type JevClient,
   type JudgeInput,
   type JudgeResult,
@@ -206,5 +207,19 @@ describe("runJudge", () => {
     expect(result.items).toBe(1);
     expect(result.errors).toEqual(["1: boom"]);
     expect(result.complete).toBe(false);
+  });
+});
+
+describe("createJevClient", () => {
+  afterEach(() => vi.unstubAllEnvs());
+
+  it("fails fast with a clear message when the key is missing", () => {
+    vi.stubEnv("OPENROUTER_API_KEY", "");
+    expect(() => createJevClient()).toThrow("OPENROUTER_API_KEY is not set");
+  });
+
+  it("builds a client when the key is set", () => {
+    vi.stubEnv("OPENROUTER_API_KEY", "sk-or-test");
+    expect(createJevClient().systemOne).toBeTypeOf("function");
   });
 });

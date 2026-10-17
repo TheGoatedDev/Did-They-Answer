@@ -181,9 +181,11 @@ export function mapAnswers(request: Request, result: JudgeResult) {
 export type JevClient = Pick<TypeSafeClient, "systemOne">;
 
 export function createJevClient(): JevClient {
+  const apiKey = process.env.OPENROUTER_API_KEY;
+  if (!apiKey) throw new Error("OPENROUTER_API_KEY is not set");
   const serverErrors = Array.from({ length: 100 }, (_, i) => 500 + i);
   return new TypeSafeClient({
-    apiKey: process.env.OPENROUTER_API_KEY,
+    apiKey,
     baseURL: "https://openrouter.ai/api",
     defaultModel: MODEL,
     compression: false,
