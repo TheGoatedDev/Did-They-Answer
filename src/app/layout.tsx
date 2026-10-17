@@ -10,6 +10,10 @@ const mono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 const serif = Newsreader({ variable: "--font-serif", subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  // og:image needs an absolute URL; without this Next falls back to localhost.
+  metadataBase: process.env.SITE_URL
+    ? new URL(process.env.SITE_URL)
+    : undefined,
   title: { default: "Did They Answer?", template: "%s · Did They Answer?" },
   description:
     "How thoroughly does the UK government engage with the petitions it answers? An automated, published assessment of every government response.",
