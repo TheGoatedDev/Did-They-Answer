@@ -1,7 +1,14 @@
 import { choice } from "@typesafe-ai/sdk";
+import { inArray, isNotNull, sql } from "drizzle-orm";
 import { z } from "zod";
-import type { DebateRole, DebateStance } from "@/db/schema";
-import type { JevClient } from "@/lib/judge";
+import type { Db } from "@/db";
+import {
+  type DebateRole,
+  type DebateStance,
+  debateStances,
+  petitions,
+} from "@/db/schema";
+import { type JevClient, MODEL } from "@/lib/judge";
 
 export const STANCE_OPTIONS = {
   for: "Supports what the petition asks for",
@@ -179,5 +186,108 @@ export async function rateMember(
         confidence: a.confidence ?? 0,
       };
     }),
+  };
+}
+
+/**
+ * Rate every speaker in each debated petition's Hansard debate and store the ratings.
+ * With `petitionIds`, re-rates those petitions; without, only petitions not yet rated.
+ */
+export async function runDebateStances(
+  db: Db,
+  client: JevClient,
+  { deadline, petitionIds = [] }: { deadline: number; petitionIds?: number[] },
+) {
+  const transcriptUrl = sql<
+    string | null
+  >`${petitions.debate}->>'transcript_url'`;
+  const debated = await db
+    .select({ id: petitions.id, action: petitions.action, url: transcriptUrl })
+    .from(petitions)
+    .where(
+      petitionIds.length
+        ? inArray(petitions.id, petitionIds)
+        : isNotNull(transcriptUrl),
+    );
+  const rated = new Set(
+    (
+      await db
+        .selectDistinct({ id: debateStances.petitionId })
+        .from(debateStances)
+    ).map((r) => r.id),
+  );
+
+  // Several petitions are often debated together; rate each debate once for all of them.
+  const debates = new Map<string, DebatePetition[]>();
+  for (const p of debated) {
+    const debateId = p.url && debateIdFrom(p.url);
+    if (!debateId || (!petitionIds.length && rated.has(p.id))) continue;
+    debates.set(debateId, [...(debates.get(debateId) ?? []), p]);
+  }
+
+  let items = 0;
+  let inputTokens = 0;
+  const errors: string[] = [];
+  for (const [debateId, group] of debates) {
+    if (Date.now() > deadline) break;
+    try {
+      const debate = await fetchDebate(debateId);
+      const bySpeaker = speakers(debate.Items);
+      const members = await fetchMembers(
+        [...bySpeaker.keys()],
+        debate.Overview.Date.slice(0, 10),
+      );
+      const rows = await Promise.all(
+        [...bySpeaker].map(async ([memberId, s]) => {
+          const member = members.get(memberId) ?? {
+            name: `Member ${memberId}`,
+            party: "Unknown",
+          };
+          const { raw, ratings } = await rateMember(
+            client,
+            debate.Overview.Title,
+            member,
+            s.speeches,
+            group,
+          );
+          inputTokens += raw.usage.input_tokens ?? 0;
+          return ratings.map((r) => ({
+            ...r,
+            ...member,
+            debateId,
+            memberId,
+            role: s.role,
+            speeches: s.speeches.length,
+            model: MODEL,
+            raw,
+          }));
+        }),
+      );
+      if (rows.length === 0) continue;
+      await db
+        .insert(debateStances)
+        .values(rows.flat())
+        .onConflictDoUpdate({
+          target: [debateStances.petitionId, debateStances.memberId],
+          set: {
+            stance: sql`excluded.stance`,
+            confidence: sql`excluded.confidence`,
+            party: sql`excluded.party`,
+            role: sql`excluded.role`,
+            speeches: sql`excluded.speeches`,
+            raw: sql`excluded.raw`,
+            createdAt: sql`now()`,
+          },
+        });
+      items += 1;
+    } catch (error) {
+      errors.push(`${debateId}: ${(error as Error).message}`);
+    }
+  }
+  return {
+    items,
+    inputTokens,
+    errors,
+    complete: items + errors.length === debates.size && errors.length === 0,
   };
 }

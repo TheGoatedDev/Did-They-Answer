@@ -68,12 +68,13 @@ If a change alters what a level means, rather than just clarifying it, relabel t
 
 The `Dockerfile` builds a standalone Next.js server. It needs `DATABASE_URL`, `OPENROUTER_API_KEY` and `CRON_SECRET` at runtime, and `NEXT_PUBLIC_POSTHOG_KEY` and `NEXT_PUBLIC_POSTHOG_HOST` at build time.
 
-Two scheduled tasks keep the data fresh. Each POSTs to an internal route with the cron secret:
+Three scheduled tasks keep the data fresh. Each POSTs to an internal route with the cron secret:
 
 ```sh
 # Sync, daily at 05:00
 node -e "fetch('http://localhost:3000/api/internal/sync',{method:'POST',headers:{authorization:'Bearer '+process.env.CRON_SECRET}}).then(r=>r.text()).then(console.log)"
 # Judge, daily at 05:30: the same command with /api/internal/judge
+# Debate stances, daily at 06:00: the same command with /api/internal/debate-stance
 ```
 
 Each run stops after about 250 seconds and resumes where it left off on the next run.

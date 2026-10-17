@@ -130,7 +130,7 @@ export const crawlCursors = pgTable("crawl_cursors", {
 
 export const jobRuns = pgTable("job_runs", {
   id: serial("id").primaryKey(),
-  job: text("job", { enum: ["sync", "judge"] }).notNull(),
+  job: text("job", { enum: ["sync", "judge", "debate_stance"] }).notNull(),
   startedAt: timestamp("started_at", tz).notNull().defaultNow(),
   finishedAt: timestamp("finished_at", tz),
   items: integer("items"),
