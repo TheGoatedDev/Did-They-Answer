@@ -21,7 +21,7 @@ type JobResult = { items: number; inputTokens?: number; errors?: string[] };
 
 export async function recordJob<T extends JobResult>(
   db: Db,
-  job: "sync" | "judge",
+  job: (typeof jobRuns.$inferInsert)["job"],
   run: () => Promise<T>,
 ) {
   const [{ id }] = await db

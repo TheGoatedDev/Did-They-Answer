@@ -19,7 +19,8 @@
     "jev:check": "tsx --env-file-if-exists=.env.local scripts/jev-check.mts",
     "judge:local": "tsx --env-file-if-exists=.env.local scripts/judge.mts",
     "gold:export": "tsx --env-file-if-exists=.env.local scripts/gold-export.mts",
-    "gold:merge": "tsx --env-file-if-exists=.env.local scripts/gold-merge.mts"
+    "gold:merge": "tsx --env-file-if-exists=.env.local scripts/gold-merge.mts",
+    "debate:stance": "tsx --env-file-if-exists=.env.local scripts/debate-stance.mts"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",
