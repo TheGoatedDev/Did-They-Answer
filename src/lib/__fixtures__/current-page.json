@@ -1,0 +1,148 @@
+{
+  "links": {
+    "self": "https://petition.parliament.uk/petitions.json?state=with_response&page=1",
+    "first": "https://petition.parliament.uk/petitions.json?state=with_response",
+    "last": "https://petition.parliament.uk/petitions.json?page=17&state=with_response",
+    "next": "https://petition.parliament.uk/petitions.json?page=2&state=with_response",
+    "prev": null
+  },
+  "data": [
+    {
+      "type": "petition",
+      "id": 770872,
+      "links": {
+        "self": "https://petition.parliament.uk/petitions/770872.json"
+      },
+      "attributes": {
+        "action": "Review access to NHS treatment for Retrograde Cricopharyngeal Dysfunction ",
+        "background": "We want the Government to review the adequacy of recognition of, and NHS treatment access for, people with Retrograde Cricopharyngeal Dysfunction (R-CPD).",
+        "additional_details": "We believe too many sufferers are dismissed or misdiagnosed before paying privately for treatment - patients deserve better awareness and NHS access to care.\r\n\r\nWe want the Government to work towards improving recognition and NHS treatment access for Retrograde Cricopharyngeal Dysfunction (R-CPD), a condition that prevents sufferers from being able to burp. R-CPD can cause severe bloating, pain and major impacts on daily life. We believe patients deserve better awareness, referral pathways and NHS access to treatment.",
+        "committee_note": "",
+        "state": "open",
+        "signature_count": 12163,
+        "closing_date": "2026-12-22",
+        "created_at": "2026-05-26T19:43:22.079Z",
+        "updated_at": "2026-10-17T16:21:00.000Z",
+        "rejected_at": null,
+        "opened_at": "2026-06-22T16:03:04.180Z",
+        "closed_at": null,
+        "moderation_threshold_reached_at": "2026-05-26T20:01:50.000Z",
+        "response_threshold_reached_at": "2026-09-25T09:57:10.000Z",
+        "government_response_at": "2026-10-15T10:48:14.834Z",
+        "debate_threshold_reached_at": null,
+        "debate_scheduled_on": null,
+        "scheduled_debate_date": null,
+        "debate_outcome_at": null,
+        "creator_name": "Gemma Renwick",
+        "rejection": null,
+        "government_response": {
+          "responded_on": "2026-10-15",
+          "summary": "The Government supports better awareness and diagnosis of, and research on, R-CPD. Botox may be prescribed off-label, with NHS access determined locally based on clinical need.",
+          "details": "The Government recognises that living with retrograde cricopharyngeal dysfunction (R-CPD) can have a significant impact on quality of life. Sometimes referred to as \u201cno burp syndrome\u201d, the condition causes symptoms such as painful bloating, chest and abdominal discomfort, excessive gurgling noises and nausea, which can limit the ability to eat, drink or socialise comfortably. Many people also report frustration at delays in receiving a diagnosis or accessing appropriate treatment, particularly given the relatively low awareness of the condition.\n\nThe Government understands the importance of ensuring that people experiencing distressing symptoms receive timely assessment and access to appropriate care. R-CPD is a relatively recently recognised condition and awareness among healthcare professionals is continuing to develop.\n\nThe Government supports efforts to improve awareness of rare and less well-recognised conditions among healthcare professionals. Patients who experience persistent symptoms that affect their health and wellbeing should be assessed by appropriate healthcare professionals and, where necessary, referred to specialist services for further investigation and management.\n\nWhilst the Government supports improvements in the diagnosis and management of all conditions through professional education and development, decisions on clinical training and service provision are primarily matters for the NHS, including service commissioners, and relevant professional bodies. Healthcare professionals are expected to keep their knowledge and skills up to date in line with developments in clinical practice.\n\nThe Government expects NHS services to provide timely access to appropriate care for all patients based on clinical need. Decisions about the diagnosis and treatment of individual patients are made by clinicians, taking account of the best available evidence and the specific circumstances of each patient.\n\nThe main treatment for R-CPD is, where clinically appropriate, a botulinum toxin (Botox) injection into the cricopharyngeal muscle, to relieve symptoms and restore the ability to burp. Botox is not currently authorised by the Medicines and Healthcare products Regulatory Agency for the treatment of R-CPD. However, clinicians may prescribe licensed medicines \u2018off label\u2019 where they judge this to be clinically appropriate, and in a patient's best interests, taking account of the available evidence and the individual's circumstances. As a result, while some specialist NHS services may offer Botox treatment for R-CPD, there is no national commissioning policy and access to treatment is determined locally by NHS commissioners and providers.\n\nThe National Institute for Health and Care Excellence (NICE) develops evidence-based guidance where there is sufficient evidence and a clear need to support decision-making in the NHS. While Botox is commonly used in the treatment of R-CPD, NICE has not developed guidance specifically on its use for the condition. As it operates independently of government, decisions on whether NICE develops new guidance are a matter for NICE, based on its assessment of the available evidence and clinical need. In the absence of NICE guidance, clinicians are expected to use their professional judgement, taking account of the available evidence and the individual circumstances of their patients.\n\nResearch into R-CPD is important because it can help to strengthen the evidence base, improve understanding of its causes and long-term impacts, and support the development of safe and effective treatments. As knowledge of R-CPD grows, research may help clinicians identify the condition more quickly, reduce delays in diagnosis, and inform decisions on the most appropriate care and support for patients. High-quality evidence is also important in supporting the consideration of new interventions by regulators, guideline developers, and the NHS, helping to improve outcomes and quality of life for people living with R-CPD.\n\nThe Department of Health and Social Care funds research through the National Institute for Health and Care Research (NIHR). While NIHR is not currently funding research specifically into R-CPD, it does support related research into swallowing and upper oesophageal disorders, persistent throat symptoms and the inability to belch after surgery. This includes clinical trials on treatments for reflux and oesophageal motility disorders, studies to improve diagnosis, and work to assess and manage patients\u2019 symptoms. Findings from this wider research may help improve understanding and care of people with conditions that share features with R-CPD.\n\nThe NIHR welcomes funding applications for research into any aspect of human health and care, including R-CPD. Its approach to funding research is through open and fair competition and peer review to ensure that the highest-quality proposals, most likely to deliver real impact for patients, are funded without imposing financial targets or limits.\n\nDepartment of Health and Social Care",
+          "created_at": "2026-10-15T10:48:14.824Z",
+          "updated_at": "2026-10-15T10:48:14.824Z"
+        },
+        "debate": null,
+        "departments": [
+          {
+            "acronym": "DHSC",
+            "name": "Department of Health and Social Care",
+            "url": "https://www.gov.uk/government/organisations/department-of-health-and-social-care"
+          }
+        ],
+        "topics": []
+      }
+    },
+    {
+      "type": "petition",
+      "id": 771401,
+      "links": {
+        "self": "https://petition.parliament.uk/petitions/771401.json"
+      },
+      "attributes": {
+        "action": "Permanent driving ban on intoxicated drivers guilty of causing death",
+        "background": "I urge Parliament to take decisive action by implementing a lifetime driving ban on those guilty of driving under the influence of alcohol or drugs and killing innocent people while under influence. Other countries have set precedents by enforcing stringent penalties.",
+        "additional_details": "We feel the current legal framework fails to deter repeat offenders and adequately protect innocent people. endangering more lives and communities.\r\n \r\nWe believe implementing a lifetime driving ban is about ensuring public safety, deterring repeat offenses, and sending a powerful message that our society refuses to tolerate such negligence. For the families affected, this legal change could offer a measure of justice and a chance to prevent others from enduring a similar tragedy.",
+        "committee_note": "",
+        "state": "open",
+        "signature_count": 43757,
+        "closing_date": "2027-01-06",
+        "created_at": "2026-06-01T21:45:40.778Z",
+        "updated_at": "2026-10-17T17:07:50.000Z",
+        "rejected_at": null,
+        "opened_at": "2026-07-06T08:15:08.621Z",
+        "closed_at": null,
+        "moderation_threshold_reached_at": "2026-06-02T11:47:30.000Z",
+        "response_threshold_reached_at": "2026-09-23T21:09:10.000Z",
+        "government_response_at": "2026-10-14T14:56:03.684Z",
+        "debate_threshold_reached_at": null,
+        "debate_scheduled_on": null,
+        "scheduled_debate_date": null,
+        "debate_outcome_at": null,
+        "creator_name": "Tracy Elizabeth venison",
+        "rejection": null,
+        "government_response": {
+          "responded_on": "2026-10-14",
+          "summary": "The Government does not propose to introduce an automatic lifetime driving ban. Courts can already impose one where justified and are best placed to decide what is appropriate in each case.",
+          "details": "I thank Tracy Elizabeth Venison and everyone who has supported this petition. Every death caused by drink or drug driving is a tragedy, and I recognise the lasting impact on families and communities.\n\nThe Government does not propose to introduce an automatic lifetime driving ban for everyone convicted of causing death while under the influence of drink or drugs. Sentencing in individual cases is for the independent courts. They have the evidence before them and are best placed to decide the appropriate period of disqualification, taking account of the circumstances of the offence. Courts can already impose a lifetime disqualification where justified. The relevant sentencing guidance (https://sentencingcouncil.org.uk/guidelines/driving-disqualification/) says this will generally be inappropriate, but recognises that it may be considered where the evidence indicates that the offender would pose a danger to the public indefinitely.\n\nThe law already provides substantial penalties. In England and Wales, causing death by dangerous driving and causing death by careless driving while under the influence of drink or drugs can each carry a life sentence for offences committed on or after 28 June 2022. Disqualification is normally required for at least five years, although a court may depart from that requirement if it finds special reasons. For a repeat conviction for causing death by careless driving while under the influence, the minimum rises to six years. These are minimum periods, not the default length of a ban: courts may impose longer disqualifications where the case warrants it. An extended driving test is also required.\n\nThere is a separate safeguard for certain drink-driving offenders. Under the high-risk offenders scheme (https://www.gov.uk/driving-disqualifications/disqualification-for-drink-driving) people who have repeatedly committed drink-driving offences, had a particularly high alcohol reading or refused an alcohol test must satisfy the DVLA that they are medically fit to drive before a new licence can be issued. This applies after the court-imposed disqualification and is not itself a criminal lifetime ban.\n\nThe Government published its Road Safety Strategy (https://www.gov.uk/government/publications/road-safety-strategy) in January 2026 to reduce the number of people killed or seriously injured on roads in Great Britain. Effective enforcement is an important part of that strategy. As part of this work, the Government consulted from January to May 2026 on proposed changes to penalties for motoring offences (https://www.gov.uk/government/consultations/proposed-changes-to-penalties-for-motoring-offences).\n\nThere was a call for evidence (https://assets.publishing.service.gov.uk/media/624c56938fa8f5277c016a0c/protecting-the-public-from-repeat-drug-driving-offenders-call-for-evidence.pdf) on a proposed high risk offender scheme for drug drivers in 2022. A detailed response to that call for evidence will be included in the Government\u2019s response to the motoring offences consultation. \n\nThe motoring offences consultation closed on 11 May 2026. We are considering the responses before announcing next steps, to ensure the motoring offences framework remains appropriate and effective. The Government\u2019s response will be published in the usual way once that work is complete. I am grateful to everyone who has raised concerns about the safety of our roads, including through this petition.\n\nDepartment for Transport",
+          "created_at": "2026-10-14T14:56:03.674Z",
+          "updated_at": "2026-10-14T14:56:03.674Z"
+        },
+        "debate": null,
+        "departments": [
+          {
+            "acronym": "DfT",
+            "name": "Department for Transport",
+            "url": "https://www.gov.uk/government/organisations/department-for-transport"
+          }
+        ],
+        "topics": []
+      }
+    },
+    {
+      "type": "petition",
+      "id": 762214,
+      "links": {
+        "self": "https://petition.parliament.uk/petitions/762214.json"
+      },
+      "attributes": {
+        "action": "Pause housebuilding targets imposed on councils, review and identify local need",
+        "background": "We ask the government to pause housebuilding targets and consult local communities to identify where substantial house building is needed, not where developers prefer to build. We worry about developers appealing rejected applications and councils and communities often having no funds for a defence.",
+        "additional_details": "We are concerned that villages are being overwhelmed by inappropriate planning applications from land banking developers despite the lack of employment, infrastructure, and services in rural areas \u2013 outdated water/sewage pipes, inadequate public transport, limited health services. We feel that local housing needs do not require high end houses nor anything like the numbers of houses proposed. \r\n \r\nIn Mickleton, applications for hundreds of new houses have been submitted, representing a significant increase in village size. A local survey indicated a preference amongst many residents for accepting no more than 50 new homes over the next 5 years.",
+        "committee_note": "",
+        "state": "closed",
+        "signature_count": 20402,
+        "created_at": "2026-02-23T12:06:43.125Z",
+        "updated_at": "2026-10-13T11:50:36.259Z",
+        "rejected_at": null,
+        "opened_at": "2026-03-30T09:37:56.574Z",
+        "closed_at": "2026-09-30T22:59:59.999Z",
+        "moderation_threshold_reached_at": "2026-02-24T07:12:00.000Z",
+        "response_threshold_reached_at": "2026-06-26T07:17:50.000Z",
+        "government_response_at": "2026-10-13T11:50:16.552Z",
+        "debate_threshold_reached_at": null,
+        "debate_scheduled_on": null,
+        "scheduled_debate_date": null,
+        "debate_outcome_at": null,
+        "creator_name": null,
+        "rejection": null,
+        "government_response": {
+          "responded_on": "2026-10-13",
+          "summary": "Housing targets are an important tool to ensure housing is directed to where it is most needed and least affordable. Local authorities should plan positively for infrastructure and service provision.",
+          "details": "In December 2024, the government introduced a new standard method for assessing housing needs that better directs new homes to where they are most needed and least affordable.\n\nTo identify the minimum number of homes expected to be planned for, the new standard method uses a formula that incorporates a baseline of local housing stock, which is adjusted upwards to reflect local affordability pressures. Areas where unaffordability is most acute see the largest adjustment.\n\nThe new method strikes a balance between meeting the scale of need right across the country and focusing additional growth on those places facing the biggest affordability pressures. It is based on a more objective assessment of need and supports a more strategic approach to housing, distributing growth across wider city regions, not just to the largest urban authority within our largest cities.\n\nThe standard method is used by local authorities to inform the preparation of their local plans. Once local housing need has been assessed, authorities should then calculate the number of new homes that can be provided in their area. This should be justified by evidence on land availability and constraints on development, such as National Landscapes and areas at risk of flooding, and any other relevant matters. \n\nIt is for local authorities, in consultation with their communities, to set out the most appropriate strategy to meet their housing needs. The government expects local authorities to explore all options to deliver the homes their communities need \u2013 maximising brownfield land, working with neighbouring authorities, and, where necessary, reviewing Green Belt.\n\nIn rural areas, the National Planning Policy Framework (NPPF) is clear that planning policies and decisions should be responsive to local circumstances. This includes supporting housing development that reflects local needs,\u202flocating\u202fhousing where it will enhance the vitality of rural communities, and\u202fidentifying\u202fopportunities for villages to grow and thrive, especially where this will support local services.\u202f\n\nOn 17 August 2026, the government published a new NPPF, which includes measures designed to promote greater clarity and certainty on expected contributions from development, such as necessary supporting infrastructure. The new NPPF is available on gov.uk here (https://www.gov.uk/guidance/national-planning-policy-framework).\n\nIn meeting housing need, achieving sustainable development sits at the heart of the planning system. Local planning authorities are responsible for identifying sites in their plans to guide development to the most suitable locations, supported by the right infrastructure. In doing so, local authorities must carry out robust consultation with local communities, making local plans the best way for communities to shape decisions about how to deliver the development their areas need. Local development plans should address needs and opportunities in relation to infrastructure, identify what infrastructure is required and how it can be funded and brought forward. \n\nContributions from developers, secured through section 106 planning obligations and the Community Infrastructure Levy (CIL), play an important role in delivering much-needed affordable homes and the infrastructure to support new development and mitigate its impacts. The government recognises how important this is to local communities, which is why we are committed to strengthening the system of developer contributions. \n\nIf a planning application is refused, it is possible to appeal to the Secretary of State. In deciding appeals, planning inspectors, who are appointed to decide appeals on behalf of the Secretary of State, take decisions on the basis of the local plan in place for the area. While they may come to a different view from the local planning authority, this does not mean that they have disregarded the views of the local authority or local residents \u2013 rather that they have attributed different weight to the issues. Currently around two-thirds of appeals are refused, so the decision of the local authority is upheld in most cases. \n\nMinistry of Housing, Communities & Local Government",
+          "created_at": "2026-10-13T11:50:16.548Z",
+          "updated_at": "2026-10-13T11:50:16.548Z"
+        },
+        "debate": null,
+        "departments": [
+          {
+            "acronym": "MHCLG",
+            "name": "Ministry of Housing, Communities & Local Government",
+            "url": "https://www.gov.uk/government/organisations/ministry-of-housing-communities-local-government"
+          }
+        ],
+        "topics": []
+      }
+    }
+  ]
+}

@@ -50,7 +50,9 @@ A public, read-only site that scores how thoroughly the UK government engages wi
   | `parliament=4` | 41 |
 
   Total: 106 pages.
-- Which years each parliament number covers is not settled. Earliest records seen: 1 → 2016, 2 → 2014, 3 → 2017–19, 4 → 2019–24. Check against each parliament's date range before writing the label constant.
+- The archive numbers are not chronological. Checked 2026-10-17 against opening dates: `2` is 2010–15, `1` is 2015–17, `3` is 2017–19, `4` is 2019–24.
+- Every 2010–15 petition has `background: null`.
+- Petition ids are unique across all sets (2,582 responses, no duplicates).
 
 ## Data model
 
@@ -59,9 +61,8 @@ A public, read-only site that scores how thoroughly the UK government engages wi
 | Column | Notes |
 |---|---|
 | `id` | Primary key; the API id |
-| `source` | `current` or `archived` |
-| `parliament` | `null` for current |
-| `action`, `background`, `additional_details` | |
+| `parliament` | Text label: `2010-15`, `2015-17`, `2017-19`, `2019-24`, or `2024-` for the current parliament |
+| `action`, `background`, `additional_details` | `background` is null for 2010–15 |
 | `state`, `signature_count` | |
 | `created_at`, `opened_at`, `closed_at` | |
 | `departments`, `topics` | jsonb |
@@ -78,11 +79,11 @@ A public, read-only site that scores how thoroughly the UK government engages wi
 | `model` | The dated version the API returns |
 | `prompt_version`, `input_hash` | |
 | `stance`, `stance_confidence` | |
-| `addresses_ask`, `evidence`, `reasoning`, `outcome`, `specificity` | `real`, 0–2 |
+| `scores` | jsonb: each criterion's score, 0–2 |
 | `total`, `verdict` | |
 | `min_confidence`, `needs_review` | |
 | `evidence_sentence` | |
-| `cost` | |
+| `input_tokens` | The SDK reports tokens, not cost |
 | `raw` | jsonb |
 | `created_at` | |
 
@@ -90,11 +91,11 @@ Unique on `(petition_id, model, prompt_version, input_hash)`.
 
 ### `crawl_cursors`
 
-Primary key `(source, parliament, state)`. Columns: `next_page`, `done`, `updated_at`.
+Primary key `url` (the set's list URL). Columns: `next_page`, `done`, `updated_at`.
 
 ### `job_runs`
 
-Columns: `job`, `started_at`, `finished_at`, `items`, `error`, `cost`. The site's "last synced" label reads from this table.
+Columns: `job`, `started_at`, `finished_at`, `items`, `error`, `input_tokens`. The site's "last synced" label reads from this table.
 
 ## Jobs
 
@@ -193,14 +194,11 @@ Every page renders on the server and is cached by tag.
   - `CRON_SECRET`
   - `NEXT_PUBLIC_POSTHOG_KEY` and `NEXT_PUBLIC_POSTHOG_HOST`. These two are set as build-time variables in Coolify.
 - `docker-compose.yml` runs Postgres 18 for local development.
-- Run locally with `pass-cli run --env-file .env.pass -- pnpm dev`.
-  - `.env.pass` holds only `pass://` references, so it is committed.
-  - `.env.local` is gitignored.
-  - `.env.example` lists every variable.
+- Local secrets live in `.env.local`, which is gitignored. `.env.example` lists every variable.
 
 ## Delivery
 
-One PR per phase. Each PR merges once CI passes.
+Changed 2026-10-17: phases 1–4 and the code for phase 5 ship together in PR #1. The Coolify, PostHog and DNS steps in phase 5 still need the owner's go-ahead.
 
 ### PR 1: Scaffold
 

@@ -1,0 +1,5417 @@
+{
+  "model": "typesafe/jev-1.14-20261014",
+  "promptVersion": 2,
+  "ranAt": "2026-10-17T18:39:13.899Z",
+  "n": 200,
+  "agreement": {
+    "addresses_ask": 0.875,
+    "evidence": 0.78,
+    "reasoning": 0.825,
+    "outcome": 0.74,
+    "specificity": 0.7124999999999999,
+    "stance": 0.8374999999999999,
+    "verdict": 0.85
+  },
+  "items": [
+    {
+      "petitionId": 570179,
+      "action": "Don't scrap funding for BTEC Performing Arts",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.62,
+          "evidence": 1.05,
+          "reasoning": 1.88,
+          "outcome": 0.26,
+          "specificity": 0.83
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 163203,
+      "action": "Increase Carers Allowance in line with the Living Wage",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.55,
+          "evidence": 2,
+          "reasoning": 1.81,
+          "outcome": 1.82,
+          "specificity": 1.31
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 258756,
+      "action": "Increase the penalty for developers and landowners who remove trees illegally.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.83,
+          "evidence": 0.6,
+          "reasoning": 1.71,
+          "outcome": 1.93,
+          "specificity": 1.41
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 756494,
+      "action": "Publish a decision on the Park Home Sales Commission in 2026",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.95,
+          "evidence": 1.95,
+          "reasoning": 0.97,
+          "outcome": 1.89,
+          "specificity": 1.93
+        },
+        "stance": "accepts",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 29356,
+      "action": "Petition to Abolish Work for your Benefit/Workfare Schemes in the UK",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.67,
+          "evidence": 0.59,
+          "reasoning": 1.62,
+          "outcome": 1.23,
+          "specificity": 1.77
+        },
+        "stance": "declines",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 318654,
+      "action": "Allow the British public to vote on the legalisation of cannabis",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.99,
+          "evidence": 1,
+          "reasoning": 1.98,
+          "outcome": 2,
+          "specificity": 1.28
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 178330,
+      "action": "Make the uk armed forces pensions for 22 years service tax free.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.86,
+          "evidence": 0.42,
+          "reasoning": 1.48,
+          "outcome": 1.79,
+          "specificity": 1.18
+        },
+        "stance": "declines",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 223567,
+      "action": "Pay healthcare students a wage while on placement",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.58,
+          "evidence": 1.98,
+          "reasoning": 1.73,
+          "outcome": 1.95,
+          "specificity": 1.43
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 703827,
+      "action": "Stop DWP repeating PIP assessments for disabled people",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.68,
+          "evidence": 1.99,
+          "reasoning": 1.88,
+          "outcome": 1.76,
+          "specificity": 1.15
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 43153,
+      "action": "UKIP to be involved in 2015 Televised Debates",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 0.78,
+          "evidence": 0,
+          "reasoning": 0.76,
+          "outcome": 1.63,
+          "specificity": 0.35
+        },
+        "stance": "deflects",
+        "verdict": "low",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 331430,
+      "action": "Repeal the decision to implement compulsory face coverings in English shops.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.32,
+          "evidence": 1.01,
+          "reasoning": 1.88,
+          "outcome": 1.86,
+          "specificity": 0.84
+        },
+        "stance": "declines",
+        "verdict": "some",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 150516,
+      "action": "Make Eid a National Holiday",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.99,
+          "evidence": 1.98,
+          "reasoning": 1.98,
+          "outcome": 1.99,
+          "specificity": 0.91
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 200311,
+      "action": "No referendum on the final deal for the UK to remain in the European Union.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1.89,
+          "reasoning": 1.77,
+          "outcome": 1.99,
+          "specificity": 1.13
+        },
+        "stance": "accepts",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 766919,
+      "action": "Review the law on unfit to plead & reform it to protect victims & public safety",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.81,
+          "evidence": 1.44,
+          "reasoning": 1.97,
+          "outcome": 1.12,
+          "specificity": 1.82
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 55031,
+      "action": "Bring home Sean Emmett from Dubai",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.85,
+          "evidence": 1.48,
+          "reasoning": 1.51,
+          "outcome": 1.77,
+          "specificity": 1.94
+        },
+        "stance": "deflects",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 616636,
+      "action": "Apply to Join the European Union (EU)",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 1,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.26,
+          "evidence": 0.97,
+          "reasoning": 1.41,
+          "outcome": 1.89,
+          "specificity": 0.79
+        },
+        "stance": "declines",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 112510,
+      "action": "To Keep Britain's Borders Open",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 1,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.99,
+          "evidence": 1.29,
+          "reasoning": 1.65,
+          "outcome": 1.83,
+          "specificity": 1.7
+        },
+        "stance": "accepts",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 272087,
+      "action": "Hold online trolls accountable for their online abuse via their IP address\r\n",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 0.85,
+          "evidence": 0.68,
+          "reasoning": 1.76,
+          "outcome": 1.39,
+          "specificity": 0.22
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 757426,
+      "action": "Nationalise water companies to make water a non profit publicly owned asset",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1.29,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 1.52
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 68040,
+      "action": "Bring severely injured children of Gaza to UK for treatment",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 2,
+          "specificity": 1
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.81,
+          "evidence": 2,
+          "reasoning": 1.31,
+          "outcome": 1.83,
+          "specificity": 1.5
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 628226,
+      "action": "We call upon the Government to hold a Public Inquiry into the impact of Brexit",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.95,
+          "evidence": 1.99,
+          "reasoning": 1.6,
+          "outcome": 1.93,
+          "specificity": 1.57
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 106355,
+      "action": "Hold public inquiry into West Ham & LLDC deal for rental of Olympic Stadium",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.98,
+          "evidence": 1.64,
+          "reasoning": 1.96,
+          "outcome": 2,
+          "specificity": 1.88
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 208008,
+      "action": "Increase the sentence for failure to stop after a fatal road traffic collision",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.88,
+          "evidence": 1.99,
+          "reasoning": 1.95,
+          "outcome": 1.93,
+          "specificity": 1.83
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 729235,
+      "action": "Stop HMRC implementing making tax digital and enforcing quarterly submissions",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.95,
+          "evidence": 2,
+          "reasoning": 1.74,
+          "outcome": 1.96,
+          "specificity": 1.22
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 20685,
+      "action": "Say NO to ACTA",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 0,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.31,
+          "evidence": 0.91,
+          "reasoning": 1.63,
+          "outcome": 0.47,
+          "specificity": 1.77
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 330333,
+      "action": "Add Bulgaria to list of countries you can visit without quarantine upon return.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.98,
+          "evidence": 1.04,
+          "reasoning": 1.77,
+          "outcome": 1.64,
+          "specificity": 1.52
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 177055,
+      "action": "Theresa May: Seek an urgent cross-party solution to the health and care crisis",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 0.78,
+          "evidence": 2,
+          "reasoning": 1.34,
+          "outcome": 1.23,
+          "specificity": 0.38
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 227405,
+      "action": "Scrap The Forestry Commission Licence Agreements With Fox & Hare Hunts",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.11,
+          "evidence": 0.98,
+          "reasoning": 1.13,
+          "outcome": 1.8,
+          "specificity": 1.19
+        },
+        "stance": "declines",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 710283,
+      "action": "Ban social media for under-16s to protect children",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.97,
+          "evidence": 0.98,
+          "reasoning": 1.83,
+          "outcome": 1.62,
+          "specificity": 1.71
+        },
+        "stance": "deflects",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 53523,
+      "action": "Make Eid & Diwali Public Holidays",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0.34,
+          "reasoning": 1.98,
+          "outcome": 1.97,
+          "specificity": 1.26
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 603619,
+      "action": "Do not build two new prisons at Wethersfield Air Base",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.27,
+          "evidence": 1.89,
+          "reasoning": 1.68,
+          "outcome": 0.35,
+          "specificity": 1.86
+        },
+        "stance": "deflects",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 719124,
+      "action": "Transfer UK Warrior Infantry Fighting Vehicles to Ukraine",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.9,
+          "evidence": 0.52,
+          "reasoning": 1.98,
+          "outcome": 1.78,
+          "specificity": 1.85
+        },
+        "stance": "deflects",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 124333,
+      "action": "Save UK Air Cadet Gliding",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.63,
+          "evidence": 1.97,
+          "reasoning": 2,
+          "outcome": 1.94,
+          "specificity": 1.94
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 237487,
+      "action": "The Prime Minister should advise Her Majesty the Queen to prorogue Parliament.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.96,
+          "evidence": 0.41,
+          "reasoning": 1.71,
+          "outcome": 1.81,
+          "specificity": 1.2
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 2199,
+      "action": "Full disclosure of all government documents relating to 1989 Hillsborough disaster",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.97,
+          "evidence": 1.49,
+          "reasoning": 0.99,
+          "outcome": 1.5,
+          "specificity": 1.92
+        },
+        "stance": "accepts",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 648649,
+      "action": "Introduce economic sanctions on Israel",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.05,
+          "evidence": 1.98,
+          "reasoning": 1.63,
+          "outcome": 1.2,
+          "specificity": 1.27
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 754292,
+      "action": "Fund Free TV licences for all pensioners.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.98,
+          "evidence": 2,
+          "reasoning": 1.99,
+          "outcome": 1.9,
+          "specificity": 1.51
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 105868,
+      "action": "An independent investigation into the new layout at Dartford river crossing.",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 0.82,
+          "evidence": 2,
+          "reasoning": 1.95,
+          "outcome": 1.29,
+          "specificity": 1.37
+        },
+        "stance": "deflects",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 251627,
+      "action": "Hold an Inquiry into the state of the Police Complaints System and role of IOPC",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 2,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.12,
+          "evidence": 2,
+          "reasoning": 1.54,
+          "outcome": 1.05,
+          "specificity": 0.86
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 32542,
+      "action": "Peace in Burma - Please do something more Mr Cameron",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.92,
+          "evidence": 2,
+          "reasoning": 0.95,
+          "outcome": 0.88,
+          "specificity": 1.89
+        },
+        "stance": "deflects",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 631561,
+      "action": "Reverse the decision to block the Gender Recognition Reform (Scotland) Bill",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.85,
+          "evidence": 1.22,
+          "reasoning": 1.85,
+          "outcome": 1.99,
+          "specificity": 1.71
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 725716,
+      "action": "Protect Northern Ireland Veterans from Prosecutions",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.42,
+          "evidence": 1.08,
+          "reasoning": 1.94,
+          "outcome": 1.5,
+          "specificity": 1.81
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 167596,
+      "action": "Ban all non-recyclable/non-compostable packaging in the UK",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.36,
+          "evidence": 1.98,
+          "reasoning": 2,
+          "outcome": 1.59,
+          "specificity": 1.08
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 247912,
+      "action": "Anonymity for those accused of sexual offences until charge.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.9,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 1.5,
+          "specificity": 1.13
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 30225,
+      "action": "Save the Portland Coastguard Helicopter",
+      "label": {
+        "scores": {
+          "addresses_ask": 0,
+          "evidence": 0,
+          "reasoning": 0,
+          "outcome": 0,
+          "specificity": 0
+        },
+        "stance": "deflects",
+        "verdict": "low"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 0.06,
+          "evidence": 0,
+          "reasoning": 0.01,
+          "outcome": 0.02,
+          "specificity": 1.45
+        },
+        "stance": "deflects",
+        "verdict": "low",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 643987,
+      "action": "Hold a referendum on ending devolution in Wales",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.99,
+          "evidence": 0.89,
+          "reasoning": 1.44,
+          "outcome": 1.97,
+          "specificity": 1.41
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 731497,
+      "action": "New Disclosure and Safeguarding Mechanism for At-Risk Children",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.93,
+          "evidence": 0.18,
+          "reasoning": 1.67,
+          "outcome": 1.66,
+          "specificity": 1.81
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 111879,
+      "action": "Stop the Government from cutting funding for Routes into Languages.",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 1,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 0.97,
+          "evidence": 1.49,
+          "reasoning": 1.28,
+          "outcome": 0.82,
+          "specificity": 1.74
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 205348,
+      "action": "Pass legislation making animals legally \"Sentient Beings\" in UK law.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.95,
+          "evidence": 1.7,
+          "reasoning": 1.86,
+          "outcome": 1.87,
+          "specificity": 1.83
+        },
+        "stance": "accepts",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 38011,
+      "action": "Method of production labelling for all meat and dairy foods sold in the UK",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.94,
+          "evidence": 0.61,
+          "reasoning": 2,
+          "outcome": 1.96,
+          "specificity": 1.78
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 661407,
+      "action": "Give parents/guardians a right to access social media accounts of their children",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.88,
+          "evidence": 0.19,
+          "reasoning": 1.8,
+          "outcome": 1.46,
+          "specificity": 1.6
+        },
+        "stance": "partially_accepts",
+        "verdict": "some",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 771833,
+      "action": "General election now – and always call one if a PM is replaced",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.97,
+          "evidence": 0.48,
+          "reasoning": 1.97,
+          "outcome": 2,
+          "specificity": 0.8
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 190708,
+      "action": "Allow Walid Durani to stay in the UK.",
+      "label": {
+        "scores": {
+          "addresses_ask": 0,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 0,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "low"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 0.92,
+          "evidence": 0.52,
+          "reasoning": 1.42,
+          "outcome": 1.14,
+          "specificity": 0.61
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 206568,
+      "action": "Introduce automatic approval of visit visas for families of British Citizens",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0.64,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 1.62
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 46695,
+      "action": "Justice for David Bartholomew",
+      "label": {
+        "scores": {
+          "addresses_ask": 0,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 0,
+          "specificity": 0
+        },
+        "stance": "deflects",
+        "verdict": "low"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 0.26,
+          "evidence": 0.05,
+          "reasoning": 1.47,
+          "outcome": 1.73,
+          "specificity": 0.03
+        },
+        "stance": "deflects",
+        "verdict": "low",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 631763,
+      "action": "Hold a referendum on removing the London Assembly and London Mayor",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.96,
+          "evidence": 1.88,
+          "reasoning": 1.75,
+          "outcome": 1.94,
+          "specificity": 1.58
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 704793,
+      "action": "Legally enshrine the right of adults to physically transition using NHS services",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.99,
+          "evidence": 1.94,
+          "reasoning": 1.89,
+          "outcome": 1.98,
+          "specificity": 1.89
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 183943,
+      "action": "Keep open the 'Dubs scheme' to resettle 3000 unaccompanied refugee children.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.85,
+          "evidence": 2,
+          "reasoning": 1.95,
+          "outcome": 1.97,
+          "specificity": 1.81
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 239406,
+      "action": "Undertake an independent enquiry into the role of Russia in Brexit.",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.38,
+          "evidence": 0.81,
+          "reasoning": 1.5,
+          "outcome": 1.85,
+          "specificity": 1.3
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 53083,
+      "action": "Block Passage of Anti-Social Behaviour, Crime and Policing Bill",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.29,
+          "evidence": 0.4,
+          "reasoning": 1.93,
+          "outcome": 1.94,
+          "specificity": 1.96
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 259256,
+      "action": "Improve maternal care for black British women",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.63,
+          "evidence": 2,
+          "reasoning": 1.1,
+          "outcome": 1.79,
+          "specificity": 1.96
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 108884,
+      "action": "Give EU citizens living & working in the UK the right to vote in EU Referendum .",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.93,
+          "evidence": 1.53,
+          "reasoning": 1.81,
+          "outcome": 1.99,
+          "specificity": 1.81
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 703861,
+      "action": "Do not stop transgender people from receiving care in mainstream hospital wards",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.16,
+          "evidence": 1.21,
+          "reasoning": 1.65,
+          "outcome": 0.59,
+          "specificity": 1.36
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 561995,
+      "action": "Repeal Coronavirus Act and end all Covid-19 restrictions",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.92,
+          "evidence": 1.17,
+          "reasoning": 2,
+          "outcome": 1.97,
+          "specificity": 1.1
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 48389,
+      "action": "Provide more Funding & Awareness for Pancreatic Cancer to aid long overdue progress in earlier detection and, ultimately, improved survival rates",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 0,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 0.9,
+          "evidence": 1.95,
+          "reasoning": 1.84,
+          "outcome": 0.35,
+          "specificity": 0.76
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 263615,
+      "action": "Compensation for women born in 1950s, due to state pension age change",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.64,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 1.03
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 105402,
+      "action": "A vote of no-confidence in the Prime Minster David Cameron. Calais crisis",
+      "label": {
+        "scores": {
+          "addresses_ask": 0,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 0,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "low"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 0.32,
+          "evidence": 0.99,
+          "reasoning": 1.22,
+          "outcome": 1.54,
+          "specificity": 1.33
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 763785,
+      "action": "Require accessible changing benches for disabled children in public venues",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.46,
+          "evidence": 1.5,
+          "reasoning": 1,
+          "outcome": 0.42,
+          "specificity": 1.13
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 332503,
+      "action": "Enshrine the Military Covenant in UK Law",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "partially_accepts",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.69,
+          "evidence": 0.88,
+          "reasoning": 1.18,
+          "outcome": 1.39,
+          "specificity": 0.94
+        },
+        "stance": "accepts",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 61335,
+      "action": "Lower the age for a smear test to 20",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1.97,
+          "reasoning": 2,
+          "outcome": 1.99,
+          "specificity": 1.95
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 202243,
+      "action": "Change the law to ban the resale of tickets for more than their face value",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.98,
+          "evidence": 1.87,
+          "reasoning": 1.92,
+          "outcome": 1.98,
+          "specificity": 1.67
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 194135,
+      "action": "Stop plans to close the congenital heart disease (CHD) service at Royal Brompton",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.72,
+          "evidence": 1.05,
+          "reasoning": 1.75,
+          "outcome": 1.81,
+          "specificity": 1.6
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 700413,
+      "action": "Make GCSE exams free for home educated children under 18",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.55,
+          "evidence": 0.03,
+          "reasoning": 1.47,
+          "outcome": 1.84,
+          "specificity": 1.49
+        },
+        "stance": "declines",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 552036,
+      "action": "Allow football fans to attend matches at all levels",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.97,
+          "evidence": 1,
+          "reasoning": 1.99,
+          "outcome": 1.37,
+          "specificity": 1.18
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 22321,
+      "action": "Protect Police Pensions",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.87,
+          "evidence": 1.73,
+          "reasoning": 1.84,
+          "outcome": 1.94,
+          "specificity": 1.69
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 236246,
+      "action": "Allow Tier 2 (Intra-Company) individuals and their dependants to settle.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.97,
+          "evidence": 1.72,
+          "reasoning": 1.94,
+          "outcome": 1.98,
+          "specificity": 1.03
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 183134,
+      "action": "Abolish the House of Lords",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.59,
+          "evidence": 1.95,
+          "reasoning": 1.68,
+          "outcome": 1.48,
+          "specificity": 0.91
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 706513,
+      "action": "Every school & college to be obliged to have an evacuation chair & training",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.9,
+          "evidence": 1.75,
+          "reasoning": 1.99,
+          "outcome": 1.95,
+          "specificity": 1.79
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 555408,
+      "action": "Do not require salons to close due to Covid-19",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.97,
+          "evidence": 1.02,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 1.37
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 66694,
+      "action": "Free parking for nhs staff",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.79,
+          "evidence": 0.1,
+          "reasoning": 2,
+          "outcome": 1.92,
+          "specificity": 1.2
+        },
+        "stance": "deflects",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 259303,
+      "action": "Allergy provision in school: Introduce Statutory Allergy Care legislation",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.96,
+          "evidence": 1.62,
+          "reasoning": 1.62,
+          "outcome": 1.91,
+          "specificity": 1.78
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 105991,
+      "action": "Accept more asylum seekers and increase support for refugee migrants in the UK.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.53,
+          "evidence": 1.99,
+          "reasoning": 1.98,
+          "outcome": 1.91,
+          "specificity": 1.2
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 747281,
+      "action": "Require DBS Checks for Tattoo Artists in England",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.99,
+          "evidence": 0.57,
+          "reasoning": 1.41,
+          "outcome": 0.97,
+          "specificity": 1.89
+        },
+        "stance": "declines",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 560288,
+      "action": "Make glue traps illegal within the UK",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.47,
+          "evidence": 0.38,
+          "reasoning": 1.24,
+          "outcome": 0.23,
+          "specificity": 1.73
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 33458,
+      "action": "Notorious criminals cashing-in on phone hacking compensation",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.94,
+          "evidence": 1.78,
+          "reasoning": 1.97,
+          "outcome": 1.98,
+          "specificity": 1.29
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 231146,
+      "action": "Increase funding to Children's Mental Health services",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.97,
+          "evidence": 1.99,
+          "reasoning": 1.02,
+          "outcome": 1.9,
+          "specificity": 1.67
+        },
+        "stance": "accepts",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 178288,
+      "action": "Abolish the House of Lords if it delays Brexit.",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.61,
+          "evidence": 0.4,
+          "reasoning": 1.38,
+          "outcome": 1.35,
+          "specificity": 1.55
+        },
+        "stance": "declines",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 767644,
+      "action": "Make seizure training mandatory in all child and vulnerable adult work settings",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.3,
+          "evidence": 1.23,
+          "reasoning": 1.19,
+          "outcome": 0.43,
+          "specificity": 1.59
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 300634,
+      "action": "Stop Forestry England granting licenses for Fox & Hare hunts",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.9,
+          "evidence": 1.69,
+          "reasoning": 1.96,
+          "outcome": 1.91,
+          "specificity": 1.79
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 35788,
+      "action": "Save Childrens Cardiac Surgery at the EMCHC at Glenfield Leicester",
+      "label": {
+        "scores": {
+          "addresses_ask": 0,
+          "evidence": 0,
+          "reasoning": 0,
+          "outcome": 0,
+          "specificity": 0
+        },
+        "stance": "deflects",
+        "verdict": "low"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 0.32,
+          "evidence": 0.02,
+          "reasoning": 0,
+          "outcome": 1.06,
+          "specificity": 0.62
+        },
+        "stance": "deflects",
+        "verdict": "low",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 248281,
+      "action": "Leave the EU Without a deal on April 12th.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 1,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.82,
+          "evidence": 1.96,
+          "reasoning": 1.66,
+          "outcome": 1.63,
+          "specificity": 1.06
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 163483,
+      "action": "Suspend Natural England licence to kill buzzards.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.38,
+          "evidence": 1.98,
+          "reasoning": 1.98,
+          "outcome": 1.87,
+          "specificity": 1.54
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 701769,
+      "action": "Change requirements for ILR for those who have graduated and worked for 3 years",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.95,
+          "evidence": 0.11,
+          "reasoning": 1.9,
+          "outcome": 1.98,
+          "specificity": 1.25
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 606834,
+      "action": "Do not end legal obligations to self-isolate if people test positive for covid",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.9,
+          "evidence": 1,
+          "reasoning": 1.99,
+          "outcome": 1.95,
+          "specificity": 1.31
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 71621,
+      "action": "KEEP THE POPPIES AT TOWER OF LONDON FOR 1 YEAR",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.98,
+          "evidence": 0.58,
+          "reasoning": 1.95,
+          "outcome": 1.99,
+          "specificity": 1.97
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 747234,
+      "action": "Remove power to cancel local government elections\r\n",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.95,
+          "evidence": 1.97,
+          "reasoning": 1.61,
+          "outcome": 1.8,
+          "specificity": 1.94
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 636088,
+      "action": "Increase the state pension to equal 35 hours a week at the National Living Wage",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.92,
+          "evidence": 2,
+          "reasoning": 1.87,
+          "outcome": 1.98,
+          "specificity": 1.48
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 40925,
+      "action": "PLEASE  BRING FORWARD  KEVIN WILLIAMS INQUEST",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "accepts",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.92,
+          "evidence": 1.29,
+          "reasoning": 0.66,
+          "outcome": 1.54,
+          "specificity": 1.85
+        },
+        "stance": "accepts",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 239893,
+      "action": "Make it compulsory for schools to teach basic signing, such as Makaton",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.93,
+          "evidence": 0.66,
+          "reasoning": 1.58,
+          "outcome": 1.83,
+          "specificity": 1.34
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 109727,
+      "action": "Guarantee British savers and investors that cash will not be abolished",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.93,
+          "evidence": 0.93,
+          "reasoning": 1.14,
+          "outcome": 1.21,
+          "specificity": 1.94
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 701290,
+      "action": "Ban wind farms on protected peat land in England",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 1.99,
+          "specificity": 1.83
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 554400,
+      "action": "Reform IPSA - cap MP payrises in line with other Public sector pay",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.83,
+          "evidence": 1.71,
+          "reasoning": 1.55,
+          "outcome": 1.91,
+          "specificity": 1.75
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 62385,
+      "action": "SOPHIES CHOICE ,smear test lowered to 16",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.96,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 1.98,
+          "specificity": 1.8
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 276425,
+      "action": "Ban fireworks for general sale to the public.",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 1,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.36,
+          "evidence": 1.06,
+          "reasoning": 1.74,
+          "outcome": 0.82,
+          "specificity": 1.14
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 129823,
+      "action": "Make it illegal for a company to require women to wear high heels at work",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.39,
+          "evidence": 0.13,
+          "reasoning": 1.15,
+          "outcome": 0.89,
+          "specificity": 1.24
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 705403,
+      "action": "Fully Repeal the Gender Recognition Act",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0.33,
+          "reasoning": 1.92,
+          "outcome": 1.98,
+          "specificity": 1.72
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 642453,
+      "action": "Repeal Relationships and Sexuality Education (Northern Ireland) Regulations 2023",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1.8,
+          "reasoning": 1.98,
+          "outcome": 2,
+          "specificity": 1.99
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 38257,
+      "action": "Stop the badger cull",
+      "label": {
+        "scores": {
+          "addresses_ask": 0,
+          "evidence": 0,
+          "reasoning": 0,
+          "outcome": 0,
+          "specificity": 0
+        },
+        "stance": "deflects",
+        "verdict": "low"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 0.04,
+          "evidence": 0.02,
+          "reasoning": 0.01,
+          "outcome": 0.16,
+          "specificity": 0.04
+        },
+        "stance": "deflects",
+        "verdict": "low",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 200968,
+      "action": "Union Jack to appear on British number plates after March 2019.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.99,
+          "evidence": 0.83,
+          "reasoning": 1.71,
+          "outcome": 1.89,
+          "specificity": 1.67
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 122770,
+      "action": "We require parliament to debate Lord Kilmuir's letter to Edward Heath",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 0,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.13,
+          "evidence": 1.2,
+          "reasoning": 1.05,
+          "outcome": 1.06,
+          "specificity": 1.49
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 734327,
+      "action": "Make it statutory guidance not to remove break-times for neurodivergent children",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.14,
+          "evidence": 0.75,
+          "reasoning": 1.57,
+          "outcome": 1.11,
+          "specificity": 1.09
+        },
+        "stance": "declines",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 332828,
+      "action": "Lower the age that breast screening services are offered",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.64,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 1.96,
+          "specificity": 1.08
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 66982,
+      "action": "GDC ARF",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.37,
+          "evidence": 0.75,
+          "reasoning": 1.54,
+          "outcome": 1.31,
+          "specificity": 1.73
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 236102,
+      "action": "Condemn Sudan’s use of lethal force vs protests, pressure for democratic change",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.96,
+          "evidence": 0.71,
+          "reasoning": 1.02,
+          "outcome": 1.46,
+          "specificity": 1.58
+        },
+        "stance": "accepts",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 121262,
+      "action": "Jeremy Hunt to resume meaningful contract negotiations with the BMA.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.66,
+          "evidence": 1.93,
+          "reasoning": 1.96,
+          "outcome": 1.98,
+          "specificity": 1.53
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 700824,
+      "action": "Close the borders! Suspend ALL immigration for 5 years!",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.99,
+          "evidence": 2,
+          "reasoning": 1.99,
+          "outcome": 1.99,
+          "specificity": 1.66
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 619720,
+      "action": "Fund more specialist school places for children with special educational needs",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.97,
+          "evidence": 2,
+          "reasoning": 1.4,
+          "outcome": 1.94,
+          "specificity": 1.67
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 63445,
+      "action": "Tougher prison sentencing for murdering and baiting animals and acts of cruelty",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 0,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "low"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.23,
+          "evidence": 1.67,
+          "reasoning": 0.99,
+          "outcome": 0.04,
+          "specificity": 0.67
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 214621,
+      "action": "Require hospitals to reinstate life support if a patient survives for 15 mins.",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 0.98,
+          "evidence": 1.37,
+          "reasoning": 1.81,
+          "outcome": 1.94,
+          "specificity": 0.54
+        },
+        "stance": "declines",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 187027,
+      "action": "Amend the Births and Deaths Registration Act 1953 to include all pregnancy loss.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.06,
+          "evidence": 1.14,
+          "reasoning": 1.99,
+          "outcome": 1.94,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 764882,
+      "action": "Stop megasheds being built & operated 24/7 close to homes and communities ",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 0,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "low"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 0.87,
+          "evidence": 0.31,
+          "reasoning": 1.49,
+          "outcome": 0.19,
+          "specificity": 0.68
+        },
+        "stance": "deflects",
+        "verdict": "low",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 608486,
+      "action": "Backpay the £20 covid uplift to people on Legacy Benefits",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.79,
+          "evidence": 1.97,
+          "reasoning": 1.2,
+          "outcome": 1.85,
+          "specificity": 1.21
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 55062,
+      "action": "Royal Commission into Police Pay and Pensions",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.99,
+          "evidence": 1.73,
+          "reasoning": 1.87,
+          "outcome": 1.99,
+          "specificity": 1.49
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 259892,
+      "action": "The Air Ambulances to be government funded",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.85,
+          "evidence": 1.95,
+          "reasoning": 1.89,
+          "outcome": 1.83,
+          "specificity": 1.62
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 133606,
+      "action": "United Kingdom to not leave the EU",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 1,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.87,
+          "evidence": 1.15,
+          "reasoning": 1.18,
+          "outcome": 1.98,
+          "specificity": 0.43
+        },
+        "stance": "declines",
+        "verdict": "some",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 751009,
+      "action": "NHS funding for egg freezing, for those suffering from endometriosis.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.9,
+          "evidence": 1.94,
+          "reasoning": 1.45,
+          "outcome": 1.07,
+          "specificity": 1.83
+        },
+        "stance": "deflects",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 328537,
+      "action": "Change outdated laws to prevent forest felling when baby animals are in\r\nnests",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.59,
+          "evidence": 1.05,
+          "reasoning": 1.21,
+          "outcome": 0.65,
+          "specificity": 1.3
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 49640,
+      "action": "Reverse the changes to school term time family holiday rules",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.99,
+          "evidence": 1.03,
+          "reasoning": 1.88,
+          "outcome": 2,
+          "specificity": 1.95
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 266835,
+      "action": "Make vet best practice measures mandatory & honour dual microchip registration.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.3,
+          "evidence": 1.51,
+          "reasoning": 1.06,
+          "outcome": 0.29,
+          "specificity": 1.17
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 170481,
+      "action": "Introduce Animal Health and Welfare to the school curriculum",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 0,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.75,
+          "evidence": 0.36,
+          "reasoning": 1.29,
+          "outcome": 0.5,
+          "specificity": 1.63
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 132140,
+      "action": "Free childcare when both parents are working. Not just those who are on benefits",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.58,
+          "evidence": 1.71,
+          "reasoning": 1.97,
+          "outcome": 1.85,
+          "specificity": 1.13
+        },
+        "stance": "deflects",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 761984,
+      "action": "Detain, detect and deport all illegal immigrants",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.87,
+          "evidence": 2,
+          "reasoning": 1.18,
+          "outcome": 1.8,
+          "specificity": 0.7
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 574305,
+      "action": "Stop the rising number of ear-cropped dogs in the UK",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.78,
+          "evidence": 1.24,
+          "reasoning": 1.44,
+          "outcome": 1.35,
+          "specificity": 1.83
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 22316,
+      "action": "Stop the cuts in the Open University",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.28,
+          "evidence": 1.92,
+          "reasoning": 1.98,
+          "outcome": 1.96,
+          "specificity": 1.62
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 209872,
+      "action": "Make Hedgehogs a Protected Species",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.98,
+          "evidence": 1.66,
+          "reasoning": 2,
+          "outcome": 1.98,
+          "specificity": 1.9
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 104559,
+      "action": "We need Jeremy Hunt MP to get NHS England to fund Vimizin for Morquio Sufferers",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.9,
+          "evidence": 1.37,
+          "reasoning": 1.57,
+          "outcome": 0.85,
+          "specificity": 1.76
+        },
+        "stance": "deflects",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 701379,
+      "action": "Impose economic sanctions on Israel.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 1,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.63,
+          "evidence": 0.94,
+          "reasoning": 1.93,
+          "outcome": 1.56,
+          "specificity": 1.66
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 636546,
+      "action": "Introduce new laws to force offenders to be present in court for sentencing",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.63,
+          "evidence": 0.1,
+          "reasoning": 2,
+          "outcome": 1.68,
+          "specificity": 1.88
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 52740,
+      "action": "Stop FGM in the UK Now",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.69,
+          "evidence": 1.96,
+          "reasoning": 1.12,
+          "outcome": 1.54,
+          "specificity": 1.6
+        },
+        "stance": "deflects",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 226109,
+      "action": "An independent study to find if driven grouse shooting is of  economic benefit.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.68,
+          "evidence": 2,
+          "reasoning": 1.81,
+          "outcome": 1.48,
+          "specificity": 1.43
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 104360,
+      "action": "Legislate to introduce minimum sentences for assaulting police officers.",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.54,
+          "evidence": 1.5,
+          "reasoning": 1.66,
+          "outcome": 1.05,
+          "specificity": 1.61
+        },
+        "stance": "deflects",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 700557,
+      "action": "Ban non-stun slaughter in the UK",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.85,
+          "evidence": 0.75,
+          "reasoning": 1.93,
+          "outcome": 1.8,
+          "specificity": 1.39
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 653888,
+      "action": "Home fee status for BN(O) students after 3 years continuous stay in the UK",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 0,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.57,
+          "evidence": 0.85,
+          "reasoning": 1.31,
+          "outcome": 1.68,
+          "specificity": 1.83
+        },
+        "stance": "deflects",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 61225,
+      "action": "Tell Eric Pickles that allotments must not be sold off!",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.96,
+          "evidence": 1.98,
+          "reasoning": 1.09,
+          "outcome": 1.59,
+          "specificity": 1.89
+        },
+        "stance": "accepts",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 226054,
+      "action": "Declare a Climate Emergency, end fossil fuel use and build community resilience.",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.14,
+          "evidence": 2,
+          "reasoning": 1.32,
+          "outcome": 1.3,
+          "specificity": 0.43
+        },
+        "stance": "partially_accepts",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 109473,
+      "action": "SAVE OUR NHS STOP PRIVATISATION\r\nSAVE EALING HOSPITAL Publicly Funded & Provided",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.54,
+          "evidence": 1.2,
+          "reasoning": 1.81,
+          "outcome": 1.53,
+          "specificity": 1.78
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 723991,
+      "action": "Abandon DWP Pathways to Work Green Paper & create National Disability Strategy",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.88,
+          "evidence": 1.96,
+          "reasoning": 1.71,
+          "outcome": 1.83,
+          "specificity": 1.68
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 562694,
+      "action": "Prioritise vaccinations for people with a learning disability",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 1
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.71,
+          "evidence": 1.72,
+          "reasoning": 1.87,
+          "outcome": 1.58,
+          "specificity": 1.33
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 34610,
+      "action": "Toast the Tax",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.98,
+          "evidence": 1.55,
+          "reasoning": 2,
+          "outcome": 1.99,
+          "specificity": 1.95
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 252449,
+      "action": "If Theresa May resigns as Prime Minister a general election must be held.",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 0,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "low"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.47,
+          "evidence": 1.84,
+          "reasoning": 1.28,
+          "outcome": 1.18,
+          "specificity": 0.46
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 107355,
+      "action": "Reverse the decision to allow \"thousands\" of Syrian migrants into the UK",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1.99,
+          "reasoning": 1.98,
+          "outcome": 2,
+          "specificity": 1.52
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 751839,
+      "action": "Cancel the clinical trial into puberty blockers & safeguard vulnerable children",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.86,
+          "evidence": 1.89,
+          "reasoning": 1.99,
+          "outcome": 1.98,
+          "specificity": 1.72
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 590309,
+      "action": "Ban urban and garden pesticides to protect bees, other wildlife and human health",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 1,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.02,
+          "evidence": 1.41,
+          "reasoning": 1.6,
+          "outcome": 0.96,
+          "specificity": 1.05
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 48352,
+      "action": "Ban all sharia law in the u.k",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.97,
+          "evidence": 0.17,
+          "reasoning": 1.72,
+          "outcome": 1.99,
+          "specificity": 1.81
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 233408,
+      "action": "Review governance of National Insurance Fund",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.83,
+          "evidence": 1.96,
+          "reasoning": 1.1,
+          "outcome": 1.95,
+          "specificity": 1.75
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 108431,
+      "action": "Stop benefits to more than one wife in the UK",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.82,
+          "evidence": 1.64,
+          "reasoning": 1.26,
+          "outcome": 1.89,
+          "specificity": 1.92
+        },
+        "stance": "deflects",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 700138,
+      "action": "Don't change inheritance tax relief for working farms",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.97,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 1.99,
+          "specificity": 1.64
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 649686,
+      "action": "Revoke citizenship/benefits from anyone who supports or has supported terrorism",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.97,
+          "evidence": 1.31,
+          "reasoning": 1.94,
+          "outcome": 1.99,
+          "specificity": 1.94
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 52656,
+      "action": "Boycott 2014 Winter Olympics",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0.65,
+          "reasoning": 1.97,
+          "outcome": 1.97,
+          "specificity": 1.95
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 257397,
+      "action": "Change Settlement Status from Application to Registration.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.72,
+          "evidence": 1.99,
+          "reasoning": 1.98,
+          "outcome": 1.95,
+          "specificity": 1.01
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 115895,
+      "action": "Scrap plans forcing self employed & small business to do 4 tax returns yearly",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.83,
+          "evidence": 1.95,
+          "reasoning": 1.95,
+          "outcome": 1.57,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 701159,
+      "action": "Allow transgender people to self-identify their legal gender.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0.22,
+          "reasoning": 1.81,
+          "outcome": 1.87,
+          "specificity": 1.68
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 582125,
+      "action": "Exchange of driving licences issued in  Republic of Moldova.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.92,
+          "evidence": 1.5,
+          "reasoning": 1.65,
+          "outcome": 1.34,
+          "specificity": 1.49
+        },
+        "stance": "deflects",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 48886,
+      "action": "Goverment to take a Safeguarding Children position against sites like Ask.Fm",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 0,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.29,
+          "evidence": 1.89,
+          "reasoning": 1.07,
+          "outcome": 0.38,
+          "specificity": 1.38
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 213702,
+      "action": "Require local authorities to adopt all Public Open Space and roads on estates",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.76,
+          "evidence": 1.47,
+          "reasoning": 1.77,
+          "outcome": 1.79,
+          "specificity": 1.73
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 582345,
+      "action": "Allow all students to return to university at the start of the Summer term",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.93,
+          "evidence": 1.93,
+          "reasoning": 2,
+          "outcome": 1.9,
+          "specificity": 1.67
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 53002,
+      "action": "End the 'Parent Trap' - suspend or reduce APD over school summer holidays",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.91,
+          "evidence": 2,
+          "reasoning": 1.99,
+          "outcome": 1.98,
+          "specificity": 1.62
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 221860,
+      "action": "PublicHoliday on Hindus special two religious occasions in a year:Diwali&Dussera",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.98,
+          "evidence": 1.99,
+          "reasoning": 1.98,
+          "outcome": 1.99,
+          "specificity": 0.86
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 150084,
+      "action": "Fast track naturalisation for EU citizens resident in the UK longer than 5 years",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.5,
+          "evidence": 0.59,
+          "reasoning": 1.91,
+          "outcome": 1.81,
+          "specificity": 1.41
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 771401,
+      "action": "Permanent driving ban on intoxicated drivers guilty of causing death",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1.78,
+          "reasoning": 1.81,
+          "outcome": 1.98,
+          "specificity": 1.86
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 320607,
+      "action": "Provide housing allowance for Care leavers aged 16 to 25",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.74,
+          "evidence": 1.95,
+          "reasoning": 1.99,
+          "outcome": 1.92,
+          "specificity": 1.59
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 35092,
+      "action": "Exclude Vulnerable Severe & Enduring Mental Health Sufferers from DLA Assessments in 2013",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.28,
+          "evidence": 0.94,
+          "reasoning": 1.83,
+          "outcome": 1.52,
+          "specificity": 0.97
+        },
+        "stance": "declines",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 232984,
+      "action": "Grant a People's Vote if Parliament rejects the EU Withdrawal Agreement",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.97,
+          "evidence": 1.99,
+          "reasoning": 1.55,
+          "outcome": 1.98,
+          "specificity": 0.85
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 187137,
+      "action": "Car insurance is compulsory therefore it should be nationalised",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.97,
+          "evidence": 0.79,
+          "reasoning": 2,
+          "outcome": 1.97,
+          "specificity": 1.61
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 700117,
+      "action": "Fund free TV licences for all pensioners",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.99,
+          "evidence": 1.91,
+          "reasoning": 1.68,
+          "outcome": 1.71,
+          "specificity": 1.75
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 634090,
+      "action": "Hold a referendum on ending devolution in Scotland",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.98,
+          "evidence": 2,
+          "reasoning": 1.89,
+          "outcome": 1.99,
+          "specificity": 1.84
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 33898,
+      "action": "Funding for Research into Congenital Diaphragmatic Hernia (CDH)",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 1,
+          "reasoning": 1,
+          "outcome": 0,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.33,
+          "evidence": 1.18,
+          "reasoning": 1,
+          "outcome": 0.14,
+          "specificity": 0.91
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 262607,
+      "action": "Ban non-stun slaughter. Animal welfare must take priority over faith tradition.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.71,
+          "evidence": 1.28,
+          "reasoning": 1.67,
+          "outcome": 1.57,
+          "specificity": 1.54
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 117136,
+      "action": "Make planting trees a priority to reduce flooding by improving soil and drainage",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.89,
+          "evidence": 1.97,
+          "reasoning": 1.52,
+          "outcome": 1.3,
+          "specificity": 1.16
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 700036,
+      "action": "Ban driven grouse shooting",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.97,
+          "evidence": 1.97,
+          "reasoning": 1.93,
+          "outcome": 1.93,
+          "specificity": 1.62
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 562838,
+      "action": "Make access to food a legal right - no one in the UK should go hungry",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.47,
+          "evidence": 2,
+          "reasoning": 1.43,
+          "outcome": 0.96,
+          "specificity": 1.63
+        },
+        "stance": "deflects",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 59196,
+      "action": "Reverse Ban on Holiday's During School Term Time",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 1
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.82,
+          "evidence": 1.54,
+          "reasoning": 1.84,
+          "outcome": 1.98,
+          "specificity": 1.6
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 214210,
+      "action": "Accept a role as guarantor to the USS pension scheme",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.97,
+          "evidence": 1.48,
+          "reasoning": 1.87,
+          "outcome": 1.96,
+          "specificity": 1.1
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 137376,
+      "action": "A change in prime minister should trigger a general election.",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 0,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.53,
+          "evidence": 1.99,
+          "reasoning": 1.64,
+          "outcome": 1.7,
+          "specificity": 1.45
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 768851,
+      "action": "Ensure fair and transparent faith security funding for all faith communities",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.76,
+          "evidence": 1.98,
+          "reasoning": 1.97,
+          "outcome": 1.46,
+          "specificity": 1.77
+        },
+        "stance": "partially_accepts",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 331930,
+      "action": "Stop sexism - Require schools to offer all sports to all children",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.74,
+          "evidence": 2,
+          "reasoning": 1.39,
+          "outcome": 1.78,
+          "specificity": 1.86
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 36063,
+      "action": "No to postcode pay",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 0,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "low"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.29,
+          "evidence": 0.24,
+          "reasoning": 1.13,
+          "outcome": 0.88,
+          "specificity": 1.25
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 257329,
+      "action": "Start preparations for a Peoples Vote now, to enable answer by 31-10-19.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 0.79,
+          "evidence": 1.99,
+          "reasoning": 1.4,
+          "outcome": 1.93,
+          "specificity": 0.96
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 112379,
+      "action": "The government has no mandate to privatise the NHS and should cease immediately.",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.49,
+          "evidence": 2,
+          "reasoning": 1.51,
+          "outcome": 1.95,
+          "specificity": 1.92
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 751174,
+      "action": "Appoint a Maternity Commissioner to improve maternity care for mums and babies",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.99,
+          "evidence": 1.52,
+          "reasoning": 1.73,
+          "outcome": 1.93,
+          "specificity": 1.8
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 562495,
+      "action": "To pay every NHS and Social Care Worker in England a £500 \"Thank You\" Bonus",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.99,
+          "evidence": 1.99,
+          "reasoning": 2,
+          "outcome": 1.96,
+          "specificity": 1.77
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 67893,
+      "action": "British citizens who fight in the Israeli army to face criminal prosecution on their return to UK",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.93,
+          "evidence": 0.69,
+          "reasoning": 1.32,
+          "outcome": 1.93,
+          "specificity": 1.96
+        },
+        "stance": "deflects",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 217239,
+      "action": "Fund free BSL lessons for every parent or carer of a Deaf child in the UK",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 0,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "low"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.48,
+          "evidence": 0.95,
+          "reasoning": 1.15,
+          "outcome": 0.95,
+          "specificity": 1.42
+        },
+        "stance": "partially_accepts",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 112845,
+      "action": "To change the name the UK Government uses for IS, ISIS and ISIL to DAESH",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "accepts",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0.4,
+          "reasoning": 1.87,
+          "outcome": 1.91,
+          "specificity": 1.97
+        },
+        "stance": "accepts",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 705772,
+      "action": "Impose a lifetime ban on animal ownership for anyone convicted of animal cruelty",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.69,
+          "evidence": 1.5,
+          "reasoning": 1.4,
+          "outcome": 1.69,
+          "specificity": 1.18
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 300257,
+      "action": "Ban non-stun slaughter in the UK. ",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 0,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.96,
+          "evidence": 0.77,
+          "reasoning": 1.97,
+          "outcome": 1.97,
+          "specificity": 1.76
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 70689,
+      "action": "Introduce mandatory noise complaint waivers for anyone who buys or rents a property within close distance of a music venue",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 1,
+          "reasoning": 2,
+          "outcome": 2,
+          "specificity": 2
+        },
+        "stance": "declines",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.98,
+          "evidence": 0.6,
+          "reasoning": 1.99,
+          "outcome": 2,
+          "specificity": 1.9
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": false
+      }
+    },
+    {
+      "petitionId": 225025,
+      "action": "The UK government should ban Steve Bannon from entering the UK",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 0,
+          "reasoning": 1,
+          "outcome": 0,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "low"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.13,
+          "evidence": 0.36,
+          "reasoning": 1.34,
+          "outcome": 0.47,
+          "specificity": 1
+        },
+        "stance": "deflects",
+        "verdict": "some",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 106779,
+      "action": "KEEP AIRFIELDS GREENFIELDS.\r\nReview Airfield Classification as Brownfield Sites",
+      "label": {
+        "scores": {
+          "addresses_ask": 2,
+          "evidence": 2,
+          "reasoning": 2,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "thorough"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.47,
+          "evidence": 1.28,
+          "reasoning": 1.58,
+          "outcome": 1.38,
+          "specificity": 1.81
+        },
+        "stance": "declines",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    },
+    {
+      "petitionId": 770872,
+      "action": "Review access to NHS treatment for Retrograde Cricopharyngeal Dysfunction ",
+      "label": {
+        "scores": {
+          "addresses_ask": 1,
+          "evidence": 1,
+          "reasoning": 1,
+          "outcome": 1,
+          "specificity": 2
+        },
+        "stance": "deflects",
+        "verdict": "some"
+      },
+      "model": {
+        "scores": {
+          "addresses_ask": 1.81,
+          "evidence": 0.99,
+          "reasoning": 1.62,
+          "outcome": 0.9,
+          "specificity": 1.94
+        },
+        "stance": "deflects",
+        "verdict": "thorough",
+        "needsReview": true
+      }
+    }
+  ]
+}

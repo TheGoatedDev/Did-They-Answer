@@ -1,0 +1,60 @@
+{
+  "name": "did-they-answer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "biome check",
+    "format": "biome format --write",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepare": "husky",
+    "db:generate": "drizzle-kit generate",
+    "gold:label": "tsx --env-file-if-exists=.env.local scripts/gold-label.mts",
+    "eval": "tsx --env-file-if-exists=.env.local scripts/eval.mts",
+    "sync:local": "tsx --env-file-if-exists=.env.local scripts/sync.mts",
+    "jev:check": "tsx --env-file-if-exists=.env.local scripts/jev-check.mts",
+    "judge:local": "tsx --env-file-if-exists=.env.local scripts/judge.mts",
+    "gold:export": "tsx --env-file-if-exists=.env.local scripts/gold-export.mts",
+    "gold:merge": "tsx --env-file-if-exists=.env.local scripts/gold-merge.mts"
+  },
+  "dependencies": {
+    "@base-ui/react": "^1.9.0",
+    "@typesafe-ai/sdk": "0.7.0",
+    "class-variance-authority": "^0.7.1",
+    "cn": "^0.5.0",
+    "drizzle-orm": "^0.45.4",
+    "lucide-react": "^1.58.0",
+    "next": "16.4.2",
+    "pg": "^8.23.1",
+    "posthog-js": "^1.438.12",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "shadcn": "^4.22.0",
+    "tw-animate-css": "^1.4.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.2",
+    "@electric-sql/pglite": "^0.5.10",
+    "@tailwindcss/turbopack": "^4",
+    "@types/node": "^24.19.2",
+    "@types/pg": "^8.23.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "babel-plugin-react-compiler": "1.0.0",
+    "drizzle-kit": "^0.31.11",
+    "husky": "^9.1.7",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5",
+    "vitest": "^5.0.5"
+  },
+  "packageManager": "pnpm@12.11.2",
+  "engines": {
+    "node": ">=24"
+  }
+}
