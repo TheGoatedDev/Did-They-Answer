@@ -111,7 +111,11 @@ async function getDebate(extId: string) {
   );
 }
 
-export async function fetchDebate(transcriptUrl: string) {
+const mentionSchema = z.object({
+  Results: z.array(z.object({ DebateSectionExtId: z.string() })),
+});
+
+export async function fetchDebate(transcriptUrl: string, petitionId: number) {
   let parsed = await getDebate(debateIdFrom(transcriptUrl) ?? "");
   // Some petition links carry ids Hansard no longer resolves; find the debate by date and title.
   const link =
@@ -125,7 +129,16 @@ export async function fetchDebate(transcriptUrl: string) {
         `https://hansard-api.parliament.uk/search/debates.json?queryParameters.house=${house}&queryParameters.startDate=${date}&queryParameters.endDate=${date}&queryParameters.take=100`,
       ),
     );
-    const extId = matchDebate(Results, slug);
+    let extId = matchDebate(Results, slug);
+    // Links to a whole sitting ("WestminsterHall"): find the debate that names the petition.
+    if (!extId) {
+      const mentions = mentionSchema.parse(
+        await getJson(
+          `https://hansard-api.parliament.uk/search/contributions/Spoken.json?queryParameters.searchTerm=${petitionId}&queryParameters.house=${house}&queryParameters.startDate=${date}&queryParameters.endDate=${date}&queryParameters.take=1`,
+        ),
+      );
+      extId = mentions.Results[0]?.DebateSectionExtId ?? null;
+    }
     if (extId) parsed = await getDebate(extId);
   }
   if (!parsed.success)
@@ -292,7 +305,7 @@ export async function runDebateStances(
       const [debateId, { url, group }] =
         queue.shift() as (typeof queue)[number];
       try {
-        const debate = await fetchDebate(url);
+        const debate = await fetchDebate(url, group[0].id);
         const bySpeaker = speakers(debate.Items);
         const members = await fetchMembers(
           [...bySpeaker.keys()],
