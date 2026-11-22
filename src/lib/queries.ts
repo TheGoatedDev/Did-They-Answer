@@ -1,4 +1,4 @@
-import { and, desc, eq, isNotNull, sql } from "drizzle-orm";
+import { and, count, desc, eq, isNotNull, sql } from "drizzle-orm";
 import { cacheLife, cacheTag } from "next/cache";
 import { db } from "@/db";
 import { assessments, debateStances, jobRuns, petitions } from "@/db/schema";
@@ -161,4 +161,27 @@ export async function getLastSync() {
     .orderBy(desc(jobRuns.finishedAt))
     .limit(1);
   return run?.finishedAt ?? null;
+}
+
+// Google's limit is 50,000 URLs per sitemap file.
+export const SITEMAP_SIZE = 50_000;
+
+export async function getSitemapCount() {
+  "use cache";
+  cacheTag(TAG);
+  cacheLife("max");
+  const [row] = await db.select({ n: count() }).from(petitions);
+  return Math.max(1, Math.ceil(row.n / SITEMAP_SIZE));
+}
+
+export async function getSitemapPetitions(page: number) {
+  "use cache";
+  cacheTag(TAG);
+  cacheLife("max");
+  return db
+    .select({ id: petitions.id, updatedAt: petitions.apiUpdatedAt })
+    .from(petitions)
+    .orderBy(petitions.id)
+    .limit(SITEMAP_SIZE)
+    .offset(page * SITEMAP_SIZE);
 }
