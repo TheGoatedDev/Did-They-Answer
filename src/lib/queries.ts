@@ -163,8 +163,8 @@ export async function getLastSync() {
   return run?.finishedAt ?? null;
 }
 
-// Google's limit is 50,000 URLs per sitemap file.
-export const SITEMAP_SIZE = 50_000;
+// Google caps a sitemap at 50,000 URLs; file 0 also carries the static pages.
+export const SITEMAP_SIZE = 49_000;
 
 export async function getSitemapCount() {
   "use cache";
