@@ -162,3 +162,12 @@ export async function getLastSync() {
     .limit(1);
   return run?.finishedAt ?? null;
 }
+
+export async function getSitemapPetitions() {
+  "use cache";
+  cacheTag(TAG);
+  cacheLife("max");
+  return db
+    .select({ id: petitions.id, updatedAt: petitions.apiUpdatedAt })
+    .from(petitions);
+}
