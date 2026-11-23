@@ -13,7 +13,7 @@ A public, read-only site that scores how thoroughly the UK government engages wi
 - `/methodology` publishes the rubric, the model version, `PROMPT_VERSION`, the full gold set, the agreement score and every case where Jev disagreed with the hand labels.
 - The footer and `/methodology` carry the Open Parliament Licence v3.0 attribution.
 - Each detail page has a "Dispute this assessment" link. It opens a pre-filled GitHub issue from a template.
-- Analytics: PostHog on EU Cloud, with no cookies (`persistence: 'memory'`) and pageviews only.
+- Analytics: PostHog on EU Cloud, with no cookies (`persistence: 'memory'`), pageviews and session replay.
 - Accessibility target: WCAG 2.2 AA.
 - Domain: `petitions.thegoated.dev`.
 
@@ -244,7 +244,7 @@ Changed 2026-10-17: phases 1–4 and the code for phase 5 ship together in PR #1
 - PostHog project in the NearLunar organisation on EU Cloud:
   - authorised URLs: the production domain and `localhost:3000`;
   - IP anonymisation on;
-  - replay and heatmaps off.
+  - replay on, heatmaps off.
 - Run the first sync and judge by hand.
 
 ## Ask the owner before
